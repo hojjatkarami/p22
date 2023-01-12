@@ -1,0 +1,79 @@
+\documentclass{article}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{svg}
+\usepackage{subcaption}
+\usepackage{multirow}
+\begin{document}
+The universe is immense and it seems to be homogeneous, 
+in a large scale, everywhere we look at.
+
+
+
+% \begin{figure}[h!]
+%     \centering
+    \includesvg{NLL-p12.svg}
+
+
+% \end{figure}
+
+% \begin{figure}[h!]
+%     \centering
+
+%     \begin{subfigure}[b]{0.4\linewidth}
+%       \includegraphics[width=\linewidth]{tsne_TEDA_Mar.png}
+%       \caption{tsne TEDA Mar.}
+%     \end{subfigure}
+
+%     \begin{subfigure}[b]{0.4\linewidth}
+%       \includegraphics[width=\linewidth]{tsne_TEDA_CIFMar.png}
+%       \caption{tsne TEDA CIFMar.}
+%     \end{subfigure}
+
+%     \begin{subfigure}[b]{0.4\linewidth}
+%         \includegraphics[width=\linewidth]{tsne_TEDA_CIF.png}
+%         \caption{tsne TEDA CIF.}
+%     \end{subfigure}
+
+%     \begin{subfigure}[b]{0.4\linewidth}
+%         \includegraphics[width=\linewidth]{tsne_TE_CIF.png}
+%         \caption{tsne TE CIF.}
+%     \end{subfigure}
+
+%     \caption{The same cup of coffee. Two times.}
+%     \label{fig:coffee}
+% \end{figure}
+
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% \usepackage{graphicx}
+\begin{table}[]
+  \centering
+  \caption{unsupervised learning}
+  \label{tab:table1}
+  \resizebox{\columnwidth}{!}{%
+  \begin{tabular}{|cl|llll|llll|}
+  \hline
+  \multicolumn{2}{|c|}{}                                & \multicolumn{4}{c|}{p12}                                                                         & \multicolumn{4}{c|}{p19}                                                                         \\ \hline
+  \multicolumn{2}{|c|}{model}                           & \multicolumn{2}{c|}{next mark}                          & \multicolumn{1}{l|}{next time} & CIFs  & \multicolumn{2}{c|}{next mark}                          & \multicolumn{1}{l|}{next time} & CIFs  \\ \hline
+  \multicolumn{1}{|l|}{module}                & loss    & \multicolumn{1}{l|}{AUPRC} & \multicolumn{1}{l|}{AUROC} & \multicolumn{1}{l|}{RMSE}      & NLL   & \multicolumn{1}{l|}{AUPRC} & \multicolumn{1}{l|}{AUROC} & \multicolumn{1}{l|}{RMSE}      & NLL   \\ \hline
+  \multicolumn{1}{|c|}{\multirow{3}{*}{TE}}   & MC      & \multicolumn{1}{l|}{23.98} & \multicolumn{1}{l|}{23.98} & \multicolumn{1}{l|}{23.98}     & 23.98 & \multicolumn{1}{l|}{23.98} & \multicolumn{1}{l|}{23.98} & \multicolumn{1}{l|}{23.98}     & 23.98 \\ \cline{2-10} 
+  \multicolumn{1}{|c|}{}                      & ML      & \multicolumn{1}{l|}{23.98} & \multicolumn{1}{l|}{23.98} & \multicolumn{1}{l|}{23.98}     & 23.98 & \multicolumn{1}{l|}{23.98} & \multicolumn{1}{l|}{23.98} & \multicolumn{1}{l|}{23.98}     & 23.98 \\ \cline{2-10} 
+  \multicolumn{1}{|c|}{}                      & SHPMARK & \multicolumn{1}{l|}{23.98} & \multicolumn{1}{l|}{23.98} & \multicolumn{1}{l|}{23.98}     & 23.98 & \multicolumn{1}{l|}{23.98} & \multicolumn{1}{l|}{23.98} & \multicolumn{1}{l|}{23.98}     & 23.98 \\ \hline
+  \multicolumn{1}{|c|}{\multirow{3}{*}{TEDA}} & MC      & \multicolumn{1}{l|}{23.98} & \multicolumn{1}{l|}{23.98} & \multicolumn{1}{l|}{23.98}     & 23.98 & \multicolumn{1}{l|}{23.98} & \multicolumn{1}{l|}{23.98} & \multicolumn{1}{l|}{23.98}     & 23.98 \\ \cline{2-10} 
+  \multicolumn{1}{|c|}{}                      & ML      & \multicolumn{1}{l|}{23.98} & \multicolumn{1}{l|}{23.98} & \multicolumn{1}{l|}{23.98}     & 23.98 & \multicolumn{1}{l|}{23.98} & \multicolumn{1}{l|}{23.98} & \multicolumn{1}{l|}{23.98}     & 23.98 \\ \cline{2-10} 
+  \multicolumn{1}{|c|}{}                      & SHPMARK & \multicolumn{1}{l|}{23.98} & \multicolumn{1}{l|}{23.98} & \multicolumn{1}{l|}{23.98}     & 23.98 & \multicolumn{1}{l|}{23.98} & \multicolumn{1}{l|}{23.98} & \multicolumn{1}{l|}{23.98}     & 23.98 \\ \hline
+  \end{tabular}%
+  }
+\end{table}
+
+
+
+
+
+
+
+There's a picture of a galaxy above
+\end{document}
