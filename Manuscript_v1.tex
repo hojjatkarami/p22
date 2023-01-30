@@ -279,15 +279,95 @@ effect of time concatenation
 compare single+mark with mc or ml
 
 
+\begin{table}[h!]
+\centering
+\caption{Effect}
+\label{tab:my-table}
+\begin{tabular}{lllll}
+        &        & shp+mark &     & baseline \\ \cline{3-5} 
+Dataset & Metric & concat   & sum &          \\ \hline
+SO      & NLL    &          &     &          \\
+        & AUROC  &          &     &          \\
+        & time   &          &     &          \\ \hline
+Synthea & NLL    &          &     &          \\
+        & AUROC  &          &     &          \\
+        & time   &          &     &          \\ \hline
+ReTweet & NLL    &          &     &          \\
+        & AUROC  &          &     &          \\
+        & time   &          &     &          \\ \hline
+\end{tabular}
+\end{table}
+
+
+
+
+
 \subsection{Negative Likelihood with state encoding}
 
 Table 1 shows the result for estimation of negative likelihood in different datasets and scnearios. It is obvious that state encoding has led to lower NLL.
+
+
+
+
+\begin{table}[h!]
+\centering
+\caption{NLL estimation}
+\label{tab:my-table}
+\begin{tabular}{lllll}
+\hline
+        &         &    & Model  &          \\ \cline{3-5} 
+Dataset & setting & TE & TE+DAM & TE+noise \\ \hline
+P12     & sc      &    &        &          \\
+        & mc1     &    &        &          \\
+        & mc2     &    &        &          \\ \hline
+p19     & sc      &    &        &          \\
+        & mc1     &    &        &          \\
+        & mc2     &    &        &          \\ \hline
+\end{tabular}
+\end{table}
+
+
+
 
 can u provide one example patient?
 
 \subsection{Downstream task with event encoding}
 
 Another key element of our work is to show the effectiveness of point process modeling for a down-stream task. In Table, we have reported the performance metrics for the mortality prediction task. We have compared our results with several sota's DL models that are compatible with irregular time series.
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table*}
+\centering
+\caption{Down stream task}
+\label{tab:my-table}
+\begin{tabular}{cccccccccccc}
+\hline
+                     &                      &        &  & F1   &        &  & AUPRC &        &  & AUROC &        \\ \cline{5-6} \cline{8-9} \cline{11-12} 
+Dataset              & Setting              & Center &  & DAM  & TE+DAM &  & DAM   & TE+DAM &  & DAM   & TE+DAM \\ \hline
+\multirow{8}{*}{P12} & \multirow{3}{*}{sc}  & 1      &  & 0.55 & 0.55   &  & 0.55  & 0.55   &  & 0.55  & 0.55   \\
+                     &                      & 2      &  & 0.55 & 0.55   &  & 0.55  & 0.55   &  & 0.55  & 0.55   \\
+                     &                      & 3      &  & 0.55 & 0.55   &  & 0.55  & 0.55   &  & 0.55  & 0.55   \\ \cline{2-12} 
+                     & \multirow{3}{*}{mc1} & 1      &  & 0.55 & 0.55   &  & 0.55  & 0.55   &  & 0.55  & 0.55   \\
+                     &                      & 2      &  & 0.55 & 0.55   &  & 0.55  & 0.55   &  & 0.55  & 0.55   \\
+                     &                      & 3      &  & 0.55 & 0.55   &  & 0.55  & 0.55   &  & 0.55  & 0.55   \\ \cline{2-12} 
+                     & mc2                  & -      &  & 0.55 & 0.55   &  & 0.55  & 0.55   &  & 0.55  & 0.55   \\
+                     & seft                 & -      &  & 0.55 & 0.55   &  & 0.55  & 0.55   &  & 0.55  & 0.55   \\ \hline
+\multirow{8}{*}{P19} & \multirow{3}{*}{sc}  & 1      &  & 0.55 & 0.55   &  & 0.55  & 0.55   &  & 0.55  & 0.55   \\
+                     &                      & 2      &  & 0.55 & 0.55   &  & 0.55  & 0.55   &  & 0.55  & 0.55   \\
+                     &                      & 3      &  & 0.55 & 0.55   &  & 0.55  & 0.55   &  & 0.55  & 0.55   \\ \cline{2-12} 
+                     & \multirow{3}{*}{mc1} & 1      &  & 0.55 & 0.55   &  & 0.55  & 0.55   &  & 0.55  & 0.55   \\
+                     &                      & 2      &  & 0.55 & 0.55   &  & 0.55  & 0.55   &  & 0.55  & 0.55   \\
+                     &                      & 3      &  & 0.55 & 0.55   &  & 0.55  & 0.55   &  & 0.55  & 0.55   \\ \cline{2-12} 
+                     & mc2                  & -      &  & 0.55 & 0.55   &  & 0.55  & 0.55   &  & 0.55  & 0.55   \\
+                     & seft                 & -      &  & 0.55 & 0.55   &  & 0.55  & 0.55   &  & 0.55  & 0.55   \\ \hline
+\end{tabular}
+\end{table*}
+
+
+
+
+
 
 
 
@@ -299,57 +379,6 @@ Fig 1 visualizes the tsne plot for the two scenarios.
 
 one advantage of proposed method is use of attention mechanisms in both event and state encoder.
 Fig 1 shows the attention mechanism
-% Please add the following required packages to your document preamble:
-% \usepackage{multirow}
-% \usepackage{graphicx}
-\begin{table}[h!]
-    \centering
-    \caption{unsupervised learning}
-    \label{tab:table1}
-    \resizebox{\columnwidth}{!}{%    
-    \begin{tabular}{cclllll}
-    \hline
-    \multirow{2}{*}{Dataset} & \multicolumn{2}{c}{Model}            & \multicolumn{2}{c}{next mark} & next time & CIFs  \\
-                             & \multicolumn{1}{l}{module} & loss    & AUPRC         & AUROC         & RMSE      & NLL   \\ \hline
-    \multirow{6}{*}{p12}     & \multirow{3}{*}{TE}        & MC      & 23.98         & 23.98         & 23.98     & 23.98 \\
-                             &                            & ML      & 23.98         & 23.98         & 23.98     & 23.98 \\
-                             &                            & SHPMARK & 23.98         & 23.98         & 23.98     & 23.98 \\
-                             & \multirow{3}{*}{TEDA}      & MC      & 23.98         & 23.98         & 23.98     & 23.98 \\
-                             &                            & ML      & 23.98         & 23.98         & 23.98     & 23.98 \\
-                             &                            & SHPMARK & 23.98         & 23.98         & 23.98     & 23.98 \\ \hline
-    \multirow{6}{*}{p19}     & \multirow{3}{*}{TE}        & MC      & 23.98         & 23.98         & 23.98     & 23.98 \\
-                             &                            & ML      & 23.98         & 23.98         & 23.98     & 23.98 \\
-                             &                            & SHPMARK & 23.98         & 23.98         & 23.98     & 23.98 \\
-                             & \multirow{3}{*}{TEDA}      & MC      & 23.98         & 23.98         & 23.98     & 23.98 \\
-                             &                            & ML      & 23.98         & 23.98         & 23.98     & 23.98 \\
-                             &                            & SHPMARK & 23.98         & 23.98         & 23.98     & 23.98 \\ \hline
-    \end{tabular}%
-    }
-\end{table}
-
-
-% Please add the following required packages to your document preamble:
-% \usepackage{multirow}
-% \usepackage{graphicx}
-\begin{table}[h!]
-
-    \centering
-    \caption{Transfer learnings}
-    \label{tab:table2}
-    \resizebox{\columnwidth}{!}{%
-    \begin{tabular}{|cll|ll|ll|}
-    \hline
-    \multicolumn{3}{|c|}{model}                                                          & \multicolumn{2}{c|}{p12}           & \multicolumn{2}{c|}{p19}           \\ \hline
-    \multicolumn{1}{|l|}{module}                & \multicolumn{1}{l|}{loss}    & freezed & \multicolumn{1}{l|}{AUPRC} & AUROC & \multicolumn{1}{l|}{AUPRC} & AUROC \\ \hline
-    \multicolumn{1}{|c|}{\multirow{3}{*}{TE}}   & \multicolumn{1}{l|}{MC}      &         & \multicolumn{1}{l|}{23.98} & 23.98 & \multicolumn{1}{l|}{23.98} & 23.98 \\ \cline{2-7} 
-    \multicolumn{1}{|c|}{}                      & \multicolumn{1}{l|}{ML}      &         & \multicolumn{1}{l|}{23.98} & 23.98 & \multicolumn{1}{l|}{23.98} & 23.98 \\ \cline{2-7} 
-    \multicolumn{1}{|c|}{}                      & \multicolumn{1}{l|}{SHPMARK} &         & \multicolumn{1}{l|}{23.98} & 23.98 & \multicolumn{1}{l|}{23.98} & 23.98 \\ \hline
-    \multicolumn{1}{|c|}{\multirow{3}{*}{TEDA}} & \multicolumn{1}{l|}{MC}      &         & \multicolumn{1}{l|}{23.98} & 23.98 & \multicolumn{1}{l|}{23.98} & 23.98 \\ \cline{2-7} 
-    \multicolumn{1}{|c|}{}                      & \multicolumn{1}{l|}{ML}      &         & \multicolumn{1}{l|}{23.98} & 23.98 & \multicolumn{1}{l|}{23.98} & 23.98 \\ \cline{2-7} 
-    \multicolumn{1}{|c|}{}                      & \multicolumn{1}{l|}{SHPMARK} &         & \multicolumn{1}{l|}{23.98} & 23.98 & \multicolumn{1}{l|}{23.98} & 23.98 \\ \hline
-    \end{tabular}%
-    }
-    \end{table}
 
 
 
