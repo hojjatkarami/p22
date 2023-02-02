@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.31)  31 JAN 2023 22:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.31)  2 FEB 2023 11:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -220,22 +220,80 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 \Gin@req@width=\dimen162
 ) (c:/texlive/2022/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+) (c:/texlive/2022/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen163
+\lightrulewidth=\dimen164
+\cmidrulewidth=\dimen165
+\belowrulesep=\dimen166
+\belowbottomsep=\dimen167
+\aboverulesep=\dimen168
+\abovetopsep=\dimen169
+\cmidrulesep=\dimen170
+\cmidrulekern=\dimen171
+\defaultaddspace=\dimen172
+\@cmidla=\count288
+\@cmidlb=\count289
+\@aboverulesep=\dimen173
+\@belowrulesep=\dimen174
+\@thisruleclass=\count290
+\@lastruleclass=\count291
+\@thisrulewidth=\dimen175
+) (c:/texlive/2022/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+ (c:/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+LaTeX Info: Redefining \color on input line 711.
+ (c:/texlive/2022/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+) (c:/texlive/2022/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
+ (c:/texlive/2022/texmf-dist/tex/latex/tools/array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen176
+\ar@mcellbox=\box55
+\extrarowheight=\dimen177
+\NC@list=\toks23
+\extratabsurround=\skip61
+\backup@length=\skip62
+\ar@cellbox=\box56
+)
+\everycr=\toks24
+\minrowclearance=\skip63
+\rownum=\count292
+) (c:/texlive/2022/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+\c@r@tfl@t=\count293
+\rotFPtop=\skip64
+\rotFPbot=\skip65
+\rot@float@box=\box57
+\rot@mess@toks=\toks25
 ) (c:/texlive/2022/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip61
-\multirow@cntb=\count288
-\multirow@dima=\skip62
-\bigstrutjot=\dimen163
+\multirow@colwidth=\skip66
+\multirow@cntb=\count294
+\multirow@dima=\skip67
+\bigstrutjot=\dimen178
 ) (c:/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count289
-\l__pdf_internal_box=\box55
+\l__color_backend_stack_int=\count295
+\l__pdf_internal_box=\box58
 ) (./Manuscript_v1.aux
 
-LaTeX Warning: Label `tab:my-table' multiply defined.
+LaTeX Warning: Label `tab:addlabel' multiply defined.
 
 
-LaTeX Warning: Label `tab:my-table' multiply defined.
+LaTeX Warning: Label `tab:addlabel' multiply defined.
 
 
 LaTeX Warning: Label `fig1' multiply defined.
@@ -243,74 +301,93 @@ LaTeX Warning: Label `fig1' multiply defined.
 )
 \openout1 = `Manuscript_v1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
  (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count290
-\scratchdimen=\dimen164
-\scratchbox=\box56
-\nofMPsegments=\count291
-\nofMParguments=\count292
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count293
-\MPscratchDim=\dimen165
-\MPnumerator=\count294
-\makeMPintoPDFobject=\count295
-\everyMPtoPDFconversion=\toks24
+\scratchcounter=\count296
+\scratchdimen=\dimen179
+\scratchbox=\box59
+\nofMPsegments=\count297
+\nofMParguments=\count298
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count299
+\MPscratchDim=\dimen180
+\MPnumerator=\count300
+\makeMPintoPDFobject=\count301
+\everyMPtoPDFconversion=\toks27
 ) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (c:/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package color Info: Redefining color nblue on input line 38.
-Package color Info: Redefining color mblue on input line 38.
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 38.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 43.
  (c:/texlive/2022/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <11> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 38.
-Package color Info: Redefining color nblue on input line 38.
-Package color Info: Redefining color mblue on input line 38.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 38.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Package color Info: Redefining color nblue on input line 41.
-Package color Info: Redefining color mblue on input line 41.
+
+Package xcolor Warning: Incompatible color definition on input line 46.
+
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <9> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 41.
-Package color Info: Redefining color nblue on input line 45.
-Package color Info: Redefining color mblue on input line 45.
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 52.
- (c:/texlive/2022/texmf-dist/tex/latex/psnfss/t1phv.fd
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 46.
+
+Package xcolor Warning: Incompatible color definition on input line 50.
+
+
+Package xcolor Warning: Incompatible color definition on input line 57.
+
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 57.
+(c:/texlive/2022/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
-<images/model_arch.png, id=1, 530.4618pt x 141.6492pt>
+
+Package xcolor Warning: Incompatible color definition on input line 64.
+
+
+Package xcolor Warning: Incompatible color definition on input line 75.
+
+
+Package xcolor Warning: Incompatible color definition on input line 78.
+
+<images/model_arch.png, id=1, 475.449pt x 118.479pt>
 File: images/model_arch.png Graphic file (type png)
 <use images/model_arch.png>
-Package pdftex.def Info: images/model_arch.png  used on input line 78.
-(pdftex.def)             Requested size: 530.4605pt x 141.64883pt.
+Package pdftex.def Info: images/model_arch.png  used on input line 83.
+(pdftex.def)             Requested size: 475.44783pt x 118.4787pt.
+
+Package xcolor Warning: Incompatible color definition on input line 85.
+
+
+Package xcolor Warning: Incompatible color definition on input line 110.
+
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 97.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 110.
+
+Package xcolor Warning: Incompatible color definition on input line 122.
+
 Package epstopdf Info: Source file: <LOGO-generic-web.eps>
 (epstopdf)                    date: 2017-08-16 21:56:44
 (epstopdf)                    size: 96860 bytes
@@ -318,7 +395,7 @@ Package epstopdf Info: Source file: <LOGO-generic-web.eps>
 (epstopdf)                    date: 2022-12-01 11:10:01
 (epstopdf)                    size: 6716 bytes
 (epstopdf)             Command: <repstopdf --outfile=LOGO-generic-web-eps-converted-to.pdf LOGO-generic-web.eps>
-(epstopdf)             \includegraphics on input line 150.
+(epstopdf)             \includegraphics on input line 144.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -326,8 +403,11 @@ pdfTeX warning: pdflatex.exe (file ./LOGO-generic-web-eps-converted-to.pdf): PDF
 <LOGO-generic-web-eps-converted-to.pdf, id=3, 55.20625pt x 34.1275pt>
 File: LOGO-generic-web-eps-converted-to.pdf Graphic file (type pdf)
 <use LOGO-generic-web-eps-converted-to.pdf>
-Package pdftex.def Info: LOGO-generic-web-eps-converted-to.pdf  used on input line 150.
+Package pdftex.def Info: LOGO-generic-web-eps-converted-to.pdf  used on input line 144.
 (pdftex.def)             Requested size: 48.0pt x 29.674pt.
+
+Package xcolor Warning: Incompatible color definition on input line 144.
+
 
 Overfull \hbox (259.0pt too wide) has occurred while \output is active
 [][] 
@@ -344,20 +424,28 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 
-Overfull \vbox (24.05351pt too high) has occurred while \output is active []
+Overfull \vbox (25.674pt too high) has occurred while \output is active []
 
  [1{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
  <./LOGO-generic-web-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
+
+Package xcolor Warning: Incompatible color definition on input line 165.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
  []
 
 
-Overfull \hbox (2.40425pt too wide) detected at line 223
-[]\OML/cmm/m/it/10 ^^U[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OMS/cmsy/m/n/10 jH[]\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 f[] []
- []
+Package xcolor Warning: Incompatible color definition on input line 222.
+
+
+Package xcolor Warning: Incompatible color definition on input line 241.
+
+
+Package xcolor Warning: Incompatible color definition on input line 245.
 
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
@@ -365,104 +453,242 @@ Overfull \vbox (5.0pt too high) has occurred while \output is active []
  [2
 
 pdfTeX warning: pdflatex.exe: pop empty color page stack 0
-
-
-pdfTeX warning: pdflatex.exe: pop empty color page stack 0
  <./images/model_arch.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 258--260
+Overfull \hbox (2.40425pt too wide) detected at line 248
+[]\OML/cmm/m/it/10 ^^U[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OMS/cmsy/m/n/10 jH[]\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 f[] []
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 254.
+
+
+Package xcolor Warning: Incompatible color definition on input line 257.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 283--285
 []\OT1/ptm/b/n/10 Stackoverflow (\OT1/ptm/b/it/10 SO\OT1/ptm/b/n/10 )\OT1/ptm/m/n/10 . Stack-Over-flow is a question-
  []
 
-\width=\dimen166
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-\width=\dimen167
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-\width=\dimen168
-
-Underfull \hbox (badness 8019) in paragraph at lines 427--436
-\OT1/ptm/m/n/10 Web site at $[]$
- []
+Package xcolor Warning: Incompatible color definition on input line 287.
 
 
-Underfull \hbox (badness 6445) in paragraph at lines 427--436
-\OT1/ptm/m/n/10 so you can use it to pre-pare your manuscript. If
- []
+Package xcolor Warning: Incompatible color definition on input line 296.
 
 
-Underfull \hbox (badness 7851) in paragraph at lines 427--436
-\OT1/ptm/m/n/10 you would pre-fer to use La-TeX, down-load IEEE's
- []
+Package xcolor Warning: Incompatible color definition on input line 299.
 
 
-Underfull \hbox (badness 6300) in paragraph at lines 427--436
-\OT1/ptm/m/n/10 La-TeX style and sam-ple files from the same Web
- []
+Package xcolor Warning: Incompatible color definition on input line 303.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 427--436
-[]$
- []
+Package xcolor Warning: Incompatible color definition on input line 309.
+
+\width=\dimen181
+
+Package xcolor Warning: Incompatible color definition on input line 319.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 427--436
-[]$
- []
+Package xcolor Warning: Incompatible color definition on input line 346.
+
+\width=\dimen182
+
+Package xcolor Warning: Incompatible color definition on input line 356.
+
+
+Package xcolor Warning: Incompatible color definition on input line 380.
+
+\width=\dimen183
+
+Package xcolor Warning: Incompatible color definition on input line 395.
+
+
+Package xcolor Warning: Incompatible color definition on input line 434.
 
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <7> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 436.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 438.
+
+Package xcolor Warning: Incompatible color definition on input line 438.
+
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [3]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 500.
- (c:/texlive/2022/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
+
+Package xcolor Warning: Incompatible color definition on input line 438.
+
+
+Package xcolor Warning: Incompatible color definition on input line 445.
+
+
+Package xcolor Warning: Incompatible color definition on input line 466.
+
+
+Package xcolor Warning: Incompatible color definition on input line 476.
+
+
+Underfull \hbox (badness 8019) in paragraph at lines 478--487
+\OT1/ptm/m/n/10 Web site at $[]$
+ []
+
+
+Underfull \hbox (badness 6445) in paragraph at lines 478--487
+\OT1/ptm/m/n/10 so you can use it to pre-pare your manuscript. If
+ []
+
+
+Underfull \hbox (badness 7851) in paragraph at lines 478--487
+\OT1/ptm/m/n/10 you would pre-fer to use La-TeX, down-load IEEE's
+ []
+
+
+Underfull \hbox (badness 6300) in paragraph at lines 478--487
+\OT1/ptm/m/n/10 La-TeX style and sam-ple files from the same Web
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 478--487
+[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 478--487
+[]$
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 495.
+
+
+Package xcolor Warning: Incompatible color definition on input line 503.
+
+
+Package xcolor Warning: Incompatible color definition on input line 530.
+
+
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [4]
-LaTeX Font Info:    Trying to load font information for OMS+pcr on input line 542.
+
+Package xcolor Warning: Incompatible color definition on input line 535.
+
+
+Package xcolor Warning: Incompatible color definition on input line 549.
+
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 551.
+(c:/texlive/2022/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+LaTeX Font Info:    Trying to load font information for OMS+pcr on input line 593.
  (c:/texlive/2022/texmf-dist/tex/latex/psnfss/omspcr.fd
 File: omspcr.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 542.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 593.
 LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <9> not available
-(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 543.
+(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 594.
 
-Overfull \hbox (8.91965pt too wide) in paragraph at lines 539--546
+Overfull \hbox (8.91963pt too wide) in paragraph at lines 590--597
  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 539--546
+Underfull \hbox (badness 10000) in paragraph at lines 590--597
 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 561.
+
+Package xcolor Warning: Incompatible color definition on input line 607.
+
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 612.
 (c:/texlive/2022/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-<fig1.png, id=44, 249.3315pt x 189.22694pt>
+
+Package xcolor Warning: Incompatible color definition on input line 623.
+
+<fig1.png, id=43, 249.3315pt x 189.22694pt>
 File: fig1.png Graphic file (type png)
 <use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 590.
+Package pdftex.def Info: fig1.png  used on input line 641.
 (pdftex.def)             Requested size: 252.0pt x 191.25339pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 609--610
+Package xcolor Warning: Incompatible color definition on input line 643.
+
+
+Package xcolor Warning: Incompatible color definition on input line 643.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 660--661
 []\OT1/ptm/m/n/10 A gen-eral IEEE styleguide is avail-able at
  []
 
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 620.
+
+Package xcolor Warning: Incompatible color definition on input line 662.
+
+
+Package xcolor Warning: Incompatible color definition on input line 665.
+
+
+Package xcolor Warning: Incompatible color definition on input line 669.
+
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
- [5
+ [5]
+
+Package xcolor Warning: Incompatible color definition on input line 671.
+
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 671.
+
+Package xcolor Warning: Incompatible color definition on input line 676.
+
+
+Package xcolor Warning: Incompatible color definition on input line 680.
+
+
+Package xcolor Warning: Incompatible color definition on input line 683.
+
+\width=\dimen184
+
+Package xcolor Warning: Incompatible color definition on input line 687.
+
+
+Underfull \hbox (badness 2591) in paragraph at lines 716--717
+[]|\OT1/ptm/m/n/8 1 erg/(G$\OMS/cmsy/m/n/8 ^^A$\OT1/ptm/m/n/8 g) $\OT1/cmr/m/n/8 =$ \OT1/ptm/m/n/8 1 emu/g $\OMS/cmsy/m/n/8 !$ \OT1/ptm/m/n/8 1
+ []
+
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 690--750
+[][]
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 752.
+
+
+Package xcolor Warning: Incompatible color definition on input line 758.
+
+
+Package xcolor Warning: Incompatible color definition on input line 767.
+
+
+Package xcolor Warning: Incompatible color definition on input line 786.
+
+
+Package xcolor Warning: Incompatible color definition on input line 792.
+
+
+Package xcolor Warning: Incompatible color definition on input line 798.
+
+
+Package xcolor Warning: Incompatible color definition on input line 798.
+
+
+Overfull \vbox (5.0pt too high) has occurred while \output is active []
+
+ [6
 
 pdfTeX warning: pdflatex.exe: pop empty color page stack 0
 
@@ -472,115 +698,182 @@ pdfTeX warning: pdflatex.exe: pop empty color page stack 0
 
 pdfTeX warning: pdflatex.exe: pop empty color page stack 0
  <./fig1.png (PNG copy)>]
-\width=\dimen169
-
-Underfull \hbox (badness 2591) in paragraph at lines 665--666
-[]\OT1/ptm/m/n/8 1 erg/(G$\OMS/cmsy/m/n/8 ^^A$\OT1/ptm/m/n/8 g) $\OT1/cmr/m/n/8 =$ \OT1/ptm/m/n/8 1 emu/g $\OMS/cmsy/m/n/8 !$ \OT1/ptm/m/n/8 1
- []
-
-
-Overfull \hbox (5.0pt too wide) in paragraph at lines 639--699
-[][]
- []
-
-
-Underfull \hbox (badness 2941) in paragraph at lines 748--753
+Underfull \hbox (badness 2941) in paragraph at lines 799--804
 \OT1/ptm/m/n/10 (red/green/blue) and CMYK (cyan/magenta/yellow/black).
  []
 
 
-Underfull \hbox (badness 2469) in paragraph at lines 754--759
+Underfull \hbox (badness 2469) in paragraph at lines 805--810
 \OT1/ptm/m/n/10 color space. Grayscale im-ages should be sub-mit-ted in
  []
 
 
-Overfull \vbox (5.0pt too high) has occurred while \output is active []
+Package xcolor Warning: Incompatible color definition on input line 811.
 
- [6]
+
+Package xcolor Warning: Incompatible color definition on input line 822.
+
+
+Package xcolor Warning: Incompatible color definition on input line 825.
+
+
+Package xcolor Warning: Incompatible color definition on input line 839.
+
+
+Package xcolor Warning: Incompatible color definition on input line 843.
+
+
+Package xcolor Warning: Incompatible color definition on input line 867.
+
+
+Package xcolor Warning: Incompatible color definition on input line 872.
+
+
+Package xcolor Warning: Incompatible color definition on input line 889.
+
+
+Package xcolor Warning: Incompatible color definition on input line 901.
+
+
+Package xcolor Warning: Incompatible color definition on input line 910.
+
+
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [7]
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 938.
- (c:/texlive/2022/texmf-dist/tex/latex/psnfss/ts1phv.fd
+
+Package xcolor Warning: Incompatible color definition on input line 911.
+
+
+Package xcolor Warning: Incompatible color definition on input line 921.
+
+
+Package xcolor Warning: Incompatible color definition on input line 930.
+
+
+Package xcolor Warning: Incompatible color definition on input line 932.
+
+
+Package xcolor Warning: Incompatible color definition on input line 964.
+
+
+Package xcolor Warning: Incompatible color definition on input line 972.
+
+
+Package xcolor Warning: Incompatible color definition on input line 974.
+
+
+Package xcolor Warning: Incompatible color definition on input line 989.
+
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 989.
+(c:/texlive/2022/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <10> not available
-(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 938.
+(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 989.
 
-Underfull \hbox (badness 10000) in paragraph at lines 939--947
+Underfull \hbox (badness 10000) in paragraph at lines 990--998
 []\OT1/ptm/m/n/10 Contributions to the Trans-ac-tions, Jour-nals, and
  []
 
 
-Underfull \hbox (badness 1796) in paragraph at lines 939--947
+Underfull \hbox (badness 1796) in paragraph at lines 990--998
 \OT1/ptm/m/n/10 Let-ters may be sub-mit-ted elec-tron-i-cally on IEEE's on-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 939--947
+Underfull \hbox (badness 10000) in paragraph at lines 990--998
 \OT1/ptm/m/n/10 line manuscript sub-mis-sion and peer-review sys-tem,
  []
 
 
-Underfull \hbox (badness 5832) in paragraph at lines 939--947
+Underfull \hbox (badness 5832) in paragraph at lines 990--998
 \OT1/ptm/m/n/10 Schol-arOne\TS1/ptm/m/n/10 ® \OT1/ptm/m/n/10 Manuscripts. You can get a list-ing of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 939--947
+Underfull \hbox (badness 10000) in paragraph at lines 990--998
 \OT1/ptm/m/n/10 the pub-li-ca-tions that par-tic-i-pate in Schol-arOne at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 939--947
+Underfull \hbox (badness 10000) in paragraph at lines 990--998
 []$
  []
+
+
+Package xcolor Warning: Incompatible color definition on input line 1019.
 
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [8]
-Underfull \hbox (badness 1817) in paragraph at lines 1065--1068
-\OT1/ptm/m/n/10 J.K. Au-thor. (year, month). Ti-tle. pre-sented at ab-
- []
+
+Package xcolor Warning: Incompatible color definition on input line 1020.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1037.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1046.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1063.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1085.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1112.
 
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [9]
-Underfull \hbox (badness 1521) in paragraph at lines 1078--1081
+Underfull \hbox (badness 1817) in paragraph at lines 1116--1119
+\OT1/ptm/m/n/10 J.K. Au-thor. (year, month). Ti-tle. pre-sented at ab-
+ []
+
+
+Underfull \hbox (badness 1521) in paragraph at lines 1129--1132
 \OT1/ptm/m/n/10 day). Patent Num-ber [Type of medium]. Avail-able:
  []
 
 
-Underfull \hbox (badness 2680) in paragraph at lines 1102--1103
+Underfull \hbox (badness 2680) in paragraph at lines 1153--1154
 []\OT1/ptm/m/n/10 J. K. Au-thor, pri-vate com-mu-ni-ca-tion, Ab-brev.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1153--1156
+Package xcolor Warning: Incompatible color definition on input line 1174.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1204--1207
 \OT1/ptm/m/n/8 Avail-able: $[]$.
  []
 
 
-Underfull \hbox (badness 4254) in paragraph at lines 1168--1172
+Underfull \hbox (badness 4254) in paragraph at lines 1219--1223
 \OT1/ptm/m/n/8 nolo-gies de-ployed be-hind the fire-wall for cor-po-rate pro-duc-tiv-
  []
 
 
-Underfull \hbox (badness 3386) in paragraph at lines 1168--1172
+Underfull \hbox (badness 3386) in paragraph at lines 1219--1223
 \OT1/ptm/m/n/8 ity. Pre-sented at INET96 An-nual Meet-ing. [On-line]. Avail-able:
  []
 
 
-Underfull \hbox (badness 4673) in paragraph at lines 1175--1178
+Underfull \hbox (badness 4673) in paragraph at lines 1226--1229
 []\OT1/ptm/m/n/8 Teralyzer. Lytera UG, Kirch-hain, Ger-many [On-line]. Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1175--1178
+Underfull \hbox (badness 10000) in paragraph at lines 1226--1229
 []$\OT1/ptm/m/n/8 ,
  []
+
+
+Package xcolor Warning: Incompatible color definition on input line 1233.
 
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
@@ -589,57 +882,68 @@ Overfull \vbox (5.0pt too high) has occurred while \output is active []
 <a1.png, id=73, 72.27pt x 90.3375pt>
 File: a1.png Graphic file (type png)
 <use a1.png>
-Package pdftex.def Info: a1.png  used on input line 1211.
+Package pdftex.def Info: a1.png  used on input line 1262.
 (pdftex.def)             Requested size: 72.2709pt x 90.33864pt.
 File: a1.png Graphic file (type png)
 <use a1.png>
-Package pdftex.def Info: a1.png  used on input line 1211.
+Package pdftex.def Info: a1.png  used on input line 1262.
 (pdftex.def)             Requested size: 72.2709pt x 90.33864pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1262.
+
 <a2.png, id=76, 72.27pt x 90.3375pt>
 File: a2.png Graphic file (type png)
 <use a2.png>
-Package pdftex.def Info: a2.png  used on input line 1237.
+Package pdftex.def Info: a2.png  used on input line 1288.
 (pdftex.def)             Requested size: 72.2709pt x 90.33864pt.
 File: a2.png Graphic file (type png)
 <use a2.png>
-Package pdftex.def Info: a2.png  used on input line 1237.
+Package pdftex.def Info: a2.png  used on input line 1288.
 (pdftex.def)             Requested size: 72.2709pt x 90.33864pt.
+
+Package xcolor Warning: Incompatible color definition on input line 1288.
+
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 1250.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 1301.
 <a3.png, id=79, 72.27pt x 90.3375pt>
 File: a3.png Graphic file (type png)
 <use a3.png>
-Package pdftex.def Info: a3.png  used on input line 1257.
+Package pdftex.def Info: a3.png  used on input line 1308.
 (pdftex.def)             Requested size: 72.2709pt x 90.33864pt.
 File: a3.png Graphic file (type png)
 <use a3.png>
-Package pdftex.def Info: a3.png  used on input line 1257.
+Package pdftex.def Info: a3.png  used on input line 1308.
 (pdftex.def)             Requested size: 72.2709pt x 90.33864pt.
 
-Underfull \hbox (badness 1442) in paragraph at lines 1257--1274
+Package xcolor Warning: Incompatible color definition on input line 1308.
+
+
+Underfull \hbox (badness 1442) in paragraph at lines 1308--1325
 \OT1/phv/m/n/8 de-gree in me-chan-i-cal en-gi-neer-ing from Na-
  []
 
 
+Package xcolor Warning: Incompatible color definition on input line 1327.
+
+
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
- [11
-
- <./a1.png> <./a2.png> <./a3.png>] (./Manuscript_v1.aux)
+ [11 <./a1.png> <./a2.png> <./a3.png>] (./Manuscript_v1.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4144 strings out of 476065
- 63260 string characters out of 5795020
- 1885299 words of memory out of 5000000
- 24448 multiletter control sequences out of 15000+600000
- 596240 words of font info for 166 fonts, out of 8000000 for 9000
+ 4880 strings out of 476065
+ 73621 string characters out of 5795020
+ 1893299 words of memory out of 5000000
+ 25162 multiletter control sequences out of 15000+600000
+ 596840 words of font info for 168 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,19n,69p,706b,396s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,20n,69p,706b,424s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Manuscript_v1.pdf (11 pages, 638701 bytes).
+Output written on Manuscript_v1.pdf (11 pages, 661070 bytes).
 PDF statistics:
  213 PDF objects out of 1000 (max. 8388607)
  124 compressed objects within 2 object streams
