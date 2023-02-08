@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.31)  2 FEB 2023 11:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.31)  8 FEB 2023 16:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -290,6 +290,12 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__pdf_internal_box=\box58
 ) (./Manuscript_v1.aux
 
+LaTeX Warning: Label `eq:11' multiply defined.
+
+
+LaTeX Warning: Label `eq:11' multiply defined.
+
+
 LaTeX Warning: Label `tab:addlabel' multiply defined.
 
 
@@ -367,26 +373,18 @@ File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 Package xcolor Warning: Incompatible color definition on input line 64.
 
 
-Package xcolor Warning: Incompatible color definition on input line 75.
+Package xcolor Warning: Incompatible color definition on input line 77.
 
 
-Package xcolor Warning: Incompatible color definition on input line 78.
+Package xcolor Warning: Incompatible color definition on input line 116.
 
 <images/model_arch.png, id=1, 475.449pt x 118.479pt>
 File: images/model_arch.png Graphic file (type png)
 <use images/model_arch.png>
-Package pdftex.def Info: images/model_arch.png  used on input line 83.
+Package pdftex.def Info: images/model_arch.png  used on input line 121.
 (pdftex.def)             Requested size: 475.44783pt x 118.4787pt.
 
-Package xcolor Warning: Incompatible color definition on input line 85.
-
-
-Package xcolor Warning: Incompatible color definition on input line 110.
-
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 110.
-
-Package xcolor Warning: Incompatible color definition on input line 122.
+Package xcolor Warning: Incompatible color definition on input line 123.
 
 Package epstopdf Info: Source file: <LOGO-generic-web.eps>
 (epstopdf)                    date: 2017-08-16 21:56:44
@@ -395,7 +393,7 @@ Package epstopdf Info: Source file: <LOGO-generic-web.eps>
 (epstopdf)                    date: 2022-12-01 11:10:01
 (epstopdf)                    size: 6716 bytes
 (epstopdf)             Command: <repstopdf --outfile=LOGO-generic-web-eps-converted-to.pdf LOGO-generic-web.eps>
-(epstopdf)             \includegraphics on input line 144.
+(epstopdf)             \includegraphics on input line 147.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -403,10 +401,10 @@ pdfTeX warning: pdflatex.exe (file ./LOGO-generic-web-eps-converted-to.pdf): PDF
 <LOGO-generic-web-eps-converted-to.pdf, id=3, 55.20625pt x 34.1275pt>
 File: LOGO-generic-web-eps-converted-to.pdf Graphic file (type pdf)
 <use LOGO-generic-web-eps-converted-to.pdf>
-Package pdftex.def Info: LOGO-generic-web-eps-converted-to.pdf  used on input line 144.
+Package pdftex.def Info: LOGO-generic-web-eps-converted-to.pdf  used on input line 147.
 (pdftex.def)             Requested size: 48.0pt x 29.674pt.
 
-Package xcolor Warning: Incompatible color definition on input line 144.
+Package xcolor Warning: Incompatible color definition on input line 147.
 
 
 Overfull \hbox (259.0pt too wide) has occurred while \output is active
@@ -431,21 +429,18 @@ Overfull \vbox (25.674pt too high) has occurred while \output is active []
 
  <./LOGO-generic-web-eps-converted-to.pdf>]
 
-Package xcolor Warning: Incompatible color definition on input line 165.
+Package xcolor Warning: Incompatible color definition on input line 148.
+
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 148.
+
+Package xcolor Warning: Incompatible color definition on input line 160.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
-
- []
+Package xcolor Warning: Incompatible color definition on input line 203.
 
 
-Package xcolor Warning: Incompatible color definition on input line 222.
-
-
-Package xcolor Warning: Incompatible color definition on input line 241.
-
-
-Package xcolor Warning: Incompatible color definition on input line 245.
+Package xcolor Warning: Incompatible color definition on input line 239.
 
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
@@ -454,236 +449,239 @@ Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
 pdfTeX warning: pdflatex.exe: pop empty color page stack 0
  <./images/model_arch.png>]
-Overfull \hbox (2.40425pt too wide) detected at line 248
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
+
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 260.
+
+
+Package xcolor Warning: Incompatible color definition on input line 279.
+
+
+Overfull \hbox (2.40425pt too wide) detected at line 286
 []\OML/cmm/m/it/10 ^^U[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OMS/cmsy/m/n/10 jH[]\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 f[] []
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 254.
+Package xcolor Warning: Incompatible color definition on input line 292.
 
 
-Package xcolor Warning: Incompatible color definition on input line 257.
+Package xcolor Warning: Incompatible color definition on input line 295.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--285
+Underfull \hbox (badness 10000) in paragraph at lines 321--323
 []\OT1/ptm/b/n/10 Stackoverflow (\OT1/ptm/b/it/10 SO\OT1/ptm/b/n/10 )\OT1/ptm/m/n/10 . Stack-Over-flow is a question-
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 287.
+Package xcolor Warning: Incompatible color definition on input line 325.
 
 
-Package xcolor Warning: Incompatible color definition on input line 296.
+Package xcolor Warning: Incompatible color definition on input line 334.
 
 
-Package xcolor Warning: Incompatible color definition on input line 299.
+Package xcolor Warning: Incompatible color definition on input line 337.
 
 
-Package xcolor Warning: Incompatible color definition on input line 303.
+Package xcolor Warning: Incompatible color definition on input line 341.
 
 
-Package xcolor Warning: Incompatible color definition on input line 309.
+Package xcolor Warning: Incompatible color definition on input line 347.
 
 \width=\dimen181
 
-Package xcolor Warning: Incompatible color definition on input line 319.
+Package xcolor Warning: Incompatible color definition on input line 357.
 
 
-Package xcolor Warning: Incompatible color definition on input line 346.
-
-\width=\dimen182
-
-Package xcolor Warning: Incompatible color definition on input line 356.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Package xcolor Warning: Incompatible color definition on input line 380.
-
-\width=\dimen183
-
-Package xcolor Warning: Incompatible color definition on input line 395.
-
-
-Package xcolor Warning: Incompatible color definition on input line 434.
+Package xcolor Warning: Incompatible color definition on input line 384.
 
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <7> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 438.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 384.
 
-Package xcolor Warning: Incompatible color definition on input line 438.
+Package xcolor Warning: Incompatible color definition on input line 384.
 
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [3]
-
-Package xcolor Warning: Incompatible color definition on input line 438.
-
-
-Package xcolor Warning: Incompatible color definition on input line 445.
+\width=\dimen182
 
 
-Package xcolor Warning: Incompatible color definition on input line 466.
+Package xcolor Warning: Incompatible color definition on input line 394.
+
+
+Package xcolor Warning: Incompatible color definition on input line 418.
+
+\width=\dimen183
+
+Package xcolor Warning: Incompatible color definition on input line 433.
+
+
+Package xcolor Warning: Incompatible color definition on input line 472.
 
 
 Package xcolor Warning: Incompatible color definition on input line 476.
 
 
-Underfull \hbox (badness 8019) in paragraph at lines 478--487
+Package xcolor Warning: Incompatible color definition on input line 483.
+
+
+Package xcolor Warning: Incompatible color definition on input line 504.
+
+
+Package xcolor Warning: Incompatible color definition on input line 514.
+
+
+Underfull \hbox (badness 8019) in paragraph at lines 516--525
 \OT1/ptm/m/n/10 Web site at $[]$
  []
 
 
-Underfull \hbox (badness 6445) in paragraph at lines 478--487
+Underfull \hbox (badness 6445) in paragraph at lines 516--525
 \OT1/ptm/m/n/10 so you can use it to pre-pare your manuscript. If
  []
 
 
-Underfull \hbox (badness 7851) in paragraph at lines 478--487
+Underfull \hbox (badness 7851) in paragraph at lines 516--525
 \OT1/ptm/m/n/10 you would pre-fer to use La-TeX, down-load IEEE's
  []
 
 
-Underfull \hbox (badness 6300) in paragraph at lines 478--487
+Underfull \hbox (badness 6300) in paragraph at lines 516--525
 \OT1/ptm/m/n/10 La-TeX style and sam-ple files from the same Web
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 478--487
+Underfull \hbox (badness 10000) in paragraph at lines 516--525
 []$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 478--487
+Underfull \hbox (badness 10000) in paragraph at lines 516--525
 []$
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 495.
+Package xcolor Warning: Incompatible color definition on input line 533.
 
 
-Package xcolor Warning: Incompatible color definition on input line 503.
+Package xcolor Warning: Incompatible color definition on input line 541.
 
 
-Package xcolor Warning: Incompatible color definition on input line 530.
+Package xcolor Warning: Incompatible color definition on input line 562.
 
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [4]
 
-Package xcolor Warning: Incompatible color definition on input line 535.
+Package xcolor Warning: Incompatible color definition on input line 573.
 
 
-Package xcolor Warning: Incompatible color definition on input line 549.
+Package xcolor Warning: Incompatible color definition on input line 587.
 
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 551.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 589.
 (c:/texlive/2022/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-LaTeX Font Info:    Trying to load font information for OMS+pcr on input line 593.
+LaTeX Font Info:    Trying to load font information for OMS+pcr on input line 631.
  (c:/texlive/2022/texmf-dist/tex/latex/psnfss/omspcr.fd
 File: omspcr.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 593.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 631.
 LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <9> not available
-(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 594.
+(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 632.
 
-Overfull \hbox (8.91963pt too wide) in paragraph at lines 590--597
+Overfull \hbox (8.91963pt too wide) in paragraph at lines 628--635
  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 590--597
+Underfull \hbox (badness 10000) in paragraph at lines 628--635
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 607.
+Package xcolor Warning: Incompatible color definition on input line 645.
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 612.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 650.
 (c:/texlive/2022/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 
-Package xcolor Warning: Incompatible color definition on input line 623.
-
-<fig1.png, id=43, 249.3315pt x 189.22694pt>
-File: fig1.png Graphic file (type png)
-<use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 641.
-(pdftex.def)             Requested size: 252.0pt x 191.25339pt.
-
-Package xcolor Warning: Incompatible color definition on input line 643.
-
-
-Package xcolor Warning: Incompatible color definition on input line 643.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 660--661
-[]\OT1/ptm/m/n/10 A gen-eral IEEE styleguide is avail-able at
- []
-
-
-Package xcolor Warning: Incompatible color definition on input line 662.
-
-
-Package xcolor Warning: Incompatible color definition on input line 665.
-
-
-Package xcolor Warning: Incompatible color definition on input line 669.
+Package xcolor Warning: Incompatible color definition on input line 655.
 
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [5]
 
-Package xcolor Warning: Incompatible color definition on input line 671.
+Package xcolor Warning: Incompatible color definition on input line 661.
+
+<fig1.png, id=49, 249.3315pt x 189.22694pt>
+File: fig1.png Graphic file (type png)
+<use fig1.png>
+Package pdftex.def Info: fig1.png  used on input line 679.
+(pdftex.def)             Requested size: 252.0pt x 191.25339pt.
+
+Package xcolor Warning: Incompatible color definition on input line 681.
+
+
+Package xcolor Warning: Incompatible color definition on input line 681.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 698--699
+[]\OT1/ptm/m/n/10 A gen-eral IEEE styleguide is avail-able at
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 700.
+
+
+Package xcolor Warning: Incompatible color definition on input line 703.
+
+
+Package xcolor Warning: Incompatible color definition on input line 709.
 
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 671.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 709.
 
-Package xcolor Warning: Incompatible color definition on input line 676.
-
-
-Package xcolor Warning: Incompatible color definition on input line 680.
+Package xcolor Warning: Incompatible color definition on input line 714.
 
 
-Package xcolor Warning: Incompatible color definition on input line 683.
+Package xcolor Warning: Incompatible color definition on input line 718.
+
+
+Package xcolor Warning: Incompatible color definition on input line 721.
 
 \width=\dimen184
 
-Package xcolor Warning: Incompatible color definition on input line 687.
+Package xcolor Warning: Incompatible color definition on input line 725.
 
 
-Underfull \hbox (badness 2591) in paragraph at lines 716--717
+Underfull \hbox (badness 2591) in paragraph at lines 754--755
 []|\OT1/ptm/m/n/8 1 erg/(G$\OMS/cmsy/m/n/8 ^^A$\OT1/ptm/m/n/8 g) $\OT1/cmr/m/n/8 =$ \OT1/ptm/m/n/8 1 emu/g $\OMS/cmsy/m/n/8 !$ \OT1/ptm/m/n/8 1
  []
 
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 690--750
+Overfull \hbox (5.0pt too wide) in paragraph at lines 728--788
 [][]
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 752.
+Package xcolor Warning: Incompatible color definition on input line 790.
 
 
-Package xcolor Warning: Incompatible color definition on input line 758.
+Package xcolor Warning: Incompatible color definition on input line 796.
 
 
-Package xcolor Warning: Incompatible color definition on input line 767.
-
-
-Package xcolor Warning: Incompatible color definition on input line 786.
-
-
-Package xcolor Warning: Incompatible color definition on input line 792.
-
-
-Package xcolor Warning: Incompatible color definition on input line 798.
-
-
-Package xcolor Warning: Incompatible color definition on input line 798.
+Package xcolor Warning: Incompatible color definition on input line 804.
 
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
@@ -698,41 +696,45 @@ pdfTeX warning: pdflatex.exe: pop empty color page stack 0
 
 pdfTeX warning: pdflatex.exe: pop empty color page stack 0
  <./fig1.png (PNG copy)>]
-Underfull \hbox (badness 2941) in paragraph at lines 799--804
+
+Package xcolor Warning: Incompatible color definition on input line 805.
+
+
+Package xcolor Warning: Incompatible color definition on input line 824.
+
+
+Package xcolor Warning: Incompatible color definition on input line 830.
+
+
+Package xcolor Warning: Incompatible color definition on input line 836.
+
+
+Underfull \hbox (badness 2941) in paragraph at lines 837--842
 \OT1/ptm/m/n/10 (red/green/blue) and CMYK (cyan/magenta/yellow/black).
  []
 
 
-Underfull \hbox (badness 2469) in paragraph at lines 805--810
+Underfull \hbox (badness 2469) in paragraph at lines 843--848
 \OT1/ptm/m/n/10 color space. Grayscale im-ages should be sub-mit-ted in
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 811.
+Package xcolor Warning: Incompatible color definition on input line 849.
 
 
-Package xcolor Warning: Incompatible color definition on input line 822.
+Package xcolor Warning: Incompatible color definition on input line 860.
 
 
-Package xcolor Warning: Incompatible color definition on input line 825.
+Package xcolor Warning: Incompatible color definition on input line 863.
 
 
-Package xcolor Warning: Incompatible color definition on input line 839.
+Package xcolor Warning: Incompatible color definition on input line 877.
 
 
-Package xcolor Warning: Incompatible color definition on input line 843.
+Package xcolor Warning: Incompatible color definition on input line 881.
 
 
-Package xcolor Warning: Incompatible color definition on input line 867.
-
-
-Package xcolor Warning: Incompatible color definition on input line 872.
-
-
-Package xcolor Warning: Incompatible color definition on input line 889.
-
-
-Package xcolor Warning: Incompatible color definition on input line 901.
+Package xcolor Warning: Incompatible color definition on input line 905.
 
 
 Package xcolor Warning: Incompatible color definition on input line 910.
@@ -742,86 +744,92 @@ Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [7]
 
-Package xcolor Warning: Incompatible color definition on input line 911.
+Package xcolor Warning: Incompatible color definition on input line 910.
 
 
-Package xcolor Warning: Incompatible color definition on input line 921.
+Package xcolor Warning: Incompatible color definition on input line 927.
 
 
-Package xcolor Warning: Incompatible color definition on input line 930.
+Package xcolor Warning: Incompatible color definition on input line 939.
 
 
-Package xcolor Warning: Incompatible color definition on input line 932.
+Package xcolor Warning: Incompatible color definition on input line 949.
 
 
-Package xcolor Warning: Incompatible color definition on input line 964.
+Package xcolor Warning: Incompatible color definition on input line 959.
 
 
-Package xcolor Warning: Incompatible color definition on input line 972.
+Package xcolor Warning: Incompatible color definition on input line 968.
 
 
-Package xcolor Warning: Incompatible color definition on input line 974.
+Package xcolor Warning: Incompatible color definition on input line 970.
 
 
-Package xcolor Warning: Incompatible color definition on input line 989.
-
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 989.
-(c:/texlive/2022/texmf-dist/tex/latex/psnfss/ts1phv.fd
-File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
-)
-LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <10> not available
-(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 989.
-
-Underfull \hbox (badness 10000) in paragraph at lines 990--998
-[]\OT1/ptm/m/n/10 Contributions to the Trans-ac-tions, Jour-nals, and
- []
+Package xcolor Warning: Incompatible color definition on input line 1002.
 
 
-Underfull \hbox (badness 1796) in paragraph at lines 990--998
-\OT1/ptm/m/n/10 Let-ters may be sub-mit-ted elec-tron-i-cally on IEEE's on-
- []
+Package xcolor Warning: Incompatible color definition on input line 1010.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 990--998
-\OT1/ptm/m/n/10 line manuscript sub-mis-sion and peer-review sys-tem,
- []
+Package xcolor Warning: Incompatible color definition on input line 1012.
 
 
-Underfull \hbox (badness 5832) in paragraph at lines 990--998
-\OT1/ptm/m/n/10 Schol-arOne\TS1/ptm/m/n/10 ® \OT1/ptm/m/n/10 Manuscripts. You can get a list-ing of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 990--998
-\OT1/ptm/m/n/10 the pub-li-ca-tions that par-tic-i-pate in Schol-arOne at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 990--998
-[]$
- []
-
-
-Package xcolor Warning: Incompatible color definition on input line 1019.
+Package xcolor Warning: Incompatible color definition on input line 1018.
 
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [8]
 
-Package xcolor Warning: Incompatible color definition on input line 1020.
+Package xcolor Warning: Incompatible color definition on input line 1027.
+
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1027.
+(c:/texlive/2022/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
+LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <10> not available
+(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 1027.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1028--1036
+[]\OT1/ptm/m/n/10 Contributions to the Trans-ac-tions, Jour-nals, and
+ []
 
 
-Package xcolor Warning: Incompatible color definition on input line 1037.
+Underfull \hbox (badness 1796) in paragraph at lines 1028--1036
+\OT1/ptm/m/n/10 Let-ters may be sub-mit-ted elec-tron-i-cally on IEEE's on-
+ []
 
 
-Package xcolor Warning: Incompatible color definition on input line 1046.
+Underfull \hbox (badness 10000) in paragraph at lines 1028--1036
+\OT1/ptm/m/n/10 line manuscript sub-mis-sion and peer-review sys-tem,
+ []
 
 
-Package xcolor Warning: Incompatible color definition on input line 1063.
+Underfull \hbox (badness 5832) in paragraph at lines 1028--1036
+\OT1/ptm/m/n/10 Schol-arOne\TS1/ptm/m/n/10 ® \OT1/ptm/m/n/10 Manuscripts. You can get a list-ing of
+ []
 
 
-Package xcolor Warning: Incompatible color definition on input line 1085.
+Underfull \hbox (badness 10000) in paragraph at lines 1028--1036
+\OT1/ptm/m/n/10 the pub-li-ca-tions that par-tic-i-pate in Schol-arOne at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1028--1036
+[]$
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 1058.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1075.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1084.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1101.
 
 
 Package xcolor Warning: Incompatible color definition on input line 1112.
@@ -830,123 +838,136 @@ Package xcolor Warning: Incompatible color definition on input line 1112.
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [9]
-Underfull \hbox (badness 1817) in paragraph at lines 1116--1119
+
+Package xcolor Warning: Incompatible color definition on input line 1123.
+
+
+Underfull \hbox (badness 1817) in paragraph at lines 1154--1157
 \OT1/ptm/m/n/10 J.K. Au-thor. (year, month). Ti-tle. pre-sented at ab-
  []
 
 
-Underfull \hbox (badness 1521) in paragraph at lines 1129--1132
+Underfull \hbox (badness 1521) in paragraph at lines 1167--1170
 \OT1/ptm/m/n/10 day). Patent Num-ber [Type of medium]. Avail-able:
  []
 
 
-Underfull \hbox (badness 2680) in paragraph at lines 1153--1154
+Underfull \hbox (badness 2680) in paragraph at lines 1191--1192
 []\OT1/ptm/m/n/10 J. K. Au-thor, pri-vate com-mu-ni-ca-tion, Ab-brev.
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 1174.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1204--1207
-\OT1/ptm/m/n/8 Avail-able: $[]$.
- []
-
-
-Underfull \hbox (badness 4254) in paragraph at lines 1219--1223
-\OT1/ptm/m/n/8 nolo-gies de-ployed be-hind the fire-wall for cor-po-rate pro-duc-tiv-
- []
-
-
-Underfull \hbox (badness 3386) in paragraph at lines 1219--1223
-\OT1/ptm/m/n/8 ity. Pre-sented at INET96 An-nual Meet-ing. [On-line]. Avail-able:
- []
-
-
-Underfull \hbox (badness 4673) in paragraph at lines 1226--1229
-[]\OT1/ptm/m/n/8 Teralyzer. Lytera UG, Kirch-hain, Ger-many [On-line]. Avail-able:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1226--1229
-[]$\OT1/ptm/m/n/8 ,
- []
-
-
-Package xcolor Warning: Incompatible color definition on input line 1233.
+Package xcolor Warning: Incompatible color definition on input line 1207.
 
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [10]
+
+Package xcolor Warning: Incompatible color definition on input line 1212.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1242--1245
+\OT1/ptm/m/n/8 Avail-able: $[]$.
+ []
+
+
+Underfull \hbox (badness 4254) in paragraph at lines 1257--1261
+\OT1/ptm/m/n/8 nolo-gies de-ployed be-hind the fire-wall for cor-po-rate pro-duc-tiv-
+ []
+
+
+Underfull \hbox (badness 3386) in paragraph at lines 1257--1261
+\OT1/ptm/m/n/8 ity. Pre-sented at INET96 An-nual Meet-ing. [On-line]. Avail-able:
+ []
+
+
+Underfull \hbox (badness 4673) in paragraph at lines 1264--1267
+[]\OT1/ptm/m/n/8 Teralyzer. Lytera UG, Kirch-hain, Ger-many [On-line]. Avail-able:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1264--1267
+[]$\OT1/ptm/m/n/8 ,
+ []
+
 <a1.png, id=73, 72.27pt x 90.3375pt>
 File: a1.png Graphic file (type png)
 <use a1.png>
-Package pdftex.def Info: a1.png  used on input line 1262.
+Package pdftex.def Info: a1.png  used on input line 1300.
 (pdftex.def)             Requested size: 72.2709pt x 90.33864pt.
 File: a1.png Graphic file (type png)
 <use a1.png>
-Package pdftex.def Info: a1.png  used on input line 1262.
+Package pdftex.def Info: a1.png  used on input line 1300.
 (pdftex.def)             Requested size: 72.2709pt x 90.33864pt.
 
-
-Package xcolor Warning: Incompatible color definition on input line 1262.
+Package xcolor Warning: Incompatible color definition on input line 1300.
 
 <a2.png, id=76, 72.27pt x 90.3375pt>
 File: a2.png Graphic file (type png)
 <use a2.png>
-Package pdftex.def Info: a2.png  used on input line 1288.
+Package pdftex.def Info: a2.png  used on input line 1326.
 (pdftex.def)             Requested size: 72.2709pt x 90.33864pt.
 File: a2.png Graphic file (type png)
 <use a2.png>
-Package pdftex.def Info: a2.png  used on input line 1288.
+Package pdftex.def Info: a2.png  used on input line 1326.
 (pdftex.def)             Requested size: 72.2709pt x 90.33864pt.
 
-Package xcolor Warning: Incompatible color definition on input line 1288.
+Package xcolor Warning: Incompatible color definition on input line 1326.
 
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 1301.
-<a3.png, id=79, 72.27pt x 90.3375pt>
-File: a3.png Graphic file (type png)
-<use a3.png>
-Package pdftex.def Info: a3.png  used on input line 1308.
-(pdftex.def)             Requested size: 72.2709pt x 90.33864pt.
-File: a3.png Graphic file (type png)
-<use a3.png>
-Package pdftex.def Info: a3.png  used on input line 1308.
-(pdftex.def)             Requested size: 72.2709pt x 90.33864pt.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 1339.
 
-Package xcolor Warning: Incompatible color definition on input line 1308.
-
-
-Underfull \hbox (badness 1442) in paragraph at lines 1308--1325
-\OT1/phv/m/n/8 de-gree in me-chan-i-cal en-gi-neer-ing from Na-
- []
-
-
-Package xcolor Warning: Incompatible color definition on input line 1327.
+Package xcolor Warning: Incompatible color definition on input line 1346.
 
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
- [11 <./a1.png> <./a2.png> <./a3.png>] (./Manuscript_v1.aux)
+ [11 <./a1.png> <./a2.png>]
+<a3.png, id=84, 72.27pt x 90.3375pt>
+File: a3.png Graphic file (type png)
+<use a3.png>
+Package pdftex.def Info: a3.png  used on input line 1346.
+(pdftex.def)             Requested size: 72.2709pt x 90.33864pt.
+File: a3.png Graphic file (type png)
+<use a3.png>
+Package pdftex.def Info: a3.png  used on input line 1346.
+(pdftex.def)             Requested size: 72.2709pt x 90.33864pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1346.
+
+
+Underfull \hbox (badness 1442) in paragraph at lines 1346--1363
+\OT1/phv/m/n/8 de-gree in me-chan-i-cal en-gi-neer-ing from Na-
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 1365.
+
+
+Overfull \vbox (5.0pt too high) has occurred while \output is active []
+
+ [12
+
+ <./a3.png>] (./Manuscript_v1.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4880 strings out of 476065
- 73621 string characters out of 5795020
- 1893299 words of memory out of 5000000
- 25162 multiletter control sequences out of 15000+600000
- 596840 words of font info for 168 fonts, out of 8000000 for 9000
+ 4884 strings out of 476065
+ 73663 string characters out of 5795020
+ 1892299 words of memory out of 5000000
+ 25165 multiletter control sequences out of 15000+600000
+ 597146 words of font info for 169 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,20n,69p,706b,424s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,20n,70p,706b,443s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Manuscript_v1.pdf (11 pages, 661070 bytes).
+Output written on Manuscript_v1.pdf (12 pages, 665323 bytes).
 PDF statistics:
- 213 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
+ 216 PDF objects out of 1000 (max. 8388607)
+ 126 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  67 words of extra memory for PDF output out of 10000 (max. 10000000)
 

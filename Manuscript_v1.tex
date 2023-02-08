@@ -72,8 +72,46 @@ Writing an effective abstract is an indispensable part of any form of research, 
 
 
 
+
+
 \section{Related Works}
 \label{sec:Related Works}
+
+Consider an event sequence data  $\mathcal{D}=\{\mathcal{S}_{i}\}_{i=1}^N$ where each sample is represented as an event sequence  $\mathcal{S}_{i}=\{(t_i,e_i)\}_{j=1}^L$, where $L$ is number of event, $t_j$ is event's timestamp, and $e_j \in \mathbb{R}^M $ is the binary represntation of event marks (multi-class or multi-label). The history of events is denoted as $\mathcal{H}_t=\{(t_j,e_j):t_j<t \} $
+
+In the multi-class setting where each mark can be exactly one of M marks, the point process is characterized by $M$ conidtional intensity functions (CIFs):
+
+\begin{equation}\label{eq:11}
+   \lambda_m^{*}(t)=\lim \frac{P(  \text{event of type m in } [t,t+\Delta t) |   \mathcal{H}_t  )}{\Delta t} 
+\end{equation} 
+
+
+The default negative log-likelihood (NLL) of a point process for a single event sequnce $\mathcal{S}_{i}$ is defined as:
+
+\begin{multline}\label{eq:11}
+    -\log p(\mathcal{S}_{i})  =  - \sum_{j = 1}^{L}\sum_{m = 1}^{M} 1(e_j=m)   \log \lambda_m^{*}(t_j) \\   
+    + \sum_{m = 1}^{M} \left(   \int_{0}^{T}  \lambda_m^{*}(s) \,ds  \right)
+\end{multline} 
+
+
+If we assume that marks and events are independent, 
+
+\begin{multline}\label{eq:11}
+    -\log p(\mathcal{S}_{i})  = \\
+      - \sum_{j = 1}^{L}\sum_{m = 1}^{M} 1(e_j=m)   \log p^{*}(e_j=m) \lambda^{*}(t_j) \\   
+    + \sum_{m = 1}^{M} p^{*}(e_j=m) \left(   \int_{0}^{T}  \lambda_m^{*}(s) \,ds  \right)
+\end{multline} 
+
+
+[ntpp] has proposed to extend for mult
+
+marked cased
+
+
+
+relation to autoencoder
+
+
 
 \section{Proposed Model}
 \label{sec:Proposed Model}
