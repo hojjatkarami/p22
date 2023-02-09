@@ -78,5 +78,8 @@
     <requires type="dynamic">
       <file>Manuscript_v1.bcf</file>
     </requires>
+    <requires type="editable">
+      <file>zotero.bib</file>
+    </requires>
   </external>
 </requests>

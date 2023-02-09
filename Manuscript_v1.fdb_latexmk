@@ -1,20 +1,21 @@
 # Fdb version 4
 ["biber Manuscript_v1"] 0 "Manuscript_v1.bcf" "Manuscript_v1.bbl" "Manuscript_v1" 0 -1
-  "Manuscript_v1.bcf" 1675964612 106744 07867c1e8c8f03d3bf49aa493861e6dc "pdflatex"
+  "./zotero.bib" 1675964932 5768 cbd4cea1dba0891890723e9c7656c10c ""
+  "Manuscript_v1.bcf" 1675965385 106835 3918ec278fdebcf104017805588468be "pdflatex"
   (generated)
   "Manuscript_v1.bbl"
   "Manuscript_v1.blg"
   (rewritten before read)
-["pdflatex"] 1675964610 "c:/DATA/Tasks/220704/Alternate-Transactions-Articles-LaTeX-template/Manuscript_v1.tex" "Manuscript_v1.pdf" "Manuscript_v1" 1675964613 2
+["pdflatex"] 1675965382 "c:/DATA/Tasks/220704/Alternate-Transactions-Articles-LaTeX-template/Manuscript_v1.tex" "Manuscript_v1.pdf" "Manuscript_v1" 1675965386 2
   "LOGO-generic-web.eps" 1502917004 96860 991288daab2defa3899e7c0d849884be ""
-  "Manuscript_v1.aux" 1675964612 4507 7dd777e6dcb0cf407db417d38acea7ad "pdflatex"
+  "Manuscript_v1.aux" 1675965385 4507 7dd777e6dcb0cf407db417d38acea7ad "pdflatex"
   "Manuscript_v1.bbl" 0 -1 0 "biber Manuscript_v1"
-  "Manuscript_v1.run.xml" 1675964612 2287 af645842c1e0f18ccc5b63326821dd53 "pdflatex"
-  "Manuscript_v1.tex" 1675964606 34039 84a63598009e741bd8b4e47d496c0073 ""
+  "Manuscript_v1.run.xml" 1675965385 2364 430cbc06d12a32b7006faa80207e85c9 "pdflatex"
+  "Manuscript_v1.tex" 1675965377 34037 78b18d044405929040e76df6f0133249 ""
   "a1.png" 1498244108 89332 12d1d346be8c3c66b1cb5e684b683f5e ""
   "a2.png" 1498244152 85241 2ac7c661abb8afc7204ea4b9eb1019fa ""
   "a3.png" 1498244136 78109 b42b318c80e02a5af545dc292ba2d66b ""
-  "c:/DATA/Tasks/220704/Alternate-Transactions-Articles-LaTeX-template/Manuscript_v1.tex" 1675964606 34039 84a63598009e741bd8b4e47d496c0073 ""
+  "c:/DATA/Tasks/220704/Alternate-Transactions-Articles-LaTeX-template/Manuscript_v1.tex" 1675965377 34037 78b18d044405929040e76df6f0133249 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc" 1675184324 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1675184688 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/adobe/helvetic/phvb7t.tfm" 1675184984 2240 eb56c13537f4d8a0bd3fafc25572b1bd ""
