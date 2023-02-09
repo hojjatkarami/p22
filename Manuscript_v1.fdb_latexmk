@@ -1,12 +1,12 @@
 # Fdb version 4
-["pdflatex"] 1675871396 "c:/DATA/Tasks/220704/Alternate-Transactions-Articles-LaTeX-template/Manuscript_v1.tex" "Manuscript_v1.pdf" "Manuscript_v1" 1675871399 0
+["pdflatex"] 1675934705 "c:/DATA/Tasks/220704/Alternate-Transactions-Articles-LaTeX-template/Manuscript_v1.tex" "Manuscript_v1.pdf" "Manuscript_v1" 1675934707 0
   "LOGO-generic-web.eps" 1502917004 96860 991288daab2defa3899e7c0d849884be ""
-  "Manuscript_v1.aux" 1675871398 9565 934c6de75223c99418d573d6c3fe1b6b "pdflatex"
-  "Manuscript_v1.tex" 1675871392 68479 fbd4aec1921c5b2387a41b17b7a7c217 ""
+  "Manuscript_v1.aux" 1675934707 9971 1e9925e7759604cde96675364be8ea4a "pdflatex"
+  "Manuscript_v1.tex" 1675934704 70203 3462d3da9f627db551267926e4aac372 ""
   "a1.png" 1498244108 89332 12d1d346be8c3c66b1cb5e684b683f5e ""
   "a2.png" 1498244152 85241 2ac7c661abb8afc7204ea4b9eb1019fa ""
   "a3.png" 1498244136 78109 b42b318c80e02a5af545dc292ba2d66b ""
-  "c:/DATA/Tasks/220704/Alternate-Transactions-Articles-LaTeX-template/Manuscript_v1.tex" 1675871392 68479 fbd4aec1921c5b2387a41b17b7a7c217 ""
+  "c:/DATA/Tasks/220704/Alternate-Transactions-Articles-LaTeX-template/Manuscript_v1.tex" 1675934704 70203 3462d3da9f627db551267926e4aac372 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc" 1675184324 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1675184688 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1675184052 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -57,7 +57,6 @@
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr9.tfm" 1675183874 1292 6b21b9c2c7bebb38aa2273f7ca0fb3af ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmss10.tfm" 1675183874 1316 b636689f1933f24d1294acdf6041daaa ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmss8.tfm" 1675183874 1296 d77f431d10d47c8ea2cc18cf45346274 ""
-  "c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmss9.tfm" 1675183874 1320 49357c421c0d469f88b867dd0c3d10e8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1675183874 1116 933a60c408fc0a863a92debe84b2d294 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1675183874 1120 8b7d695260f3cff42e636090a8002094 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm" 1675183874 1116 25a7bf822c58caf309a702ef79f4afbb ""

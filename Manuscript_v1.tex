@@ -74,9 +74,10 @@ Writing an effective abstract is an indispensable part of any form of research, 
 
 
 
-\section{Related Works}
-\label{sec:Related Works}
 
+
+
+\subsubsection{Temporal point process}
 Consider an event sequence data  $\mathcal{D}=\{\mathcal{S}_{i}\}_{i=1}^N$ where each sample is represented as an event sequence  $\mathcal{S}_{i}=\{(t_i,e_i)\}_{j=1}^L$, where $L$ is number of event, $t_j$ is event's timestamp, and $e_j \in \mathbb{R}^M $ is the binary represntation of event marks (multi-class or multi-label). The history of events is denoted as $\mathcal{H}_t=\{(t_j,e_j):t_j<t \} $
 
 In the multi-class setting where each mark can be exactly one of M marks, the point process is characterized by $M$ conidtional intensity functions (CIFs):
@@ -103,15 +104,26 @@ If we assume that marks and events are independent,
 \end{multline} 
 
 
-[ntpp] has proposed to extend for mult
+[ntpp] has proposed the following CIF to extend for multi-label case:
 
-marked cased
+\begin{multline}\label{eq:11}
+    -\log p(\mathcal{S}_{i})  =  - \sum_{j = 1}^{L}\sum_{m = 1}^{M} 1(e_j=m)   \log \lambda_m^{*}(t_j) \\   
+    + \sum_{m = 1}^{M} \left(   \int_{0}^{T}  \lambda_m^{*}(s) \,ds  \right)\\
+    - \sum_{j = 1}^{L}\sum_{m = 1}^{M} (1-1(e_j=m)) \log \left(1-\lambda_m^{*}(t_j) \exp \left( - \int_{0}^{T}  \lambda_m^{*}(s) \,ds  \right) \right)
+\end{multline} 
+
+It should be noted that the real advantage of point process is modeling non-event likelihoods in the form of integrals. If we neglect the integrals, we would achieve the cross-entropy and binary cross entropy loss in the multi-class and multi-label settings respectively for the prediction of next mark given history of events.
+
+\subsubsection{Neural temporal point process}
+
+Encoder-decoder architectures have proven to be effective in many applications. The main idea of a neural point process is to first encode the history of events until $t_j$ using different neural network architectures $h_j=Enc(\mathcal{H}_j)$. Then it tries to estimate $\lambda^*_m(t)$ or its integral for $ t_i < t \leq t_{i+1}$.
 
 
+\subsubsection{Deep learning for irregular sampling}
+An irregularly sampled data can be denoted as $\mathcal{D}=\{\mathcal{U}_i\}_{i=1}^{N}$ where $N$ is number of samples and each sample is represented as series of tuple $\mathcal{U}_i={(t_p,k_p,v_p)}$ where $t_p, k_p, v_p$ represents the time, modality and value of $p$-th datapoint respectively.
 
-relation to autoencoder
-
-
+\section{Related Works}
+\label{sec:Related Works}
 
 \section{Proposed Model}
 \label{sec:Proposed Model}
@@ -123,6 +135,8 @@ relation to autoencoder
 It is good practice to explain the significance of the figure in the caption.}
 \label{fig1}
 \end{figure*}
+
+ The key advantage of our proposed model is to combine a  transformer-based event encoder with point process loss with a deep attention module that can handle an irregularly sampled time series for a any downstream prediciton task.
 
 
 The entire data consists of $N$ samples  $\mathcal{D}=\{\mathcal{O}_{i}=(\mathcal{E}_{i},\mathcal{S}_{i}  )\}_{i=1}^N$ where $\mathcal{E}_{i}$ and $\mathcal{S}_{i}$ represents event and state sequences, respectively.
