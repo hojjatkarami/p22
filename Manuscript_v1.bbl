@@ -1,0 +1,92 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{zuoTransformerHawkesProcess2020a}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=3309bf092827781ffd038ce1069c0710}{%
+           family={Zuo},
+           familyi={Z\bibinitperiod},
+           given={Simiao},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a5643fa1ae8fe0824b15f38d5bd6a580}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Haoming},
+           giveni={H\bibinitperiod}}}%
+        {{hash=22490d27bf4609701bb6e92b6cb7881e}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Zichong},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=5aabe643c77f92846adf1b83e9c78387}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Tuo},
+           giveni={T\bibinitperiod}}}%
+        {{hash=55bb21a31fded4aad976b7902dc8206a}{%
+           family={Zha},
+           familyi={Z\bibinitperiod},
+           given={Hongyuan},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {PMLR}%
+      }
+      \strng{namehash}{e9d74a43929c8d1624f3733af801a8df}
+      \strng{fullhash}{c31bccfeadda7a73fdb17c9eefee48f5}
+      \strng{bibnamehash}{e9d74a43929c8d1624f3733af801a8df}
+      \strng{authorbibnamehash}{e9d74a43929c8d1624f3733af801a8df}
+      \strng{authornamehash}{e9d74a43929c8d1624f3733af801a8df}
+      \strng{authorfullhash}{c31bccfeadda7a73fdb17c9eefee48f5}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Modern data acquisition routinely produce massive amounts of event sequence data in various domains, such as social media, healthcare, and financial markets. These data often exhibit complicated short-term and long-term temporal dependencies. However, most of the existing recurrent neural network based point process models fail to capture such dependencies, and yield unreliable prediction performance. To address this issue, we propose a Transformer Hawkes Process (THP) model, which leverages the self-attention mechanism to capture long-term dependencies and meanwhile enjoys computational efficiency. Numerical experiments on various datasets show that THP outperforms existing models in terms of both likelihood and event prediction accuracy by a notable margin. Moreover, THP is quite general and can incorporate additional structural knowledge. We provide a concrete example, where THP achieves improved prediction performance for learning multiple point processes when incorporating their relational information.}
+      \field{booktitle}{Proceedings of the 37th {{International Conference}} on {{Machine Learning}}}
+      \field{day}{21}
+      \field{eventtitle}{International {{Conference}} on {{Machine Learning}}}
+      \field{issn}{2640-3498}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{title}{Transformer {{Hawkes Process}}}
+      \field{urlday}{6}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{11692\bibrangedash 11702}
+      \range{pages}{11}
+      \verb{file}
+      \verb C\:\\Users\\hokarami\\Zotero\\storage\\FFEV6YWA\\Zuo et al. - 2020 - Transformer Hawkes Process.pdf;C\:\\Users\\hokarami\\Zotero\\storage\\K5LDG4WX\\Zuo et al_2020_Transformer Hawkes Process.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://proceedings.mlr.press/v119/zuo20a.html
+      \endverb
+      \verb{url}
+      \verb https://proceedings.mlr.press/v119/zuo20a.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

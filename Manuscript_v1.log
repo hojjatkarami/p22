@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.31)  9 FEB 2023 18:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.31)  16 FEB 2023 17:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -114,11 +114,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \c@edbiography=\count271
 LaTeX Info: Redefining \sf on input line 4869.
 \@IEEEtranrubishbin=\box52
-) (./generic.sty) (c:/texlive/2022/texmf-dist/tex/latex/cite/cite.sty
-LaTeX Info: Redefining \cite on input line 302.
-LaTeX Info: Redefining \nocite on input line 332.
-Package: cite 2015/02/27  v 5.5
-) (c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (./generic.sty) (c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
 \@mathmargin=\skip56
 
@@ -314,17 +310,6 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-
-c:/texlive/2022/texmf-dist/tex/latex/biblatex/biblatex.sty:212: Package biblatex Error: Incompatible package 'cite'.
-
-See the biblatex package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.212 \blx@packageincompatibility
-                                 
-The 'cite' package and biblatex are incompatible.
-
 \c@tabx@nest=\count297
 \c@listtotal=\count298
 \c@listcount=\count299
@@ -384,7 +369,7 @@ The 'cite' package and biblatex are incompatible.
 \c@mincompwidth=\count342
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
-(c:/texlive/2022/texmf-dist/tex/latex/biblatex/blx-dm.def
+ (c:/texlive/2022/texmf-dist/tex/latex/biblatex/blx-dm.def
 File: blx-dm.def 2022/07/12 v3.18b biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
@@ -546,23 +531,30 @@ Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
 ))
 \@quotelevel=\count423
 \@quotereset=\count424
- (./Manuscript_v1.aux)
+ (./Manuscript_v1.aux
+
+LaTeX Warning: Label `tab:addlabel' multiply defined.
+
+
+LaTeX Warning: Label `tab:addlabel' multiply defined.
+
+)
 \openout1 = `Manuscript_v1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
  (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count425
@@ -593,53 +585,39 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `Manuscript_v1.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'Manuscript_v1.bbl' not found.
-
-No file Manuscript_v1.bbl.
-Package biblatex Info: Reference section=0 on input line 25.
-Package biblatex Info: Reference segment=0 on input line 25.
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 41.
-(c:/texlive/2022/texmf-dist/tex/latex/psnfss/ot1phv.fd
+Package biblatex Info: ... file 'Manuscript_v1.bbl' found.
+ (./Manuscript_v1.bbl)
+Package biblatex Info: Reference section=0 on input line 29.
+Package biblatex Info: Reference segment=0 on input line 29.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 45.
+ (c:/texlive/2022/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <11> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 41.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 45.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 45.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 45.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-Package xcolor Warning: Incompatible color definition on input line 44.
+Package xcolor Warning: Incompatible color definition on input line 48.
 
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <9> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 44.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 48.
 
-Package xcolor Warning: Incompatible color definition on input line 49.
+Package xcolor Warning: Incompatible color definition on input line 53.
 
 
-Package xcolor Warning: Incompatible color definition on input line 54.
+Package xcolor Warning: Incompatible color definition on input line 58.
 
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 54.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 58.
 (c:/texlive/2022/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
-
-Package xcolor Warning: Incompatible color definition on input line 86.
-
-
-Package xcolor Warning: Incompatible color definition on input line 99.
-
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 99.
-
-Overfull \hbox (41.07303pt too wide) detected at line 131
- []$[] \OMS/cmsy/m/n/10 ^^@ [] []\OT1/cmr/m/n/10 (1 \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 1(\OML/cmm/m/it/10 e[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 m\OT1/cmr/m/n/10 )) [] []$ []  
- []
-
 Package epstopdf Info: Source file: <LOGO-generic-web.eps>
 (epstopdf)                    date: 2017-08-16 21:56:44
 (epstopdf)                    size: 96860 bytes
@@ -647,7 +625,7 @@ Package epstopdf Info: Source file: <LOGO-generic-web.eps>
 (epstopdf)                    date: 2022-12-01 11:10:01
 (epstopdf)                    size: 6716 bytes
 (epstopdf)             Command: <repstopdf --outfile=LOGO-generic-web-eps-converted-to.pdf LOGO-generic-web.eps>
-(epstopdf)             \includegraphics on input line 131.
+(epstopdf)             \includegraphics on input line 79.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -655,10 +633,10 @@ pdfTeX warning: pdflatex.exe (file ./LOGO-generic-web-eps-converted-to.pdf): PDF
 <LOGO-generic-web-eps-converted-to.pdf, id=1, 55.20625pt x 34.1275pt>
 File: LOGO-generic-web-eps-converted-to.pdf Graphic file (type pdf)
 <use LOGO-generic-web-eps-converted-to.pdf>
-Package pdftex.def Info: LOGO-generic-web-eps-converted-to.pdf  used on input line 131.
+Package pdftex.def Info: LOGO-generic-web-eps-converted-to.pdf  used on input line 79.
 (pdftex.def)             Requested size: 48.0pt x 29.674pt.
 
-Package xcolor Warning: Incompatible color definition on input line 131.
+Package xcolor Warning: Incompatible color definition on input line 79.
 
 
 Overfull \hbox (259.0pt too wide) has occurred while \output is active
@@ -683,69 +661,66 @@ Overfull \vbox (25.674pt too high) has occurred while \output is active []
 
  <./LOGO-generic-web-eps-converted-to.pdf>]
 
-Package xcolor Warning: Incompatible color definition on input line 137.
+Package xcolor Warning: Incompatible color definition on input line 90.
 
 
-Package xcolor Warning: Incompatible color definition on input line 141.
+Package xcolor Warning: Incompatible color definition on input line 105.
+
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 105.
+
+Package xcolor Warning: Incompatible color definition on input line 122.
 
 
-Package xcolor Warning: Incompatible color definition on input line 143.
+Package xcolor Warning: Incompatible color definition on input line 128.
 
 
-Package xcolor Warning: Incompatible color definition on input line 146.
+Package xcolor Warning: Incompatible color definition on input line 179.
 
-<images/model_arch.png, id=24, 475.449pt x 118.479pt>
+
+Package xcolor Warning: Incompatible color definition on input line 181.
+
+
+Package xcolor Warning: Incompatible color definition on input line 184.
+
+<images/model_arch.png, id=16, 475.449pt x 118.479pt>
 File: images/model_arch.png Graphic file (type png)
 <use images/model_arch.png>
-Package pdftex.def Info: images/model_arch.png  used on input line 151.
+Package pdftex.def Info: images/model_arch.png  used on input line 189.
 (pdftex.def)             Requested size: 475.44783pt x 118.4787pt.
 
-Package xcolor Warning: Incompatible color definition on input line 153.
+Package xcolor Warning: Incompatible color definition on input line 191.
 
 
-Package xcolor Warning: Incompatible color definition on input line 163.
-
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 163.
-
-Package xcolor Warning: Incompatible color definition on input line 178.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
-
- []
-
-
-Overfull \hbox (2.40425pt too wide) detected at line 272
-[]\OML/cmm/m/it/10 ^^U[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OMS/cmsy/m/n/10 jH[]\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 f[] []
- []
-
-
-Package xcolor Warning: Incompatible color definition on input line 272.
+Package xcolor Warning: Incompatible color definition on input line 196.
 
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [2]
 
-Package xcolor Warning: Incompatible color definition on input line 278.
+Package xcolor Warning: Incompatible color definition on input line 201.
+
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 201.
+
+Package xcolor Warning: Incompatible color definition on input line 216.
 
 
-Package xcolor Warning: Incompatible color definition on input line 303.
+Underfull \hbox (badness 10000) in paragraph at lines 266--267
+
+ []
 
 
-Package xcolor Warning: Incompatible color definition on input line 312.
+Package xcolor Warning: Incompatible color definition on input line 269.
 
 
-Package xcolor Warning: Incompatible color definition on input line 316.
-
-
-Package xcolor Warning: Incompatible color definition on input line 340.
+Package xcolor Warning: Incompatible color definition on input line 313.
 
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <7> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 345.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 333.
 
-Package xcolor Warning: Incompatible color definition on input line 345.
+Package xcolor Warning: Incompatible color definition on input line 333.
 
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
@@ -755,177 +730,111 @@ Overfull \vbox (5.0pt too high) has occurred while \output is active []
 pdfTeX warning: pdflatex.exe: pop empty color page stack 0
  <./images/model_arch.png>]
 
-Package xcolor Warning: Incompatible color definition on input line 350.
+Package xcolor Warning: Incompatible color definition on input line 338.
 
 
-Package xcolor Warning: Incompatible color definition on input line 354.
+Package xcolor Warning: Incompatible color definition on input line 347.
 
 
-Package xcolor Warning: Incompatible color definition on input line 358.
+Package xcolor Warning: Incompatible color definition on input line 351.
 
 
-Package xcolor Warning: Incompatible color definition on input line 360.
+Package xcolor Warning: Incompatible color definition on input line 375.
 
 
-Package xcolor Warning: Incompatible color definition on input line 366.
+Package xcolor Warning: Incompatible color definition on input line 385.
+
+
+Package xcolor Warning: Incompatible color definition on input line 389.
+
+
+Package xcolor Warning: Incompatible color definition on input line 393.
+
+
+Package xcolor Warning: Incompatible color definition on input line 395.
+
+
+Package xcolor Warning: Incompatible color definition on input line 401.
 
 \width=\dimen181
 
-Package xcolor Warning: Incompatible color definition on input line 376.
+Package xcolor Warning: Incompatible color definition on input line 416.
 
 
-Package xcolor Warning: Incompatible color definition on input line 402.
-
-\width=\dimen182
-
-Package xcolor Warning: Incompatible color definition on input line 412.
+Package xcolor Warning: Incompatible color definition on input line 447.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Package xcolor Warning: Incompatible color definition on input line 436.
-
-\width=\dimen183
-
-Package xcolor Warning: Incompatible color definition on input line 451.
-
-
-Package xcolor Warning: Incompatible color definition on input line 490.
-
-
-Package xcolor Warning: Incompatible color definition on input line 494.
-
-
-Package xcolor Warning: Incompatible color definition on input line 501.
-
-
-Package xcolor Warning: Incompatible color definition on input line 522.
-
-
-Package xcolor Warning: Incompatible color definition on input line 532.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 562--565
-\OT1/ptm/m/n/8 Avail-able: $[]$.
- []
-
-
-Underfull \hbox (badness 4254) in paragraph at lines 577--581
-\OT1/ptm/m/n/8 nolo-gies de-ployed be-hind the fire-wall for cor-po-rate pro-duc-tiv-
- []
-
-
-Underfull \hbox (badness 3386) in paragraph at lines 577--581
-\OT1/ptm/m/n/8 ity. Pre-sented at INET96 An-nual Meet-ing. [On-line]. Avail-able:
- []
-
-
-Underfull \hbox (badness 4673) in paragraph at lines 584--587
-[]\OT1/ptm/m/n/8 Teralyzer. Lytera UG, Kirch-hain, Ger-many [On-line]. Avail-able:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 584--587
-[]$\OT1/ptm/m/n/8 ,
- []
-
-
-Package xcolor Warning: Incompatible color definition on input line 588.
+Package xcolor Warning: Incompatible color definition on input line 454.
 
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [4]
-<a1.png, id=44, 72.27pt x 90.3375pt>
-File: a1.png Graphic file (type png)
-<use a1.png>
-Package pdftex.def Info: a1.png  used on input line 620.
-(pdftex.def)             Requested size: 72.2709pt x 90.33864pt.
-File: a1.png Graphic file (type png)
-<use a1.png>
-Package pdftex.def Info: a1.png  used on input line 620.
-(pdftex.def)             Requested size: 72.2709pt x 90.33864pt.
+\width=\dimen182
 
 
-Package xcolor Warning: Incompatible color definition on input line 620.
-
-<a2.png, id=47, 72.27pt x 90.3375pt>
-File: a2.png Graphic file (type png)
-<use a2.png>
-Package pdftex.def Info: a2.png  used on input line 646.
-(pdftex.def)             Requested size: 72.2709pt x 90.33864pt.
-File: a2.png Graphic file (type png)
-<use a2.png>
-Package pdftex.def Info: a2.png  used on input line 646.
-(pdftex.def)             Requested size: 72.2709pt x 90.33864pt.
-
-Package xcolor Warning: Incompatible color definition on input line 646.
-
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 659.
-
-Package xcolor Warning: Incompatible color definition on input line 666.
+Package xcolor Warning: Incompatible color definition on input line 461.
 
 
-Overfull \vbox (5.0pt too high) has occurred while \output is active []
+Package xcolor Warning: Incompatible color definition on input line 485.
 
- [5 <./a1.png> <./a2.png>]
-<a3.png, id=55, 72.27pt x 90.3375pt>
-File: a3.png Graphic file (type png)
-<use a3.png>
-Package pdftex.def Info: a3.png  used on input line 666.
-(pdftex.def)             Requested size: 72.2709pt x 90.33864pt.
-File: a3.png Graphic file (type png)
-<use a3.png>
-Package pdftex.def Info: a3.png  used on input line 666.
-(pdftex.def)             Requested size: 72.2709pt x 90.33864pt.
+\width=\dimen183
+
+Package xcolor Warning: Incompatible color definition on input line 502.
 
 
-Package xcolor Warning: Incompatible color definition on input line 666.
+Package xcolor Warning: Incompatible color definition on input line 541.
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 666--683
-\OT1/phv/m/n/8 de-gree in me-chan-i-cal en-gi-neer-ing from Na-
- []
+Package xcolor Warning: Incompatible color definition on input line 545.
 
 
-Package xcolor Warning: Incompatible color definition on input line 685.
+Package xcolor Warning: Incompatible color definition on input line 552.
+
+
+Package xcolor Warning: Incompatible color definition on input line 573.
+
+
+Package xcolor Warning: Incompatible color definition on input line 671.
+
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 671.
+(c:/texlive/2022/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+
+Package xcolor Warning: Incompatible color definition on input line 741.
 
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
- [6
+ [5]
 
- <./a3.png>] (./Manuscript_v1.aux)
-
-LaTeX Warning: There were undefined references.
+Package xcolor Warning: Incompatible color definition on input line 741.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
+ [6] (./Manuscript_v1.aux)
 
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                Manuscript_v1
-(biblatex)                and rerun LaTeX afterwards.
+LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'Manuscript_v1.run.xml'.
 \openout1 = `Manuscript_v1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12538 strings out of 476065
- 225784 string characters out of 5795020
+ 12608 strings out of 476065
+ 228576 string characters out of 5795020
  1897299 words of memory out of 5000000
- 32766 multiletter control sequences out of 15000+600000
- 586424 words of font info for 142 fonts, out of 8000000 for 9000
+ 32845 multiletter control sequences out of 15000+600000
+ 578851 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,21n,68p,1012b,801s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Manuscript_v1.pdf (6 pages, 529908 bytes).
+ 63i,20n,68p,1279b,1318s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Manuscript_v1.pdf (6 pages, 276217 bytes).
 PDF statistics:
- 149 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
+ 132 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 62 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
