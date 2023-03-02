@@ -2,11 +2,14 @@
 \usepackage{generic}
 % \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
+\usepackage{bbm}
 \usepackage{algorithmic}
 \usepackage{graphicx}
 \usepackage{textcomp}
 
+\DeclareMathOperator*{\argmax}{argmax} % thin space, limits underneath in displays
 
+\usepackage{svg}
 
 \usepackage{booktabs}
 \usepackage{xcolor}
@@ -47,7 +50,7 @@ Tsukuba, Japan (e-mail: author@nrim.go.jp).}}
 
 \begin{abstract}
 
-    Irregular  sampling of time series in electronic health records (EHRs) is challenging for model development. In addition, the pattern of missingness for certain clinical variables are not at random as it is determined by clinicians decision and the state of patient. Point process is a mathematical framework for handling event sequence data which is also consistent with the irregular sampling. We propose \emph{TEEDAM}, a deep neural network that can learn patient representation from irregulary sample time series as well as informative missingness pattern of certain laboratory variables. We performed various experiments to show the effectiveness of event and state encoding for characterization of conditional intensity functions as well as downstream prediction task. Results show that in some cases learning from patterns may improve the performance of prediction task.
+    Irregular sampling of time series in electronic health records (EHRs) is challenging for model development. In addition, the pattern of missingness for certain clinical variables are not at random as it is determined by clinicians decision and the state of patient. Point process is a mathematical framework for handling event sequence data which is also consistent with the irregular sampling. We propose \emph{TEEDAM}, a deep neural network that can learn patient representation from irregulary sample time series as well as informative missingness pattern of certain laboratory variables. We performed various experiments to show the effectiveness of event and state encoding for characterization of conditional intensity functions as well as downstream prediction task. Results show that in some cases learning from patterns may improve the performance of prediction task.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -58,32 +61,44 @@ Tsukuba, Japan (e-mail: author@nrim.go.jp).}}
 \section{Introduction}
 \label{sec:intro}
 
+[ML in healthcare]Machine learning has the potential to revolutionize healthcare by leveraging vast amounts of data available in electronic health records (EHRs) to develop more accurate clinical decision support systems. EHRs store patient health information, such as medical history, medications, lab results, and diagnostic images, which can be used as input for machine learning algorithms to identify patterns and associations that could inform more precise diagnoses, better treatment plans, and earlier interventions. Clinical decision support systems that use machine learning can provide real-time, evidence-based recommendations to healthcare providers, reducing errors and improving patient outcomes.
+
+[irregular sampling challenge] One of data challenges for machine learning (ML) when using electronic health records (EHRs) is irregular sampling. EHR data is often collected at different times and frequencies, depending on a patient's healthcare needs and visit schedules, which can result in uneven and irregularly sampled time series data. 
+
+missingness in tabular and time series.
+
+[sources of missingness] Sources of missingness in EHRs must be carefully understood. For example, lab measurements are typically ordered as part of a diagnostic work-up, meaning that the presence of a datapoint conveys information about the patient's state
+% \cite*{ghassemiReviewChallengesOpportunities2020}.
+
+[conseqs of IRR] A typical EHR consist of tabular and time series data. Depending on the desired outcome, we can formulate the problem in static or longitudinal setting. There are various consequences asscociated with irregularly sampled data. Many machine learning models are not inherently compatible with
+
+imputation for static setting
+
+imputation for time series.
+
+inherently compatible methods.
+
+imputation methods/// Imputation techniques are widely used in electronic health records (EHRs) to handle missing data. Imputation refers to the process of filling in the missing data with plausible values based on the available information. There are several imputation techniques available, each with their own strengths and weaknesses. For example, mean imputation replaces missing values with the mean of the available values in the same column, while regression imputation uses a regression model to estimate the missing values based on the relationship between the variables. Other popular imputation methods include multiple imputation, hot deck imputation, and k-nearest neighbors imputation. The choice of imputation technique depends on the type and amount of missing data, as well as the goals of the analysis. Regardless of the technique used, it is important to carefully consider the impact of imputed values on the analysis and to report the imputation method used in the results.
+
+There exist several ML frameworks that are inherently compatible with the missig or irregularly-sampled data such as Gaussian process and recurrent neural networks.
+Deep learning models that are compatible with irregularly sampled time series are important in many real-world applications, such as stock market predictions, speech recognition, and medical diagnosis. These models need to be able to handle data that is not evenly spaced, as is often the case in time-sensitive applications. One popular deep learning architecture that can handle irregularly sampled time series is the Recurrent Neural Network (RNN). RNNs are well-suited for this task because they have the ability to process sequential data, taking into account not only the current input but also the previous inputs. Another architecture that can handle irregularly sampled time series is the Convolutional Neural Network (CNN), which can be used to extract features from the data and then pass the processed data to an RNN for further analysis. Additionally, Attention Mechanisms can be integrated into RNNs and CNNs to help the model focus on important features in the data. Overall, these deep learning models offer a powerful toolset for handling irregularly sampled time series and provide useful insights into this type of data.
+These models does not explicitly take into account the fact wether the absence of some datapoints could convey some unique information.
+
+Point processes are mathematical models used to describe the distribution of events in time or space. These events can be occurrences of earthquakes, nerve impulses, customer purchases, or anything else that can be counted or measured.
+In healthcare, lab measurements can be regarded as sequence of events that are ordered by clinicians. At the core of point process is the defintion of conditional intensity function and the corresponding log likelihood which simultanously models the occurence of events using the history of past events.[GAP]
+More recently, neural Point Processes have been developed for better characteriztion of CIFs by leveraing the power of deep neural networks. These models can be used for tasks such as predicting future events, estimating the rate of event occurrence, or identifying correlations between events. They offer a flexible and powerful way to analyze point process data, as they can handle complex dependencies between events and incorporate prior knowledge about the process. Traditioaly, a point process encodes timestample and type of events, however, it is common in healtcare to have additional sources of information that could be useful for CIF characterization. For example the absolute value of patients vital signs might be predictive for next event prediction.[GAP]
+
+our model TEEDAM is a deep learning model for EHR that can simultanously 
+encodes all of events and values and optimizes for a point process objective function as well as a desired outcome. We have performed extensive experiments on existing event sequence data to show the effectivness of our improved transformer event encoder against the existing methods. In addition, we show that encoding states can reduce point process NLL in two EHRs dataset (p12,p19) and in some cases it can lead to better performance for next event prediction. Finally, we provide explanations regarding the interpretablity of out model thanks to the utilized attention mechanisms.
+
+the contributions of this paper are:
+\begin{itemize}
+    \item cont1
+    \item cont2
+\end{itemize}
 
 
-healthcare systems are one of main area for deploying machine learning models. Thanks to recent advancements in data collection technologies, policies and computing power data are recorded in a hosptial. This data consists of multiple modalities frome tabular and time series to clinical notes and images. We focus on tabular and time series. \cite{zuoTransformerHawkesProcess2020a}
-
-
-talk about the irregular sampling in EHRs and causes.///
-In and ideal setup, variables are measured on a regular basis, however, in a hospital due to medical costs, patient associated risks, sampling device.
-
-conseq of irr sampling/// Irregularly sampled time series in electronic health records can have serious consequences for data analysis and decision making. Irregular sampling occurs when the time intervals between data points are inconsistent, which can lead to biased or inaccurate results when trying to make inferences about the underlying process. This can also make it difficult to accurately compare the data over time, as well as to detect patterns or trends. Furthermore, irregular sampling can cause problems for machine learning algorithms, which may struggle to accurately capture the relationships between variables in the data. This can result in poor predictions or incorrect diagnoses, potentially leading to negative impacts on patient care. To mitigate these consequences, it is important to ensure that electronic health records are sampled at regular intervals, or that appropriate statistical techniques are applied to account for the irregularity.
-
-potential adv of irr sampl/// 
-
-imputation methods/// Imputation techniques are widely used in electronic health records (EHRs) to handle missing data. EHRs often contain incomplete or missing information due to various reasons such as measurement errors, system failures, or data entry issues. Imputation refers to the process of filling in the missing data with plausible values based on the available information. There are several imputation techniques available, each with their own strengths and weaknesses. For example, mean imputation replaces missing values with the mean of the available values in the same column, while regression imputation uses a regression model to estimate the missing values based on the relationship between the variables. Other popular imputation methods include multiple imputation, hot deck imputation, and k-nearest neighbors imputation. The choice of imputation technique depends on the type and amount of missing data, as well as the goals of the analysis. Regardless of the technique used, it is important to carefully consider the impact of imputed values on the analysis and to report the imputation method used in the results.
-
-inherently compatible methods/// Deep learning models that are compatible with irregularly sampled time series are important in many real-world applications, such as stock market predictions, speech recognition, and medical diagnosis. These models need to be able to handle data that is not evenly spaced, as is often the case in time-sensitive applications. One popular deep learning architecture that can handle irregularly sampled time series is the Recurrent Neural Network (RNN). RNNs are well-suited for this task because they have the ability to process sequential data, taking into account not only the current input but also the previous inputs. Another architecture that can handle irregularly sampled time series is the Convolutional Neural Network (CNN), which can be used to extract features from the data and then pass the processed data to an RNN for further analysis. Additionally, Attention Mechanisms can be integrated into RNNs and CNNs to help the model focus on important features in the data. Overall, these deep learning models offer a powerful toolset for handling irregularly sampled time series and provide useful insights into this type of data.
-
-
-pp framework/// Point processes are mathematical models used to describe the distribution of events in time or space. These events can be occurrences of earthquakes, nerve impulses, customer purchases, or anything else that can be counted or measured. Neural Point Processes are a type of machine learning models that learn the patterns and relationships between events using artificial neural networks. These models can be used for tasks such as predicting future events, estimating the rate of event occurrence, or identifying correlations between events. They offer a flexible and powerful way to analyze point process data, as they can handle complex dependencies between events and incorporate prior knowledge about the process.
-
-Our aims??// In this work, we propose a DNN for joint modeling of NTPP and a DAM. Our first aim is to investigate the effectiveness of state encoding for CIF characterization. Second, we are interested in seeing the utility of event encoding a downstream task
-
-contribs?/// 
-
-
-
-
+explain structure of paper
 
 
 
@@ -99,10 +114,10 @@ contribs?///
 
 
 
-\subsubsection*{Temporal point process}
+\subsection{Temporal point process}
 
 
-Consider an event sequence data  $\mathcal{D}=\{\mathcal{S}_{i}\}_{i=1}^N$ where each sample is represented as an event sequence  $\mathcal{S}_{i}=\{(t_i,e_i)\}_{j=1}^L$, where $L$ is the total number of events, $t_j$ is event's timestamp, and $e_j \in \mathbb{R}^M $ is the binary represntation of event marks (multi-class or multi-label). The history of events is denoted as $\mathcal{H}_t=\{(t_j,e_j):t_j<t \}$.
+A temporal point process [13, 14] is a stochastic process that models a sequence of events in a continuous time domain. Consider an event sequence data  $\mathcal{D}=\{\mathcal{S}_{i}\}_{i=1}^N$ where $N$ is total number of samples and each sample $\mathcal{S}_{i}$ is represented as a sequence of events $\mathcal{S}_{i}=\{(t_i,e_i)\}_{j=1}^L$, where $L$ is the total number of occured events, $t_j$ is the event's timestamp, and $e_j \in \mathbb{R}^M $ is the binary represntation of event marks (multi-class or multi-label). Furthermore, the history of events at time $t$ is denoted as $\mathcal{H}_t=\{(t_j,e_j):t_j<t \}$.
 
 The core idea of the point process framework is the definition of conditional intensity functions (CIFs) which is the probability of the occurence of an event of type $m$ in an infinitesimal time window $[t,t+dt)$:
 
@@ -110,20 +125,25 @@ The core idea of the point process framework is the definition of conditional in
    \lambda_m^{*}(t)=\lim \frac{P(  \text{event of type m in } [t,t+\Delta t) |   \mathcal{H}_t  )}{\Delta t} 
 \end{equation} 
 
-Multivariate Hawkes process is the traditional approach to characterize CIFs:
+Here, $*$ denotes conditioning on the history of events. Multivariate Hawkes process is the traditional approach to characterize CIFs by assumming a fixed form of intensity to account for the additive influence of an history event:
 
 \begin{equation} 
     \lambda_m^{*}(t)= \mu_m + \sum_{(t^{\prime},e^{\prime})\in \mathcal{H}_t} \phi(t-t^{\prime})
  \end{equation} 
 
+ where $\mu \ge 0 $, aka base intensity, is an exogenous component that is independent of history, while $\phi(t)>0$, excitation function, is an endogenous component depending on the history that shows the mutual influences. The excitation function can ge characterized using exponentials, linear combination of $M$ basis functions \cite*{xuLearningGrangerCausality2016}.
 
-\subsubsection*{Neural temporal point process}
+\subsection{Neural temporal point process}
 
-Encoder-decoder architectures have proven to be effective in many applications. The main idea of a neural temporal point process (NTPP) is to first encode the history of events until $t_j$ using a neural network architecture $h_j=Enc(\mathcal{H}_{j+1};\theta)$. Then it tries to estimate $\lambda^*_m(t)=Dec(h_j;\phi)$ for $ t \in (t_j,t_{j+1}]$.
+Encoder-decoder architectures have proven to be effective in many applications. The main idea of a neural temporal point process (NTPP) is to first encode the history of events until $t_j$ using a neural network architecture $h_j=Enc(\mathcal{H}_{j+1};\theta)$. Then it tries to estimate CIFs using a different decoder architectures $\lambda^*_m(t)=Dec(h_j;\phi)$ for $ t \in (t_j,t_{j+1}]$.
 
-Initial works used recurrent neural networks either in a discrete way [16], a continuous way [39], or a multi-scale multi-channel architecture [24]; then self-attention was also used by [54, 57]. [57] develop a Structured Transformer Hawkes (STH) model that studies the relationship between point processes. It assumes the modeling of one point process might contribute to the modeling of another. Each vertex in the STH’s graph is associated with a point process. Other efforts have been made to model the cumulative intensity function [42] and conditional probability density [46]. One issue that has been ignored in these works is that these NPP models take all types of historic events to predict the future ones, neglecting that some event types may not contribute to the prediction of another type. This study aims to correct this defect by learning to omit those non-contributing event types when predicting the target type via NPPs.
+Initial works has used recurrent encoders such as RNN, GRU or LSTM [refs] in which the hidden state gets updated after arrival of new event as $h_{j+1}=Update(h_j,(t_j,e_j))$. The main advantage is that they allow us to compute history embeddings in $O(L)$ time, however, they are prone to neglect long-term inter-event influences. On the other hand, set aggregation encoders directly encodes all past events into a history embedding. adopting attention mechanism is one way that can capture long-term influences and can be trained in parallel as well. For example, \cite*{zuoTransformerHawkesProcess2020a} proposed transformer hawkes process (THP) that adopts a transformer architecture for event encoding.
 
-\subsubsection*{Parameter Estimation}
+The learned event embeddings can be later used for estimating conditional intensity functions, comulative conditional intensity functions or event probability density functions.
+
+
+
+\subsection{Parameter Estimation}
 
 Based on conditional intensity function, it is straightforward to derive conditional probability density function $p^{*}_{m}(t)$ in $(t_j, t_{j+1}]$:
 
@@ -131,31 +151,25 @@ Based on conditional intensity function, it is straightforward to derive conditi
     p_m^{*}(t)=\lambda_m^{*}(t) \exp \left[-\sum_{m=1}^{M} \int_{t_j}^{t_{j+1}}\lambda_m^{*}(t^{\prime})dt^{\prime}\right]
  \end{equation}
  
- Intuitively, the integral term indicates that there is no event of any type in the interval.
+
+ The paramters of point process can be learnt by Maximum Likeihood Estimation (MLE) framework. However, more advanced methods such as adversarial learning, reinforcement learning have also been proposed.
 
 In the multi-class setting, the log-likelihood (LL) of a point process for a single event sequnce $\mathcal{S}_{i}$ is defined as:
 
-\begin{multline} 
-    \log p_{mc}(\mathcal{S}_{i})  =  \sum_{j = 1}^{L}\sum_{m = 1}^{M} 1(e_j=m)   \log p_m^{*}(t_j) \\   
-    = \sum_{j = 1}^{L}\sum_{m = 1}^{M} 1(e_j=m)   \log \lambda_m^{*}(t_j)\\
-    \sum_{m = 1}^{M} \left(   \int_{0}^{T}  \lambda_m^{*}(s) \,ds  \right)
+\begin{multline} \label{eq:CIF-mc}
+    \log p_{mc}(\mathcal{S}_{i})  =  \sum_{j = 1}^{L}\sum_{m = 1}^{M} \mathbbm{1}(e_j=m)   \log p_m^{*}(t_j) \\   
+    = \sum_{j = 1}^{L}\sum_{m = 1}^{M} \mathbbm{1}(e_j=m)   \log \lambda_m^{*}(t_j)\\
+    -\sum_{m = 1}^{M} \left(   \int_{0}^{T}  \lambda_m^{*}(s) \,ds  \right)
 \end{multline} 
 
-However, in many cases such as EHRs it is common to have co-occuring events. [ntpp] proposed to add:
+Here, $\mathbbm{1}$ is the indicator function. The log-likelihood can be understood using the following two facts. First, the quantity $\lambda_k^{*}(t)dt$ corresponds to the probability of observing an event of type $k$ in the infinitesimal interval $[t_j,t_j+dt]$ conditioned on the past events $\mathbb{H}_{t_j}$. Second, we can compute the probability of not observing any eevents of type $k$ in the rest of the interval $[0,T]$ as $\exp \left(-\int_{0}^{T}  \lambda_m^{*}(s) ds\right)$.
 
-% If we assume that marks and events are independent, 
-
-% \begin{multline} 
-%     -\log p(\mathcal{S}_{i})  = \\
-%       - \sum_{j = 1}^{L}\sum_{m = 1}^{M} 1(e_j=m)   \log p^{*}(e_j=m) \lambda^{*}(t_j) \\   
-%     + \sum_{m = 1}^{M} p^{*}(e_j=m) \left(   \int_{0}^{T}  \lambda_m^{*}(s) \,ds  \right)
-% \end{multline} 
+However, in many cases such as EHRs it is common to have co-occuring events. \cite*{enguehardNeuralTemporalPoint2020} proposed to use a binary cross entropy function:
 
 
-
-\begin{multline} 
+\begin{multline} \label{eq:CIF-ml}
     \log p_{ml}(\mathcal{S}_{i}) = \log p_{mc}(\mathcal{S}_{i}) \\
-    + \sum_{m = 1}^{M} (1-1(e_j=m)) \log \left(1-p_m^{*}(t_j)  \right)
+    + \sum_{m = 1}^{M} (1-\mathbbm{1}(e_j=m)) \log \left(1-p_m^{*}(t_j)  \right)
 \end{multline} 
 
 
@@ -169,17 +183,30 @@ It should be noted that the real advantage of point process is modeling non-even
 
 Another approach is the marked case which assumes that marks and timestamps are conditionally independent given $\mathcal{H}_t$.
 
-\begin{multline} 
+\begin{multline} \label{eq:CIF-marked}
     \log p_{marked}(\mathcal{S}_{i}) =    
     \sum_{j = 1}^{L}\sum_{m = 1}^{M} 1(e_j=m)   \log p^{*}(e_j=m) \\
     +\sum_{j = 1}^{L}\lambda^{*}(t_j) - \int_{t_0}^{t_{L}}\lambda^{*}(t^{\prime})dt^{\prime}  
 \end{multline} 
 
-\subsubsection*{Deep learning for irregular sampling}
-An irregularly sampled data can be denoted as $\mathcal{D}=\{\mathcal{U}_i\}_{i=1}^{N}$ where $N$ is number of samples and each sample is represented as series of tuple $\mathcal{U}_i={(t_p,k_p,v_p)}$ where $t_p, k_p, v_p$ represents the time, modality and value of $p$-th datapoint respectively.
+This marked case is basically an autoencoder for next mark prediction with a single dimension point process for timestamps only.
+
+\subsection{Deep learning for irregularly sampled data}
+An irregularly sampled data can be denoted as $\mathcal{D}=\{\mathcal{U}_i\}_{i=1}^{N}$ where $N$ is number of samples and each sample is represented as sequence of tuples $\mathcal{U}_i=\{(t_p,k_p,v_p)\}_{p=1}^{P}$ where $P$ is the total number of observations and $t_p, k_p, v_p$ represents the time, modality and value of $p$-th observation respectively.
+
+Recurrent neural networks can naturally deal with sequential data. These models can be made compatible with irregularly sampled data by adding a strategy to consider time.
 
 \section{Related Works}
 \label{sec:Related Works}
+
+We focus on Neural point process based on attention mechanism that can potentially addresses the problems of slow serial computing and loss of long-term information. In addition, attention weights bring interpretability and can show peer influences between events. Self-attentive Hawkes Process (SAHP) \cite*{zhangSelfAttentiveHawkesProcess2020} proposes a multihead attention network as the history encoder. In addition, they use a sofplus function that can capture both excitaion and inhibition effects. Similarly, Transformer Hawkes Process (THP) \cite*{zuoTransformerHawkesProcess2020a} adopts the transformer architecture \cite*{vaswaniAttentionAllYou2017} with time encodings for event embeddings. They have introduced softplus function that can only capture mutual excitations between events. In a interesting study, reseraches studied different combination of encoders (self attention and GRU) and decoders and simulated on various datasets for comparison \cite*{enguehardNeuralTemporalPoint2020}. They demonsterated that attention-based TPPs appear to transmit pertinent EHR information and perform favourably compared to existing models. One gap in the current literature is that they don't have any mean for encoding additional information that can be useful for characterization of CIFs.
+
+Recurrent neural networks have been modified to consider irregulary sampled time series. For example, GRU-D \cite*{cheRecurrentNeuralNetworks2018} adapts GRU to consider missingness pattern in the form of feature masks and time intervals to achieve better prediction results. RETAIN \cite*{choiRETAINInterpretablePredictive2017} is based on a two-level neural attention model that is specifically designed for EHRs data. SeFT \cite*{hornSetFunctionsTime2020} is based on recent advancements in differentiable set function learning, extremely parallelizable with a beneficial memory footprint, thus scaling well to large datasets of long time series and online monitoring scenarios. Their use of aggregation function is similar to Transformers that computes the embeddings of set elements independently, leading to lower runtime and memory complexity of O(n). Although, these models are nearly end-to-end that eliminates the need for imputation pipeline, it is still unclear how much they are affected by the missigness pattern in EHRs. In addition, they do not explicitly model the missingness pattern in the data.
+
+
+
+
+
 
 \section{Proposed Model}
 \label{sec:Proposed Model}
@@ -192,21 +219,36 @@ It is good practice to explain the significance of the figure in the caption.}
 \label{fig1}
 \end{figure*}
 
- The key advantage of our proposed model is to combine a  transformer-based event encoder (TEE) with a deep attention module (DAM) that can handle an irregularly sampled time series for a any downstream prediciton task. In this case the data is represented as $\mathcal{D}=\{\mathcal{S}_i,\mathcal{U}_i\}_{i=1}^{N}$. General schematic of TEDAM is depicted in FIG.
+The proposed model, TEEDAM, consists of two modules for encoding a dataset with both event sequence data and irregularly sampled time series. The schematic of the model is depicted in \ref*{fig1}.
 
-
+ The key advantage of our proposed model is to combine a transformer-based event encoder (TEE) with a deep attention module (DAM) that can handle an irregularly sampled time series for a any downstream prediciton task. The data is represented as $\mathcal{D}=\{(\mathcal{S}_i,\mathcal{U}_i)\}_{i=1}^{N}$, where $\mathcal{S}_i$ and $\mathcal{U}_i$ are event sequence data and irregular time series for the $i$-th sample.
 
 
 
 \subsection{Event Encoder}
-We use a similar transformer architecture [thp] for encoding events with minor modifications for event embedding.
+We use a transformer event encoder similar to THP \cite*{zuoTransformerHawkesProcess2020a} with minor modifications for event embedding.
+
+In the first step, we embed all event marks $E_{emb}=E \times W_{emb}$ where $E_i \in \mathbb{R}^{L \times M}$ is the binary encoding matrix of all event marks (multi-label or multi-class), and  $ W_{emb} \in  \mathbb{R}^{M \times d_{emb} }  $ is the trainable embedding matrix. In addition, we encode vector of timestamps $t=[t_1,t_2,...,t_L] $ to $Z=[z(t_1),z(t_2),...,z(t_L)]\in \mathbb{R}^{L \times d_{time}}$ using following transformation formula:
+
+\begin{equation}\label{eq:time-encoding}
+    [z(t_j)]_{k} = 
+     \begin{cases} 
+        \cos\left(  \frac{t_j}{\mathcal{T}^{(k-1)/d_t} }  \right) & \text{if } k \text{ is odd}\\
+        \sin\left(  \frac{t_j}{\mathcal{T}^{k/d_t} }  \right) & \text{if } k \text{ is even}
+
+        \end{cases} 
+\end{equation} 
+Here, $\mathcal{T}$ is representing maximum time scale. This is very similar to positional encodings in transformers where the index is substitued by the time stamp. In contrary to THP and original positional encoding that considers $d_{emb}=d_{time}$ and adds up time encoding to the event embedding, we propose to concatenate this two vectors:
+
+\begin{equation}
+    X_{ev}=[W_{emb}, Z] \in \mathbb{R}^{L \times (d_{emb}+t_{emb})}
+\end{equation}
 
 
-In the first step, we embed all event marks $E_{emb}=E \times W_{emb}$ where $E_i \in \mathbb{R}^{L \times M}$ is the binary encoding matrix of all event marks (multi-label or multi-class), and  $ W_{emb} \in  \mathbb{R}^{M \times d_{emb} }  $ is the trainable embedding matrix. 
 
-In the second step, timestamps should be encoded and added to the event embedding, however, we propose to concatenate time encodings that can lead to better characterization of conditional intensity functions. Finally, the input of the transformer encoder will be $X_{emb}=[E_{emb}, T_{emb}] \in \mathbb{R}^{L \times (d_{emb}+t_{emb})}$.
+% In the second step, timestamps should be encoded and added to the event embedding, however, we propose to concatenate time encodings that can lead to better characterization of conditional intensity functions. Finally, the input of the transformer encoder will be $X_{emb}=[E_{emb}, T_{emb}] \in \mathbb{R}^{L \times (d_{emb}+t_{emb})}$.
 
-Here, we use the standard transformer encoder similar to [vaswani] with masking matrix to prevent the model from looking into the future. we obtain the encoded matrix  $ H=(h_1, ..., h_j, ..., h_L) $ where $h_j$ containes the all available information until occurence of $j$-th event.
+Finally, we use the standard transformer encoder to encode embedded events $X_{emb}$ tothe encoded matrix  $ H=(h_1, ..., h_j, ..., h_L) $. It is important to use approporiate mask matrix to prevent information leakage from future to the past. In this case, $h_j$ containes the all available information until occurence of $j$-th event.
 
 
 
@@ -215,55 +257,61 @@ Here, we use the standard transformer encoder similar to [vaswani] with masking 
 
 \subsection{State Encoder}
 
-Similar to [setF], we use an attention-based aggregation approach for encoding all additional information. Each side information  $ (t_k, v_k, m_k) $ can be represented by $s_k=(z(t_k), v_k, m_k)$. we define attention $a(\mathcal{U}_k,s_k )$
+We use the a deep attention module \cite*{hornSetFunctionsTime2020} for encoding all additional information including irregularly sampled time series. Each observation of a sample can be represented by $u_k=(z(t_k), v_k, m_k)$ where $z(t_k)$ is the same time encoding similar to equation \ref{eq:time-encoding}.% we define attention $a(\mathcal{U}_k,s_k )$
 
-We define $\mathcal{U}_p$ to be the set of the first $p$ available information.
-The goal is to calculate $a(\mathcal{U}_p,s_k ), k \leq p$ that is the relevance of $k$-th observation $s_k$ to the first $p$ observed values $\mathcal{U}_p$.
+We define $\mathcal{U}_p$ to be the set of the first $p$ observations.
+The goal is to calculate the attention weight $a(\mathcal{U}_p,u_k ), k \leq p$ that is the relevance of $k$-th observation $s_k$ to the first $p$ observed values $\mathcal{U}_p$.
 This is achieved by computing an embedding of the set elements using a smaller set functions $f^{\prime}$, and projecting the concatenation of the set representation and the individual set element into d-dimensional space:
 
 
 
-\begin{equation}
-    f^{\prime}(\mathcal{U}_p) = g^{\prime} \left(  \frac{1}{|p|} \sum_{u_k \in \mathcal{U}_p}  h^{\prime}(u_k;\theta^{\prime}) ;\rho^{\prime}\right) 
+\begin{equation}\label{eq:fprime}
+    y^{\prime}_{p}=f^{\prime}(\mathcal{U}_p) = g^{\prime} \left(  \frac{1}{|p|} \sum_{u_k \in \mathcal{U}_p}  h^{\prime}(u_k;\theta^{\prime}) ;\rho^{\prime}\right) 
 \end{equation}
 
-Then we can compute key values using key matrix $W^k \in \mathbb{R}^{(d_g+d_s) \times d_{prod}}$
+Here, we compute the mean of first $p$ observations after passing first $p$ observations through a multilayer perceptron (MLP) nueral network ($h^{\prime}(u_k;\theta^{\prime})$). Finally, a second transformation using $g^{\prime}$ is performed to obtain embeddings $f^{\prime}(\mathcal{U}_p) \in \mathbb{R}^{d_{g^{\prime}}}$.
+
+
+Then we can compute key values ($ K_p$) using key matrix $W^k \in \mathbb{R}^{(d_{g^{\prime}}+d_s) \times d_{prod}}$:
 
 
 \begin{equation}
     K_p=[f^{\prime}(\mathcal{U}_p), u_p]^T W^K   
 \end{equation}
 
-using a query vector $w^q \in \mathbb{R}^{d_{prod}}$
+Then using a query vector $w^q \in \mathbb{R}^{d_{prod}}$, we compute the desired attnetion weight in this way:
 
-\begin{equation*}
+\begin{equation}
     a(\mathcal{U}_p,u_p)=  softmax(\frac{K_p.w^q}{\sqrt{d}  })
-\end{equation*}
+\end{equation}
 
 
-Finally, we compute a weighted aggregation of set elements:
+Finally, we compute a weighted aggregation of set elements using attention weights similar to equation \ref*{eq:fprime}:
 
 \begin{equation*}
-    z_p = f(\mathcal{U}_p) =     
+    y_p=f(\mathcal{U}_p) =     
     g\left(
-    \sum_{s_k \in \mathcal{U}_p}  a(\mathcal{U}_p,s_k)h(s_k;\theta);\rho 
+    \sum_{u_k \in \mathcal{U}_p}  a(\mathcal{U}_p,u_k)h(u_k;\theta);\rho 
     \right) 
 \end{equation*}
 
-we regard $z_p \in \mathbb{R}^{d_{\rho}}$ as the representation of state data until arrival of $p$-th datapoint.
+We regard $y_p \in \mathbb{R}^{d_g}$ as the representation of first $p$ observations.
+
+The matrix $Y=[y_1,y_2,...,y_P] \in \mathbb{R}^{P \times d_g}$ keeps the entire representions of the data. To use state information for CIFs characterization, we down-sample $Y$ to $Y^{\prime}=[y^{\prime}_1,y^{\prime}_2,...,y^{\prime}_L]  \in \mathbb{R}^{L \times d_g}$ where $ y^{\prime}_j=y_p \text{ where } p=\argmax_{t_p \leq t_j} p$.
+
+Without loss of generality, we can consider multiple heads by adding an additional dimension to keys and queries.
+
+% We need to combine event embeddings $ H_{L \times d_e}$ and state embeddings $Y_{P \times d_g}$, however, the length of each matrices does not match. As a result, we consider the reduced version of state matrix as below:
+
+% \begin{equation*}
+%     y^{\prime}_j=y_p \text{ where } p=\argmax_{t_p \leq t_j} p
+% \end{equation*}
 
 
-Finally, we need to combine event embeddings $ H_{L \times d_e}$ and state embeddings $Z_{P \times d_{\rho}}$, however, the length of each does not match. As a result, we consider the reduced version of state matrix as below:
-
-\begin{equation*}
-    Z^{red}_i=Z_p \text{ where } p=argmax(z \leq i)
-\end{equation*}
 
 
 
 
-
-Without loss of generality, we can consider multiple heads by adding an additional dimension to keys and queries.\\
 
 
 \subsection{All formulas}
@@ -294,14 +342,7 @@ Without loss of generality, we can consider multiple heads by adding an addition
 % \end{cases} 
 % \end{equation*}
 
-% \begin{equation}\label{eq:1}
-%     [z(t_j)]_{k} = 
-%      \begin{cases} 
-%         \sin\left(  \frac{t_j}{\mathcal{T}^{(k-1)/d_t} }  \right) & \text{if } k \text{ is odd}\\
-%         \sin\left(  \frac{t_j}{\mathcal{T}^{k/d_t} }  \right) & \text{if } k \text{ is even}
 
-%         \end{cases} 
-% \end{equation} 
 % \begin{equation}
 %     \lambda_k(t|\mathcal{H}_t ) = f_k\left(\alpha_k \frac{t-t_j}{t_j}+\mathbf{w}_k^T \mathbf{x}_{enc}(t_j)+\mathbf{y}_k^T \mathbf{s}_{enc}(t_j) +b_k   \right)
 % \end{equation}
@@ -319,26 +360,25 @@ In neural point process literature, many approaches have been propose to decode 
 %    \mu_{m,i+1}=gelu(h_{i+1}W_{m,\mu}), 
 % \end{gather*}
 
-\begin{gather*} 
-    \mu_{m,i+1}=gelu(h_{i+1}W_{m,\mu}  +  z_{i+1}W_{m,\mu}), \\ 
-    \eta_{m,i+1}=gelu(h_{i+1}W_{m,\eta}  +  z_{i+1}W_{m,\eta}), \\
-    \gamma_{m,i+1}=gelu(h_{i+1}W_{m,\gamma}  +  z_{i+1}W_{m,\gamma}),
-    \end{gather*}
+\begin{gather} 
+    \mu_{m,j}=gelu(h_{j}W_{m,\mu}  +  y^{\prime}_{j}W_{m,\mu}), \\ 
+    \eta_{m,j}=gelu(h_{j}W_{m,\eta}  +  y^{\prime}_{j}W_{m,\eta}), \\
+    \gamma_{m,j}=gelu(h_{j}W_{m,\gamma}  +  y^{\prime}_{j}W_{m,\gamma}),
+    \end{gather}
 
 Finally, we can express the intensity function as follows:
 
-\begin{multline*}
-    \lambda_m(t)=\text{softplus}(\mu_{m,i+1}+\\
-    (\eta_{m,i+1}- \mu_{m,i+1}) \exp(-\gamma_{m,i+1}(t-t_i))    ),
-\end{multline*}
+\begin{multline}
+    \lambda_m(t)=\text{softplus}(\mu_{m,j}+\\
+    (\eta_{m,j}- \mu_{m,j}) \exp(-\gamma_{m,j}(t-t_j))    ),
+\end{multline}
 
-for $t \in (t_i, t_{i+1}]$,where the $softplus$ is used to constrain thei intensity function to be positive.
+for $t \in (t_j, t_{j+1}]$,where the $softplus$ is used to constrain the intensity function to be positive.
 
 
 \subsection{Loss Function}
 
-We define a multi-objective loss function 
-$ \mathcal{L}   =   \mathcal{L}_{CIF}   +   \mathcal{L}_{mark}  +   \mathcal{L}_{state}$.
+We define a multi-objective loss function as $ \mathcal{L}   =   \mathcal{L}_{CIF}   +   \beta \mathcal{L}_{state}$., where $\mathcal{L}_{CIF}$ could be one of equations \ref*{eq:CIF-mc},\ref*{eq:CIF-ml} or \ref*{eq:CIF-marked}. $\mathcal{L}_{state}$ could be any desired loss functioin such as mean square error or corss entropy depending on the task. $\beta$ is a coefficient that can be optimized during hyperparamter tuning.
 
 
 
@@ -349,9 +389,6 @@ $ \mathcal{L}   =   \mathcal{L}_{CIF}   +   \mathcal{L}_{mark}  +   \mathcal{L}_
 
 We perform various experiments to show the effectiveness of each component in out model.
 \subsection*{Datasets}
-
-
-To show the utility of time concatenation and marked loss, we consider three datasets:
 
 \textbf{Synthea(\emph{Syn})}.
 We used the Synthea simulator (Walonoski et al., 2018) which generates patient-level EHRs using human expert curated Markov processes. Here, we reused the already processed version of this data by [ntpp].
@@ -372,125 +409,120 @@ This dataset contains clinical data of about 40k patients in ICU. Clinical data 
 
 
 
-\subsection*{Scenarios}
+\subsection*{Experimental Setup}
 
-To show the utility of time concatenation and marked-shp we report the metrics for SO, RT and SYN and compare it with 3 baselines: SAHP, THP, and GRU-CP.
+In the first series of experiments, we compare our proposed model for point process modeling in three scenarios:
 
-To show the utility of additional information for CIF modeling, we report NLL/events for P12 and P19 in the following conditions: TE, TE+DAM, TE+noise
+\begin{itemize}
+    \item AE(next mark) is a simple auto-encoder for predicting the next event from event embeddings without CIF characterization. As mentioned before, the log-likelihood of the point process will reduce to this one if we ignore the integral term.
+    \item PP(marked) is a marked point process (equation \ref*{eq:CIF-marked}) where we assume marks and time stamps are independent.
+    \item PP(multi-class or multi-label) uses multi-class or multi-label loss.
+\end{itemize}
 
-Finally, we investigate whether point process characterization can be useful in a downstream task or not. As each dataset consists of different hospitals and the pattern of irregular sampling might differ from hosptial to hospital, we assume different settings: single-center, multi-center and external evaluation.
+To show the utility of time concatenation, we also report the metrics for the summation case.
+
+In the second series, we want to investigate the effectiveness of state encoding in addition to the events for real-world EHR datasets P12 and P19 in a multi-label setting. We regard the occurrence of certain laboratory variables as events that are based on clinicians' decisions. As a result, we consider two scenarios:
+
+\begin{itemize}
+    \item TEE: Here, we only use the transformer event encoder for CIFs characterization.
+    \item TEE+DAM: we further encode time stamps and values of all clinical variables through the deep attention module (DAM).
+\end{itemize}
+
+In the last series of experiments, we investigate the utility of event encoding in a supervised learning task. In particular, we try to predict mortality and sepsis shock as a binary outcome in P12 and P19 respectively. As a result, we compare (TEE+DAM) against the baseline (DAM) for outcome prediction.
 
 
-
-\subsection*{Baselines}
-
-we compare our model against existing models: THP, SAHP, GRU-CP.     
 
 \subsection*{Metrics}
-We report the weighted AUPRC, AUROC of next predicted event as well as root mean sqaure error (RMSE) of next measurement interval.
-For evaluating the goodness of fit for the parameterized point process, we report normalized negative likelihood normalized by number of ocurred event (NLL/events). Furthermore, we can also evaluate the learned representation of each patient to predict the sepsis label in a binary classification task.
+We report log-likelihood normalized by the number of events (LL/\#events) as a goodness of fit for CIFs characterization \cite*{zhangSelfAttentiveHawkesProcess2020,zuoTransformerHawkesProcess2020a}. For the next event type prediction, we report the weighted measure of F1-score and area under the receiver operating characteristic curve (AUROC) in the multi-class and multi-label setting respectively. In the supervised learning task for binary prediction, we report F1-score and area under the precision-recall curve (AUPRC).
 
 \subsection*{Training Details}
 To be completed.
+
+
 \section{Results and Discussion}
 \label{sec:Results and Discussion}
 
 
 In this section, we present our results regarding the advantage of state and event encoding.
 
-\subsection{Effect of minor improvements}
+\subsection{Preliminary comparison}
 
 
-[TB1] shows the performance metrics of different datasets. 
-
-In general, time concatenation has lead to better F1-score/AUROC as well as LL/events compared to adding time. This idea can be used for future research in NTPPs for better characterization of CIFs.
-
-Another interesting fact is that in some datasets (A, B) next mark prediction has competetive performance compared to the point process loss. However, in many cases, point process loss significantly improves the performance metrics which indicates that modeling non-event likelihood could be beneficial. In addition, we propose to use next-mark prediction case as a baseline.
-
-Another interesting results is that independent assumption in the marked loss may lead to worse performance compared to MC/ML loss.
 
 
 % Table generated by Excel2LaTeX from sheet 'time concat'
 \begin{table*}[htbp]
-  \centering
-  \caption{Add caption}
-    \begin{tabular}{cccccccccccccc}
-    \toprule
-          &       & \multicolumn{8}{c}{TEEDAM}                                    &       &       &       &  \\
-\cmidrule{3-10}          &       & \multicolumn{2}{c}{AE (next mark)} &       & \multicolumn{2}{c}{PP(single+mark)} &       & \multicolumn{2}{c}{PP (MC/ML)} &       &       &       &  \\
-\cmidrule{3-4}\cmidrule{6-7}\cmidrule{9-10}    Dataset & Metric & concat & sum   &       & concat & sum   &       & concat & sum   & Latent & SAHP  & THP   & GRU-CP \\
-    \midrule
-    \multirow{2}[2]{*}{SO} & LL/\#events & ND    & ND    &       & -0.56 & -0.57 &       &       &       & -1.54 & -1.86 & -1.84 & NR \\
-          & F1-score & 27.86 & 28.79 &       & 29.10 & 28.95 &       &       &       & 28.34(0.19) & 24.12 & 23.89 & 26 \\
-    \midrule
-    \multirow{2}[2]{*}{ReTweet (MC)} & LL/\#events & ND    & ND    &       &       &       &       &       &       & -3.89 & -4.56 & -4.57 & NR \\
-          & F1-score &       &       &       &       &       &       &       &       & 58.29 & 53.92 & 53.86 & NR \\
-    \midrule
-    \multirow{2}[2]{*}{Synthea} & LL/\#events & ND    & ND    &       &       &       &       &       &       & ND    & ND    & ND    & NR \\
-          & AUROC &       &       &       &       &       &       &       &       & ND    & ND    & ND    & 0.85(.014) \\
-    \midrule
-    \multirow{2}[2]{*}{ReTweet (ML)} & LL/\#events & ND    & ND    &       & 1.86  & 1.4   &       &       &       & ND    & ND    & ND    & NR \\
-          & AUROC & 63.3  & 61.01 &       & 68.7  & 66.2  &       & 73.87 &       & ND    & ND    & ND    & 0.611(0.001) \\
-    \bottomrule
-    \end{tabular}%
-  \label{tab:addlabel}%
-\end{table*}%
-
-  
-  
-  
-
-
-
-
-
-\subsection{Negative Likelihood with state encoding}
-
-[TB2] shows the result for estimation of negative likelihood for the two datasets. 
-
-In general we can see that using state information results in lower NLL, however, it cannot neccessarily increase the AUROC for next time prediction.
-
-Another observation is that more data will lead to higher LL.
-
-
-
-
-% Table generated by Excel2LaTeX from sheet 'state enc'
-\begin{table}[htbp]
     \centering
     \caption{Add caption}
-      \begin{tabular}{ccccc}
+      \begin{tabular}{cccccccccccccc}
       \toprule
-            &       & \multicolumn{3}{c}{Model} \\
-  \cmidrule{3-5}    Dataset & setting & TE    & TE+DAM & TE+noise \\
+            &       & \multicolumn{8}{c}{TEEDAM}                                    &       &       &       &  \\
+  \cmidrule{3-10}          &       & \multicolumn{2}{c}{AE (next mark)} &       & \multicolumn{2}{c}{PP(single+mark)} &       & \multicolumn{2}{c}{PP (MC/ML)} &       &       &       &  \\
+  \cmidrule{3-4}\cmidrule{6-7}\cmidrule{9-10}    Dataset & Metric & concat & sum   &       & concat & sum   &       & concat & sum   & Latent & SAHP  & THP   & GRU-CP \\
       \midrule
-      \multirow{3}[2]{*}{P12} & sc    & -1.99 & -1.77 & -1.92 \\
-            & mc1   & -0.99 & -1.14 & -0.89 \\
-            & mc2   & -1.5  & -1.33 & -1.47 \\
+      \multirow{2}[2]{*}{SO (MC)} & LL/\#events & ND    & ND    &       & -0.56 & -0.57 &       & -2.04 & -2.05 & -1.54 & -1.86 & -1.84 & NR \\
+            & F1-score & 38.46 & 36.91 &       & 36.04 & 34.91 &       & \multicolumn{1}{r}{32.65} & 31.67 & 28.34(0.19) & 24.12 & 23.89 & 26 \\
       \midrule
-      \multirow{3}[2]{*}{P19} & sc    & 0.55 (0.02) & 0.55 (0.02) & 0.55 (0.02) \\
-            & mc1   & -1.81 & -1.62 & -1.69 \\
-            & mc2   & -2.77 & -2.38 & -2.67 \\
+      \multirow{2}[2]{*}{ReTweet (MC)} & LL/\#events & ND    & ND    &       &       &       &       &       &       & -3.89 & -4.56 & -4.57 & NR \\
+            & F1-score & 62.48 & 61.65 &       & 58.45 & 35.59 &       & 36.38 &       & 58.29 & 53.92 & 53.86 & NR \\
+      \midrule
+      \multirow{2}[2]{*}{Synthea (ML)} & LL/\#events & ND    & ND    &       &       &       &       &       &       & ND    & ND    & ND    & NR \\
+            & AUROC & 89.58 & 89.19 &       & 64.98 & 63.95 &       & 60.95 & 60.65 & ND    & ND    & ND    & 0.85(.014) \\
+      \midrule
+      \multirow{2}[2]{*}{ReTweet (ML)} & LL/\#events & ND    & ND    &       & 1.589 & 1.355 &       & -1.587 & -1.656 & ND    & ND    & ND    & NR \\
+            & AUROC & 69.12 & 67.86 &       & 62.5  & 60.4  &       & 73.9  & 71.8  & ND    & ND    & ND    & 0.611(0.001) \\
       \bottomrule
       \end{tabular}%
-    \label{tab:addlabel}%
-  \end{table}%
+    \label{tab:1}%
+  \end{table*}%
+  
+ 
+% Table generated by Excel2LaTeX from sheet 'state enc'
+\begin{table*}[htbp]
+    \centering
+    \caption{Add caption}
+      \begin{tabular}{ccccccccc}
+      \toprule
+      \toprule
+            &       & \multicolumn{3}{c}{LL/\#Events} &       & \multicolumn{3}{c}{AUROC} \\
+  \cmidrule{3-5}\cmidrule{7-9}    Dataset & setting & TEE   & TEE+DAM & TEE+noise &       & TEE   & TEE+DAM & TEE+noise \\
+      \midrule
+      \multirow{3}[2]{*}{P12} & sc    & -0.2345 & \textbf{-0.0019} & 0.2365 &       & 67.76 & \textbf{71.66} & 69.99 \\
+            & mc1   & 0.1984 & \textbf{0.3623} & 0.2252 &       & 74.88 & \textbf{81.39} & 74.52 \\
+            & mc2   & 0.1634 & \textbf{0.2337} & 0.0858 &       & 78.67 & \textbf{80.24} & 72.03 \\
+      \midrule
+      \multirow{3}[2]{*}{P19} & sc    & -0.9734 & \textbf{-0.8531} & -1.047 &       & 79.3  & \textbf{82.52} & 72.13 \\
+            & mc1   & -0.9182 & \textbf{-0.7641} & -0.937 &       & 77.58 & \textbf{87.09} & 73.11 \\
+            & mc2   & -1.199 & \textbf{-1.04} & -1.135 &       & 64    & \textbf{73.31} & 64.96 \\
+      \bottomrule
+      \bottomrule
+      \end{tabular}%
+    \label{tab:2}%
+  \end{table*}%
+
+Table \ref{tab:1} shows the performance metrics of TEEDAM for different datasets in various scenarios. We can see that in most cases time concatenation leads to better results in terms of LL/\#events and F1-score/AUROC while adding time encodings to the event embeddings is the default practice in the literature \cite*{zhangSelfAttentiveHawkesProcess2020,zuoTransformerHawkesProcess2020a}.
+
+Another interesting fact is that the simple auto-encoder for next event type prediction achieves better results for SO,RT(MC) and SYN(ML) compared to the point process scenario. These datasets have been widely used in the point process literature to show the effectiveness of point process, however, we show that this simple baseline may perform better for some datasets.
+
+RT(MC) is the only dataset in which the point process with multi-label loss (equation \ref*{eq:CIF-ml}) performs better indicating the real advantage of modeling non-event likelihood of point process in this dataset. In general, we would recommend to compare future works in this area with this simple baseline.
+
+
+\subsection{State encoding for CIF characterization}
+
+
+  
   
 
 
-
-
-can u provide one example patient?
-
-\subsection{Downstream task}
-
-[TB3] indicates the result for Mortality/sepsis prediction in different settings and hospital centers.
-
-In some cases, incorporating event embeddings can lead to better performance.
+Table \ref*{tab:2} shows the result for the utility of state encodings for the estimation of negative likelihood. We see that in all cases, state encoding leads to higher AUROC for the next event type prediction and LL/\#event as well. It is intuitive that in a hospital, the absolute value of patient states can be useful for ordering future laboratory events. We have evaluated our model in a healthcare database, however, it can be further evaluated on other event sequence data where additional information is available.
 
 
 
+\subsection{Event encoding in supervised learning}
 
+Table \ref*{tab:3} indicates the result for Mortality/sepsis prediction task across different settings and hospital centers. Generally, we can see that in the mc1 setting, has the best performance because of the larger training dataset from other centers and the test center. In addition, event encoding module is useful for 2/5 cases while in 1/5 cases degrades the performance.
+
+In general, it might seem problematic to rely on the missingness pattern for outcome prediction as it can hurt generalizability when transferring to a new environment with a different pattern. We regard this approach as a double-edged sword that could improve performance in some cases, especially in a new environment with a similar pattern, but it can also degrade the performance if the target environment has a completely different pattern.
 
 
 
@@ -524,7 +556,7 @@ In some cases, incorporating event embeddings can lead to better performance.
             & seft  & -     & 0.55 (0.02) & 0.55 (0.02) &       & 0.55 (0.02) & 0.55 (0.02) &       & 0.55 (0.02) & 0.55 (0.02) \\
       \bottomrule
       \end{tabular}%
-    \label{tab:addlabel}%
+    \label{tab:3}%
   \end{table*}%
   
   
@@ -539,7 +571,15 @@ In some cases, incorporating event embeddings can lead to better performance.
 
 
 \subsection{Learned representions}
-Fig 1 visualizes the tsne plot for the two scenarios.
+
+\begin{figure*}[!t]
+    \centerline{\includesvg[inkscapelatex=false]{images/tsne.svg}}
+    \caption{Magnetization as a function of applied field.
+    It is good practice to explain the significance of the figure in the caption.}
+    \label{fig1}
+    \end{figure*}
+
+Fig 1 visualizes the t-SNE plot for the learned embeddings of [] with and without event encodings. Besides, we visualize the sampling pattern of an example patient and its neighbors. As can be seen, in TEEDAM neighbors have more similar pattern compared to the baseline. Although event encoding does not necessarily leads to better performance, we can learn a better representation that considers both absolute values and the patterns. One application could be time series generation.
 
 
 \subsection{Model interpretability}
@@ -549,31 +589,14 @@ Fig 1 shows the attention mechanism
 
 
 
-\subsection{Likelihood estimation}
 
-Although CIF does not improve mark prediction, it has led to better representation of patient for downstream task such as sepsis prediction.
-
-In addition, we can interpret some of learned CIF patterns.
-
-explain the effect of time concatenation in SO dataset
-
-
-
-tsne of learned representation. 4 modes:
-
-
-\begin{itemize}
-    \item (DA,TE)->(Mark, CIF)
-\end{itemize}
-
-attention of DA for sepsis prediction
-
-attention matrix of events for SO dataset
 
 \section{Conclusion}
 \label{sec:Conclusion}
 
+data generation with similar patterns
 
+pattern similarity index
 
 
 

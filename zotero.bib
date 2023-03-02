@@ -1,3 +1,53 @@
+@article{cheRecurrentNeuralNetworks2018,
+  title = {Recurrent {{Neural Networks}} for {{Multivariate Time Series}} with {{Missing Values}}},
+  author = {Che, Zhengping and Purushotham, Sanjay and Cho, Kyunghyun and Sontag, David and Liu, Yan},
+  date = {2018-12},
+  journaltitle = {Scientific Reports},
+  shortjournal = {Sci Rep},
+  volume = {8},
+  number = {1},
+  pages = {6085},
+  issn = {2045-2322},
+  doi = {10.1038/s41598-018-24271-9},
+  langid = {english},
+  annotation = {971 citations (Semantic Scholar/DOI) [2022-05-03]},
+  file = {C\:\\Users\\hokarami\\Zotero\\storage\\R4K8EF48\\Che et al. - 2018 - Recurrent Neural Networks for Multivariate Time Se.pdf}
+}
+
+@inproceedings{choiDoctorAIPredicting2016,
+  title = {Doctor {{AI}}: {{Predicting Clinical Events}} via {{Recurrent Neural Networks}}},
+  shorttitle = {Doctor {{AI}}},
+  booktitle = {Proceedings of the 1st {{Machine Learning}} for {{Healthcare Conference}}},
+  author = {Choi, Edward and Bahadori, Mohammad Taha and Schuetz, Andy and Stewart, Walter F. and Sun, Jimeng},
+  date = {2016-12-10},
+  pages = {301--318},
+  publisher = {{PMLR}},
+  issn = {1938-7228},
+  url = {https://proceedings.mlr.press/v56/Choi16.html},
+  urldate = {2022-01-03},
+  abstract = {Leveraging large historical data in electronic health record (EHR), we developed Doctor AI, a generic predictive model that covers observed medical conditions and medication uses. Doctor AI is a temporal model using recurrent neural networks (RNN) and was developed and applied to longitudinal time stamped EHR data from 260K patients and 2,128 physicians over 8 years. Encounter records (e.g. diagnosis codes, medication codes or procedure codes) were input to RNN to predict (all) the diagnosis and medication categories for a subsequent visit. Doctor AI assesses the history of patients to make multilabel predictions (one label for each diagnosis or medication category). Based on separate blind test set evaluation, Doctor AI can perform differential diagnosis with up to 79\% recall@30, significantly higher than several baselines. Moreover, we demonstrate great generalizability of Doctor AI by adapting the resulting models from one institution to another without losing substantial accuracy.},
+  eventtitle = {Machine {{Learning}} for {{Healthcare Conference}}},
+  langid = {english},
+  annotation = {00000},
+  file = {C\:\\Users\\hokarami\\Zotero\\storage\\7H9K7UEP\\Choi et al. - 2016 - Doctor AI Predicting Clinical Events via Recurren.pdf}
+}
+
+@unpublished{choiRETAINInterpretablePredictive2017,
+  title = {{{RETAIN}}: {{An Interpretable Predictive Model}} for {{Healthcare}} Using {{Reverse Time Attention Mechanism}}},
+  shorttitle = {{{RETAIN}}},
+  author = {Choi, Edward and Bahadori, Mohammad Taha and Kulas, Joshua A. and Schuetz, Andy and Stewart, Walter F. and Sun, Jimeng},
+  date = {2017-02-26},
+  eprint = {1608.05745},
+  eprinttype = {arxiv},
+  primaryclass = {cs},
+  url = {http://arxiv.org/abs/1608.05745},
+  urldate = {2022-01-03},
+  abstract = {Accuracy and interpretability are two dominant features of successful predictive models. Typically, a choice must be made in favor of complex black box models such as recurrent neural networks (RNN) for accuracy versus less accurate but more interpretable traditional models such as logistic regression. This tradeoff poses challenges in medicine where both accuracy and interpretability are important. We addressed this challenge by developing the REverse Time AttentIoN model (RETAIN) for application to Electronic Health Records (EHR) data. RETAIN achieves high accuracy while remaining clinically interpretable and is based on a two-level neural attention model that detects influential past visits and significant clinical variables within those visits (e.g. key diagnoses). RETAIN mimics physician practice by attending the EHR data in a reverse time order so that recent clinical visits are likely to receive higher attention. RETAIN was tested on a large health system EHR dataset with 14 million visits completed by 263K patients over an 8 year period and demonstrated predictive accuracy and computational scalability comparable to state-of-the-art methods such as RNN, and ease of interpretability comparable to traditional models.},
+  archiveprefix = {arXiv},
+  annotation = {00816},
+  file = {C\:\\Users\\hokarami\\Zotero\\storage\\E32XWUZT\\Choi et al. - 2017 - RETAIN An Interpretable Predictive Model for Heal.pdf;C\:\\Users\\hokarami\\Zotero\\storage\\SGWTXCH6\\Choi et al. - 2017 - RETAIN An Interpretable Predictive Model for Heal.pdf;C\:\\Users\\hokarami\\Zotero\\storage\\VVWKMZYD\\1608.html;C\:\\Users\\hokarami\\Zotero\\storage\\XXJ9GPXW\\1608.html}
+}
+
 @inproceedings{duRecurrentMarkedTemporal2016,
   title = {Recurrent {{Marked Temporal Point Processes}}: {{Embedding Event History}} to {{Vector}}},
   shorttitle = {Recurrent {{Marked Temporal Point Processes}}},
@@ -32,6 +82,57 @@
   file = {C\:\\Users\\hokarami\\Zotero\\storage\\L89R3ZXZ\\Enguehard et al_2020_Neural Temporal Point Processes For Modelling Electronic Health Records.pdf}
 }
 
+@inproceedings{futomaLearningDetectSepsis2017,
+  title = {Learning to {{Detect Sepsis}} with a {{Multitask Gaussian Process RNN Classifier}}},
+  booktitle = {Proceedings of the 34th {{International Conference}} on {{Machine Learning}}},
+  author = {Futoma, Joseph and Hariharan, Sanjay and Heller, Katherine},
+  date = {2017-07-17},
+  pages = {1174--1182},
+  publisher = {{PMLR}},
+  issn = {2640-3498},
+  url = {https://proceedings.mlr.press/v70/futoma17a.html},
+  urldate = {2021-12-30},
+  abstract = {We present a scalable end-to-end classifier that uses streaming physiological and medication data to accurately predict the onset of sepsis, a life-threatening complication from infections that has high mortality and morbidity. Our proposed framework models the multivariate trajectories of continuous-valued physiological time series using multitask Gaussian processes, seamlessly accounting for the high uncertainty, frequent missingness, and irregular sampling rates typically associated with real clinical data. The Gaussian process is directly connected to a black-box classifier that predicts whether a patient will become septic, chosen in our case to be a recurrent neural network to account for the extreme variability in the length of patient encounters. We show how to scale the computations associated with the Gaussian process in a manner so that the entire system can be discriminatively trained end-to-end using backpropagation. In a large cohort of heterogeneous inpatient encounters at our university health system we find that it outperforms several baselines at predicting sepsis, and yields 19.4\textbackslash\% and 55.5\textbackslash\% improved areas under the Receiver Operating Characteristic and Precision Recall curves as compared to the NEWS score currently used by our hospital.},
+  eventtitle = {International {{Conference}} on {{Machine Learning}}},
+  langid = {english},
+  file = {C\:\\Users\\hokarami\\Zotero\\storage\\BJDAYCAV\\Futoma et al. - 2017 - Learning to Detect Sepsis with a Multitask Gaussia.pdf}
+}
+
+@article{ghassemiDatadrivenApproachOptimized2014,
+  title = {A Data-Driven Approach to Optimized Medication Dosing: A Focus on Heparin},
+  shorttitle = {A Data-Driven Approach to Optimized Medication Dosing},
+  author = {Ghassemi, Mohammad M. and Richter, Stefan E. and Eche, Ifeoma M. and Chen, Tszyi W. and Danziger, John and Celi, Leo A.},
+  date = {2014-09-01},
+  journaltitle = {Intensive Care Medicine},
+  shortjournal = {Intensive Care Med},
+  volume = {40},
+  number = {9},
+  pages = {1332--1339},
+  issn = {1432-1238},
+  doi = {10.1007/s00134-014-3406-5},
+  abstract = {To demonstrate a novel method that utilizes retrospective data to develop statistically optimal dosing strategies for medications with sensitive therapeutic windows. We illustrate our approach on intravenous unfractionated heparin, a medication which typically considers only patient weight and is frequently misdosed.},
+  langid = {english},
+  file = {C\:\\Users\\hokarami\\Zotero\\storage\\TJNH6SVC\\Ghassemi et al. - 2015 - A Multivariate Timeseries Modeling Approach to Sev.pdf}
+}
+
+@article{ghassemiReviewChallengesOpportunities2020,
+  title = {A {{Review}} of {{Challenges}} and {{Opportunities}} in {{Machine Learning}} for {{Health}}},
+  author = {Ghassemi, Marzyeh and Naumann, Tristan and Schulam, Peter and Beam, Andrew L. and Chen, Irene Y. and Ranganath, Rajesh},
+  date = {2020-05-30},
+  journaltitle = {AMIA Summits on Translational Science Proceedings},
+  shortjournal = {AMIA Jt Summits Transl Sci Proc},
+  volume = {2020},
+  eprint = {32477638},
+  eprinttype = {pmid},
+  pages = {191--200},
+  issn = {2153-4063},
+  url = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7233077/},
+  urldate = {2021-12-31},
+  abstract = {Modern electronic health records (EHRs) provide data to answer clinically meaningful questions. The growing data in EHRs makes healthcare ripe for the use of machine learning. However, learning in a clinical setting presents unique challenges that complicate the use of common machine learning methodologies. For example, diseases in EHRs are poorly labeled, conditions can encompass multiple underlying endotypes, and healthy individuals are underrepresented. This article serves as a primer to illuminate these challenges and highlights opportunities for members of the machine learning community to contribute to healthcare.},
+  pmcid = {PMC7233077},
+  file = {C\:\\Users\\hokarami\\Zotero\\storage\\99WKXRNS\\Ghassemi et al. - 2020 - A Review of Challenges and Opportunities in Machin.pdf}
+}
+
 @inproceedings{hornSetFunctionsTime2020,
   title = {Set {{Functions}} for {{Time Series}}},
   booktitle = {Proceedings of the 37th {{International Conference}} on {{Machine Learning}}},
@@ -48,6 +149,25 @@
   file = {C\:\\Users\\hokarami\\Zotero\\storage\\ETCDFTT8\\Horn et al. - 2020 - Set Functions for Time Series.pdf;C\:\\Users\\hokarami\\Zotero\\storage\\V6B5HGHU\\Horn et al_2020_Set Functions for Time Series.pdf}
 }
 
+@misc{linEmpiricalStudyExtensive2021,
+  title = {An {{Empirical Study}}: {{Extensive Deep Temporal Point Process}}},
+  shorttitle = {An {{Empirical Study}}},
+  author = {Lin, Haitao and Tan, Cheng and Wu, Lirong and Gao, Zhangyang and Li, Stan Z.},
+  date = {2021-12-21},
+  number = {arXiv:2110.09823},
+  eprint = {2110.09823},
+  eprinttype = {arxiv},
+  primaryclass = {cs, stat},
+  publisher = {{arXiv}},
+  url = {http://arxiv.org/abs/2110.09823},
+  urldate = {2022-06-27},
+  abstract = {Temporal point process as the stochastic process on continuous domain of time is commonly used to model the asynchronous event sequence featuring with occurrence timestamps. Thanks to the strong expressivity of deep neural networks, they are emerging as a promising choice for capturing the patterns in asynchronous sequences, in the context of temporal point process. In this paper, we first review recent research emphasis and difficulties in modeling asynchronous event sequences with deep temporal point process, which can be concluded into four fields: encoding of history sequence, formulation of conditional intensity function, relational discovery of events and learning approaches for optimization. We introduce most of recently proposed models by dismantling them into the four parts, and conduct experiments by remodularizing the first three parts with the same learning strategy for a fair empirical evaluation. Besides, we extend the history encoders and conditional intensity function family, and propose a Granger causality discovery framework for exploiting the relations among multi-types of events. Because the Granger causality can be represented by the Granger causality graph, discrete graph structure learning in the framework of Variational Inference is employed to reveal latent structures of the graph. Further experiments show that the proposed framework with latent graph discovery can both capture the relations and achieve an improved fitting and predicting performance.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,review,Statistics - Applications,Statistics - Methodology},
+  annotation = {0 citations (Semantic Scholar/arXiv) [2022-06-27]},
+  file = {C\:\\Users\\hokarami\\Zotero\\storage\\3V5B7DN6\\Lin et al_2021_An Empirical Study.pdf;C\:\\Users\\hokarami\\Zotero\\storage\\R87R9TRF\\2110.html}
+}
+
 @inproceedings{meiNeuralHawkesProcess2017,
   title = {The {{Neural Hawkes Process}}: {{A Neurally Self-Modulating Multivariate Point Process}}},
   shorttitle = {The {{Neural Hawkes Process}}},
@@ -62,6 +182,20 @@
   file = {C\:\\Users\\hokarami\\Zotero\\storage\\NR4DXBI3\\supp.pdf;C\:\\Users\\hokarami\\Zotero\\storage\\S8LIWHF4\\Mei_Eisner_2017_The Neural Hawkes Process.pdf}
 }
 
+@unpublished{raghuDeepReinforcementLearning2017,
+  title = {Deep {{Reinforcement Learning}} for {{Sepsis Treatment}}},
+  author = {Raghu, Aniruddh and Komorowski, Matthieu and Ahmed, Imran and Celi, Leo and Szolovits, Peter and Ghassemi, Marzyeh},
+  date = {2017-11-27},
+  eprint = {1711.09602},
+  eprinttype = {arxiv},
+  primaryclass = {cs},
+  url = {http://arxiv.org/abs/1711.09602},
+  urldate = {2021-12-30},
+  abstract = {Sepsis is a leading cause of mortality in intensive care units and costs hospitals billions annually. Treating a septic patient is highly challenging, because individual patients respond very differently to medical interventions and there is no universally agreed-upon treatment for sepsis. In this work, we propose an approach to deduce treatment policies for septic patients by using continuous state-space models and deep reinforcement learning. Our model learns clinically interpretable treatment policies, similar in important aspects to the treatment policies of physicians. The learned policies could be used to aid intensive care clinicians in medical decision making and improve the likelihood of patient survival.},
+  archiveprefix = {arXiv},
+  file = {C\:\\Users\\hokarami\\Zotero\\storage\\UZAG8T83\\Raghu et al. - 2017 - Deep Reinforcement Learning for Sepsis Treatment.pdf;C\:\\Users\\hokarami\\Zotero\\storage\\5LPMW6PE\\1711.html}
+}
+
 @inproceedings{salehiLearningHawkesProcesses2019,
   title = {Learning {{Hawkes Processes}} from a Handful of Events},
   booktitle = {Advances in {{Neural Information Processing Systems}}},
@@ -73,6 +207,53 @@
   urldate = {2022-05-29},
   abstract = {Learning the causal-interaction network of multivariate Hawkes processes is a useful task in many applications. Maximum-likelihood estimation is the most common approach to solve the problem in the presence of long observation sequences. However, when only short sequences are available, the lack of data amplifies the risk of overfitting and regularization becomes critical. Due to the challenges of hyper-parameter tuning, state-of-the-art methods only parameterize regularizers by a single shared hyper-parameter, hence limiting the power of representation of the model. To solve both issues, we develop in this work an efficient algorithm based on variational expectation-maximization. Our approach is able to optimize over an extended set of hyper-parameters. It is also able to take into account the uncertainty in the model parameters by learning a posterior distribution over them. Experimental results on both synthetic and real datasets show that our approach significantly outperforms state-of-the-art methods under short observation sequences.},
   file = {C\:\\Users\\hokarami\\Zotero\\storage\\DJG8NDM6\\Salehi et al_2019_Learning Hawkes Processes from a handful of events.pdf}
+}
+
+@inproceedings{vaswaniAttentionAllYou2017,
+  title = {Attention Is {{All}} You {{Need}}},
+  booktitle = {Advances in {{Neural Information Processing Systems}}},
+  author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, Łukasz and Polosukhin, Illia},
+  date = {2017},
+  volume = {30},
+  publisher = {{Curran Associates, Inc.}},
+  url = {https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html},
+  urldate = {2022-07-07},
+  abstract = {The dominant sequence transduction models are based on complex recurrent orconvolutional neural networks in an encoder and decoder configuration. The best performing such models also connect the encoder and decoder through an attentionm echanisms.  We propose a novel, simple network architecture based solely onan attention mechanism, dispensing with recurrence and convolutions entirely.Experiments on two machine translation tasks show these models to be superiorin quality while being more parallelizable and requiring significantly less timeto train. Our single model with 165 million parameters, achieves 27.5 BLEU onEnglish-to-German translation, improving over the existing best ensemble result by over 1 BLEU. On English-to-French translation, we outperform the previoussingle state-of-the-art with model by 0.7 BLEU, achieving a BLEU score of 41.1.},
+  file = {C\:\\Users\\hokarami\\Zotero\\storage\\5ZNDVKFI\\Vaswani et al_2017_Attention is All you Need.pdf}
+}
+
+@inproceedings{xuLearningGrangerCausality2016,
+  title = {Learning {{Granger Causality}} for {{Hawkes Processes}}},
+  booktitle = {Proceedings of {{The}} 33rd {{International Conference}} on {{Machine Learning}}},
+  author = {Xu, Hongteng and Farajtabar, Mehrdad and Zha, Hongyuan},
+  date = {2016-06-11},
+  pages = {1717--1726},
+  publisher = {{PMLR}},
+  issn = {1938-7228},
+  url = {https://proceedings.mlr.press/v48/xuc16.html},
+  urldate = {2022-04-20},
+  abstract = {Learning Granger causality for general point processes is a very challenging task. We propose an effective method learning Granger causality for a special but significant type of point processes — Hawkes processes. Focusing on Hawkes processes, we reveal the relationship between Hawkes process’s impact functions and its Granger causality graph. Specifically, our model represents impact functions using a series of basis functions and recovers the Granger causality graph via group sparsity of the impact functions’ coefficients. We propose an effective learning algorithm combining a maximum likelihood estimator (MLE) with a sparse-group-lasso (SGL) regularizer. Additionally, the pairwise similarity between the dimensions of the process is considered when their clustering structure is available. We analyze our learning method and discuss the selection of the basis functions. Experiments on synthetic data and real-world data show that our method can learn the Granger causality graph and the triggering patterns of Hawkes processes simultaneously.},
+  eventtitle = {International {{Conference}} on {{Machine Learning}}},
+  langid = {english},
+  file = {C\:\\Users\\hokarami\\Zotero\\storage\\2AR4F4GV\\Xu et al_2016_Learning Granger Causality for Hawkes Processes.pdf}
+}
+
+@article{yoonAnonymizationDataSynthesis2020,
+  title = {Anonymization {{Through Data Synthesis Using Generative Adversarial Networks}} ({{ADS-GAN}})},
+  author = {Yoon, Jinsung and Drumright, Lydia N. and van der Schaar, Mihaela},
+  options = {useprefix=true},
+  date = {2020-08},
+  journaltitle = {IEEE Journal of Biomedical and Health Informatics},
+  volume = {24},
+  number = {8},
+  pages = {2378--2388},
+  issn = {2168-2208},
+  doi = {10.1109/JBHI.2020.2980262},
+  abstract = {The medical and machine learning communities are relying on the promise of artificial intelligence (AI) to transform medicine through enabling more accurate decisions and personalized treatment. However, progress is slow. Legal and ethical issues around unconsented patient data and privacy is one of the limiting factors in data sharing, resulting in a significant barrier in accessing routinely collected electronic health records (EHR) by the machine learning community. We propose a novel framework for generating synthetic data that closely approximates the joint distribution of variables in an original EHR dataset, providing a readily accessible, legally and ethically appropriate solution to support more open data sharing, enabling the development of AI solutions. In order to address issues around lack of clarity in defining sufficient anonymization, we created a quantifiable, mathematical definition for “identifiability”. We used a conditional generative adversarial networks (GAN) framework to generate synthetic data while minimize patient identifiability that is defined based on the probability of re-identification given the combination of all data on any individual patient. We compared models fitted to our synthetically generated data to those fitted to the real data across four independent datasets to evaluate similarity in model performance, while assessing the extent to which original observations can be identified from the synthetic data. Our model, ADS-GAN, consistently outperformed state-of-the-art methods, and demonstrated reliability in the joint distributions. We propose that this method could be used to develop datasets that can be made publicly available while considerably lowering the risk of breaching patient confidentiality.},
+  eventtitle = {{{IEEE Journal}} of {{Biomedical}} and {{Health Informatics}}},
+  keywords = {anonymization,electronic health records,Gallium nitride,generative adversarial networks,Generative adversarial networks,Generators,identifiability,Machine learning,Medical services,Synthetic data generation},
+  annotation = {43 citations (Semantic Scholar/DOI) [2022-09-07]},
+  file = {C\:\\Users\\hokarami\\Zotero\\storage\\TQ5HGXB4\\Yoon et al_2020_Anonymization Through Data Synthesis Using Generative Adversarial Networks.pdf;C\:\\Users\\hokarami\\Zotero\\storage\\4GNEG9MM\\9034117.html}
 }
 
 @inproceedings{zhangCAUSELearningGranger2020,

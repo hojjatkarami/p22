@@ -4,6 +4,11 @@
             "language": "latex",
             "scheme": "file",
             "pattern": "generic-color-brief.tex"
+        },
+        {
+            "language": "latex",
+            "scheme": "file",
+            "pattern": "Manuscript_v1.tex"
         }
     ]
 }
