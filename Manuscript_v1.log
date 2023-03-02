@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.31)  2 MAR 2023 16:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.31)  2 MAR 2023 16:58
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **c:/DATA/Tasks/220704/Alternate-Transactions-Articles-LaTeX-template/Manuscript_v1.tex
@@ -251,8 +251,16 @@ Package pdftexcmds Info: \pdfdraftmode found.
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ) (c:/texlive/2022/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
-Package shellesc Info: Restricted shell escape enabled on input line 77.
-)
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+) (c:/texlive/2022/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+ (c:/texlive/2022/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+ (c:/texlive/2022/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)) (c:/texlive/2022/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+))
 \c@svg@param@lastpage=\count288
 \svg@box=\box55
 \c@svg@param@currpage=\count289
@@ -618,20 +626,20 @@ Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
  (./Manuscript_v1.aux)
 \openout1 = `Manuscript_v1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
  (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count434
@@ -650,10 +658,18 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (c:/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-))
+)) (|'inkscape' -V )
+
+Package svg Warning: No version of Inkscape was detected by invoking
+(svg)                `inkscape -V'
+(svg)                so the Inkscape export will fail quite sure as the
+(svg)                command is probably unknown to your OS. You could set
+(svg)                `inkscapeversion=<version>' manually but this is very
+(svg)                unlikely to work on input line 33.
+
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
- (c:/texlive/2022/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+(c:/texlive/2022/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2022/07/12 v3.18b biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
@@ -665,34 +681,34 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Manuscript_v1.bbl' not found.
 
 No file Manuscript_v1.bbl.
-Package biblatex Info: Reference section=0 on input line 32.
-Package biblatex Info: Reference segment=0 on input line 32.
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 48.
+Package biblatex Info: Reference section=0 on input line 33.
+Package biblatex Info: Reference segment=0 on input line 33.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 49.
 (c:/texlive/2022/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <11> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 48.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 48.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 49.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 49.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 48.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-Package xcolor Warning: Incompatible color definition on input line 51.
+Package xcolor Warning: Incompatible color definition on input line 52.
 
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <9> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 51.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 52.
 
-Package xcolor Warning: Incompatible color definition on input line 56.
+Package xcolor Warning: Incompatible color definition on input line 57.
 
 
-Package xcolor Warning: Incompatible color definition on input line 61.
+Package xcolor Warning: Incompatible color definition on input line 62.
 
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 61.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 62.
 (c:/texlive/2022/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
@@ -702,8 +718,8 @@ Package epstopdf Info: Source file: <LOGO-generic-web.eps>
 (epstopdf)             Output file: <LOGO-generic-web-eps-converted-to.pdf>
 (epstopdf)                    date: 2022-12-01 11:10:01
 (epstopdf)                    size: 6716 bytes
-(epstopdf)             Command: <repstopdf --outfile=LOGO-generic-web-eps-converted-to.pdf LOGO-generic-web.eps>
-(epstopdf)             \includegraphics on input line 86.
+(epstopdf)             Command: <epstopdf --outfile=LOGO-generic-web-eps-converted-to.pdf LOGO-generic-web.eps>
+(epstopdf)             \includegraphics on input line 87.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -711,10 +727,10 @@ pdfTeX warning: pdflatex.exe (file ./LOGO-generic-web-eps-converted-to.pdf): PDF
 <LOGO-generic-web-eps-converted-to.pdf, id=4, 55.20625pt x 34.1275pt>
 File: LOGO-generic-web-eps-converted-to.pdf Graphic file (type pdf)
 <use LOGO-generic-web-eps-converted-to.pdf>
-Package pdftex.def Info: LOGO-generic-web-eps-converted-to.pdf  used on input line 86.
+Package pdftex.def Info: LOGO-generic-web-eps-converted-to.pdf  used on input line 87.
 (pdftex.def)             Requested size: 48.0pt x 29.674pt.
 
-Package xcolor Warning: Incompatible color definition on input line 86.
+Package xcolor Warning: Incompatible color definition on input line 87.
 
 
 Overfull \hbox (259.0pt too wide) has occurred while \output is active
@@ -739,297 +755,320 @@ Overfull \vbox (25.674pt too high) has occurred while \output is active []
 
  <./LOGO-generic-web-eps-converted-to.pdf>]
 
-Package xcolor Warning: Incompatible color definition on input line 105.
+Package xcolor Warning: Incompatible color definition on input line 106.
 
 
-Package xcolor Warning: Incompatible color definition on input line 117.
+Package xcolor Warning: Incompatible color definition on input line 118.
 
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 117.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 118.
 
-LaTeX Warning: Citation 'xuLearningGrangerCausality2016' on page 2 undefined on input line 134.
-
-
-Package xcolor Warning: Incompatible color definition on input line 136.
+LaTeX Warning: Citation 'xuLearningGrangerCausality2016' on page 2 undefined on input line 135.
 
 
-LaTeX Warning: Citation 'zuoTransformerHawkesProcess2020a' on page 2 undefined on input line 140.
+Package xcolor Warning: Incompatible color definition on input line 137.
 
 
-Package xcolor Warning: Incompatible color definition on input line 146.
+LaTeX Warning: Citation 'zuoTransformerHawkesProcess2020a' on page 2 undefined on input line 141.
 
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 163.
+
+Package xcolor Warning: Incompatible color definition on input line 147.
+
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 164.
 (c:/texlive/2022/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 )
 
-Package xcolor Warning: Incompatible color definition on input line 163.
+Package xcolor Warning: Incompatible color definition on input line 164.
 
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [2]
 
-LaTeX Warning: Citation 'enguehardNeuralTemporalPoint2020' on page 3 undefined on input line 167.
+LaTeX Warning: Citation 'enguehardNeuralTemporalPoint2020' on page 3 undefined on input line 168.
 
 
-Package xcolor Warning: Incompatible color definition on input line 194.
+Package xcolor Warning: Incompatible color definition on input line 195.
 
 
-Package xcolor Warning: Incompatible color definition on input line 199.
+Package xcolor Warning: Incompatible color definition on input line 200.
 
 
-LaTeX Warning: Citation 'zhangSelfAttentiveHawkesProcess2020' on page 3 undefined on input line 202.
+LaTeX Warning: Citation 'zhangSelfAttentiveHawkesProcess2020' on page 3 undefined on input line 203.
 
 
-LaTeX Warning: Citation 'zuoTransformerHawkesProcess2020a' on page 3 undefined on input line 202.
+LaTeX Warning: Citation 'zuoTransformerHawkesProcess2020a' on page 3 undefined on input line 203.
 
 
-LaTeX Warning: Citation 'vaswaniAttentionAllYou2017' on page 3 undefined on input line 202.
+LaTeX Warning: Citation 'vaswaniAttentionAllYou2017' on page 3 undefined on input line 203.
 
 
-LaTeX Warning: Citation 'enguehardNeuralTemporalPoint2020' on page 3 undefined on input line 202.
+LaTeX Warning: Citation 'enguehardNeuralTemporalPoint2020' on page 3 undefined on input line 203.
 
 
-LaTeX Warning: Citation 'cheRecurrentNeuralNetworks2018' on page 3 undefined on input line 204.
+LaTeX Warning: Citation 'cheRecurrentNeuralNetworks2018' on page 3 undefined on input line 205.
 
 
-LaTeX Warning: Citation 'choiRETAINInterpretablePredictive2017' on page 3 undefined on input line 204.
+LaTeX Warning: Citation 'choiRETAINInterpretablePredictive2017' on page 3 undefined on input line 205.
 
 
-LaTeX Warning: Citation 'hornSetFunctionsTime2020' on page 3 undefined on input line 204.
+LaTeX Warning: Citation 'hornSetFunctionsTime2020' on page 3 undefined on input line 205.
 
 
-Package xcolor Warning: Incompatible color definition on input line 211.
+Package xcolor Warning: Incompatible color definition on input line 212.
 
 <images/model_arch.png, id=34, 475.449pt x 118.479pt>
 File: images/model_arch.png Graphic file (type png)
 <use images/model_arch.png>
-Package pdftex.def Info: images/model_arch.png  used on input line 216.
+Package pdftex.def Info: images/model_arch.png  used on input line 217.
 (pdftex.def)             Requested size: 475.44783pt x 118.4787pt.
 
-Package xcolor Warning: Incompatible color definition on input line 218.
+Package xcolor Warning: Incompatible color definition on input line 219.
 
 
-LaTeX Warning: Reference `fig1' on page 3 undefined on input line 222.
+LaTeX Warning: Reference `fig1' on page 3 undefined on input line 223.
 
 
-Package xcolor Warning: Incompatible color definition on input line 228.
+Package xcolor Warning: Incompatible color definition on input line 229.
 
 
-LaTeX Warning: Citation 'zuoTransformerHawkesProcess2020a' on page 3 undefined on input line 229.
+LaTeX Warning: Citation 'zuoTransformerHawkesProcess2020a' on page 3 undefined on input line 230.
 
 
-Underfull \hbox (badness 1430) in paragraph at lines 229--230
+Underfull \hbox (badness 1430) in paragraph at lines 230--231
 []\OT1/ptm/m/n/10 We use a trans-former event en-coder sim-i-lar to THP
  []
 
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <7> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 231.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 232.
 
-Package xcolor Warning: Incompatible color definition on input line 231.
+Package xcolor Warning: Incompatible color definition on input line 232.
 
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [3]
 
-Package xcolor Warning: Incompatible color definition on input line 258.
+Package xcolor Warning: Incompatible color definition on input line 259.
 
 
-LaTeX Warning: Citation 'hornSetFunctionsTime2020' on page 4 undefined on input line 260.
+LaTeX Warning: Citation 'hornSetFunctionsTime2020' on page 4 undefined on input line 261.
 
 
-LaTeX Warning: Reference `eq:time-encoding' on page 4 undefined on input line 260.
+LaTeX Warning: Reference `eq:time-encoding' on page 4 undefined on input line 261.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--261
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 []\OT1/ptm/m/n/10 We use the a deep at-ten-tion mod-ule
  []
 
 
-Underfull \hbox (badness 1565) in paragraph at lines 260--261
+Underfull \hbox (badness 1565) in paragraph at lines 261--262
 \OT1/ptm/m/n/10 [[]] for en-cod-ing all ad-di-tional
  []
 
 
-Underfull \hbox (badness 7099) in paragraph at lines 260--261
+Underfull \hbox (badness 7099) in paragraph at lines 261--262
 \OT1/ptm/m/n/10 in-for-ma-tion in-clud-ing ir-reg-u-larly sam-pled time se-ries.
  []
 
 
-Underfull \hbox (badness 2951) in paragraph at lines 260--261
+Underfull \hbox (badness 2951) in paragraph at lines 261--262
 \OT1/ptm/m/n/10 Each ob-ser-va-tion of a sam-ple can be rep-re-sented by
  []
 
 
-LaTeX Warning: Reference `eq:fprime' on page 4 undefined on input line 289.
+LaTeX Warning: Reference `eq:fprime' on page 4 undefined on input line 290.
 
 
-Package xcolor Warning: Incompatible color definition on input line 317.
+Package xcolor Warning: Incompatible color definition on input line 318.
 
 
-Package xcolor Warning: Incompatible color definition on input line 354.
+Package xcolor Warning: Incompatible color definition on input line 355.
 
 
-Package xcolor Warning: Incompatible color definition on input line 367.
+Package xcolor Warning: Incompatible color definition on input line 368.
 
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [4 <./images/model_arch.png>]
 
-Package xcolor Warning: Incompatible color definition on input line 379.
+Package xcolor Warning: Incompatible color definition on input line 380.
 
 
-LaTeX Warning: Reference `eq:CIF-mc' on page 5 undefined on input line 381.
+LaTeX Warning: Reference `eq:CIF-mc' on page 5 undefined on input line 382.
 
 
-LaTeX Warning: Reference `eq:CIF-ml' on page 5 undefined on input line 381.
+LaTeX Warning: Reference `eq:CIF-ml' on page 5 undefined on input line 382.
 
 
-LaTeX Warning: Reference `eq:CIF-marked' on page 5 undefined on input line 381.
+LaTeX Warning: Reference `eq:CIF-marked' on page 5 undefined on input line 382.
 
 
-Package xcolor Warning: Incompatible color definition on input line 387.
+Package xcolor Warning: Incompatible color definition on input line 388.
 
 
-Package xcolor Warning: Incompatible color definition on input line 391.
+Package xcolor Warning: Incompatible color definition on input line 392.
 
 
-Package xcolor Warning: Incompatible color definition on input line 412.
+Package xcolor Warning: Incompatible color definition on input line 413.
 
 
-LaTeX Warning: Reference `eq:CIF-marked' on page 5 undefined on input line 418.
+LaTeX Warning: Reference `eq:CIF-marked' on page 5 undefined on input line 419.
 
 
-Package xcolor Warning: Incompatible color definition on input line 435.
+Package xcolor Warning: Incompatible color definition on input line 436.
 
 
-LaTeX Warning: Citation 'zhangSelfAttentiveHawkesProcess2020' on page 5 undefined on input line 436.
+LaTeX Warning: Citation 'zhangSelfAttentiveHawkesProcess2020' on page 5 undefined on input line 437.
 
 
-LaTeX Warning: Citation 'zuoTransformerHawkesProcess2020a' on page 5 undefined on input line 436.
+LaTeX Warning: Citation 'zuoTransformerHawkesProcess2020a' on page 5 undefined on input line 437.
 
 
-Underfull \hbox (badness 3590) in paragraph at lines 436--437
+Underfull \hbox (badness 3590) in paragraph at lines 437--438
 []\OT1/ptm/m/n/10 We re-port log-likelihood nor-mal-ized by the num-ber
  []
 
 
-Underfull \hbox (badness 2126) in paragraph at lines 436--437
+Underfull \hbox (badness 2126) in paragraph at lines 437--438
 \OT1/ptm/m/n/10 of events (LL/#events) as a good-ness of fit for CIFs
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 436--437
+Underfull \hbox (badness 10000) in paragraph at lines 437--438
 \OT1/ptm/m/n/10 char-ac-ter-i-za-tion [[],
  []
 
 
-Underfull \hbox (badness 1960) in paragraph at lines 436--437
+Underfull \hbox (badness 1960) in paragraph at lines 437--438
 \OT1/ptm/m/n/10 re-spec-tively. In the su-per-vised learn-ing task for bi-nary
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 438.
+Package xcolor Warning: Incompatible color definition on input line 439.
 
 
-Package xcolor Warning: Incompatible color definition on input line 442.
+Package xcolor Warning: Incompatible color definition on input line 443.
 
 
-Package xcolor Warning: Incompatible color definition on input line 448.
+Package xcolor Warning: Incompatible color definition on input line 449.
 
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [5]
 
-Package xcolor Warning: Incompatible color definition on input line 448.
+Package xcolor Warning: Incompatible color definition on input line 449.
 
 \width=\dimen193
 
-Package xcolor Warning: Incompatible color definition on input line 456.
+Package xcolor Warning: Incompatible color definition on input line 457.
 
 \width=\dimen194
 
-Package xcolor Warning: Incompatible color definition on input line 483.
+Package xcolor Warning: Incompatible color definition on input line 484.
 
 
-LaTeX Warning: Reference `tab:1' on page 6 undefined on input line 503.
+LaTeX Warning: Reference `tab:1' on page 6 undefined on input line 504.
 
 
-LaTeX Warning: Citation 'zhangSelfAttentiveHawkesProcess2020' on page 6 undefined on input line 503.
+LaTeX Warning: Citation 'zhangSelfAttentiveHawkesProcess2020' on page 6 undefined on input line 504.
 
 
-LaTeX Warning: Citation 'zuoTransformerHawkesProcess2020a' on page 6 undefined on input line 503.
+LaTeX Warning: Citation 'zuoTransformerHawkesProcess2020a' on page 6 undefined on input line 504.
 
 
-Underfull \hbox (badness 2326) in paragraph at lines 503--504
+Underfull \hbox (badness 2326) in paragraph at lines 504--505
 \OT1/ptm/m/n/10 in the lit-er-a-ture [[],
  []
 
 
-LaTeX Warning: Reference `eq:CIF-ml' on page 6 undefined on input line 507.
+LaTeX Warning: Reference `eq:CIF-ml' on page 6 undefined on input line 508.
 
 
-Package xcolor Warning: Incompatible color definition on input line 510.
+Package xcolor Warning: Incompatible color definition on input line 511.
 
 
-LaTeX Warning: Reference `tab:2' on page 6 undefined on input line 517.
+LaTeX Warning: Reference `tab:2' on page 6 undefined on input line 518.
 
 
-Package xcolor Warning: Incompatible color definition on input line 521.
+Package xcolor Warning: Incompatible color definition on input line 522.
 
 
-LaTeX Warning: Reference `tab:3' on page 6 undefined on input line 523.
+LaTeX Warning: Reference `tab:3' on page 6 undefined on input line 524.
 
 \width=\dimen195
 
-Package xcolor Warning: Incompatible color definition on input line 534.
+Package xcolor Warning: Incompatible color definition on input line 535.
 
 
-Package xcolor Warning: Incompatible color definition on input line 573.
+Package xcolor Warning: Incompatible color definition on input line 574.
+
+Package svg Info: Calling Inkscape on input line 577.
+runsystem(inkscape "images/tsne.svg" -D --export-filename="tsne_svg-raw.pdf")...executed.
+
+runsystem(inkscape "images/tsne.svg" -D \relax --without-gui --export-pdf="tsne_svg-raw.pdf")...executed.
 
 
-Package svg Warning: You didn't enable `shell escape' (or `write18')
-(svg)                so it wasn't possible to launch the Inkscape export
-(svg)                for `images/tsne.svg' on input line 576.
-
-
-c:/DATA/Tasks/220704/Alternate-Transactions-Articles-LaTeX-template/Manuscript_v1.tex:576: Package svg Error: File `tsne_svg-raw.pdf' is missing.
+c:/DATA/Tasks/220704/Alternate-Transactions-Articles-LaTeX-template/Manuscript_v1.tex:577: Package svg Error: Inkscape version not detected.
 
 See the svg package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.576 ...vg[inkscapelatex=false]{images/tsne.svg}}
+l.577 ...width=0.75\columnwidth]{images/tsne.svg}}
+                                                  
+It was tried to invoke `inkscape'
+for file "images/tsne.svg"
+but no result was produced. Check the log file
+and set `inkscapeversion=<version>' manually.
+
+runsystem(inkscape "images/tsne.svg" -D --export-filename="tsne_svg-raw.pdf")...executed.
+
+
+Package svg Warning: The export with Inkscape failed for file
+(svg)                `images/tsne.svg'
+(svg)                Troubleshooting: Please check in the log file how
+(svg)                the invocation of Inkscape took place and try to
+(svg)                execute it yourself in the terminal on input line 577.
+
+
+c:/DATA/Tasks/220704/Alternate-Transactions-Articles-LaTeX-template/Manuscript_v1.tex:577: Package svg Error: File `tsne_svg-raw.pdf' is missing.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.577 ...width=0.75\columnwidth]{images/tsne.svg}}
                                                   
 Did you run the export with Inkscape? There's no file
 `./svg-inkscape/tsne_svg-raw.pdf'
 although `images/tsne.svg' was found.
 
 
-Package xcolor Warning: Incompatible color definition on input line 578.
+Package xcolor Warning: Incompatible color definition on input line 579.
 
 
-Package xcolor Warning: Incompatible color definition on input line 585.
+Package xcolor Warning: Incompatible color definition on input line 587.
 
 
-Package xcolor Warning: Incompatible color definition on input line 594.
+Package xcolor Warning: Incompatible color definition on input line 596.
 
 
-LaTeX Warning: Empty bibliography on input line 694.
+LaTeX Warning: Empty bibliography on input line 696.
 
 
-Package xcolor Warning: Incompatible color definition on input line 764.
+Package xcolor Warning: Incompatible color definition on input line 766.
 
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [6]
 
-Package xcolor Warning: Incompatible color definition on input line 764.
+Package xcolor Warning: Incompatible color definition on input line 766.
 
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
@@ -1054,10 +1093,10 @@ Package logreq Info: Writing requests to 'Manuscript_v1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 14713 strings out of 476065
- 278089 string characters out of 5795020
+ 14854 strings out of 476065
+ 281457 string characters out of 5795020
  1907299 words of memory out of 5000000
- 34861 multiletter control sequences out of 15000+600000
+ 34984 multiletter control sequences out of 15000+600000
  576434 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,20n,92p,1460b,1317s stack positions out of 10000i,1000n,20000p,200000b,200000s

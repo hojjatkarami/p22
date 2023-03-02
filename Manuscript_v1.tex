@@ -9,6 +9,7 @@
 
 \DeclareMathOperator*{\argmax}{argmax} % thin space, limits underneath in displays
 
+% https://github.com/James-Yu/LaTeX-Workshop/wiki/FAQ#how-to-pass--shell-escape-to-latexmk
 \usepackage{svg}
 
 \usepackage{booktabs}
@@ -573,11 +574,12 @@ In general, it might seem problematic to rely on the missingness pattern for out
 \subsection{Learned representions}
 
 \begin{figure*}[!t]
-    \centerline{\includesvg[inkscapelatex=false]{images/tsne.svg}}
+    \centerline{\includesvg[inkscapelatex=false,width=0.75\columnwidth]{images/tsne.svg}}
     \caption{Magnetization as a function of applied field.
     It is good practice to explain the significance of the figure in the caption.}
     \label{fig1}
     \end{figure*}
+
 
 Fig 1 visualizes the t-SNE plot for the learned embeddings of [] with and without event encodings. Besides, we visualize the sampling pattern of an example patient and its neighbors. As can be seen, in TEEDAM neighbors have more similar pattern compared to the baseline. Although event encoding does not necessarily leads to better performance, we can learn a better representation that considers both absolute values and the patterns. One application could be time series generation.
 
