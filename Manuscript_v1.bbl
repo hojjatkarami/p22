@@ -1,0 +1,875 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{cheRecurrentNeuralNetworks2018}{article}{}
+      \name{author}{5}{}{%
+        {{hash=9a3883e9890f26b708e2beeb76655180}{%
+           family={Che},
+           familyi={C\bibinitperiod},
+           given={Zhengping},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=76b799069a676d5592d0daf8ff7d5e38}{%
+           family={Purushotham},
+           familyi={P\bibinitperiod},
+           given={Sanjay},
+           giveni={S\bibinitperiod}}}%
+        {{hash=3da7501a79d9346572c7fd6e41b615df}{%
+           family={Cho},
+           familyi={C\bibinitperiod},
+           given={Kyunghyun},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e7482c3a6bf929dc430ae34c20757273}{%
+           family={Sontag},
+           familyi={S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=92f7474e36f4f2b59a14e85c0e738e40}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yan},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{e7ba3bf7742ab28bb3b8e94be9bd6f72}
+      \strng{fullhash}{9bb54a7f2ef09e0c9dd46cf8157c5c39}
+      \strng{bibnamehash}{e7ba3bf7742ab28bb3b8e94be9bd6f72}
+      \strng{authorbibnamehash}{e7ba3bf7742ab28bb3b8e94be9bd6f72}
+      \strng{authornamehash}{e7ba3bf7742ab28bb3b8e94be9bd6f72}
+      \strng{authorfullhash}{9bb54a7f2ef09e0c9dd46cf8157c5c39}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{971 citations (Semantic Scholar/DOI) [2022-05-03]}
+      \field{issn}{2045-2322}
+      \field{journaltitle}{Scientific Reports}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{1}
+      \field{shortjournal}{Sci Rep}
+      \field{title}{Recurrent {{Neural Networks}} for {{Multivariate Time Series}} with {{Missing Values}}}
+      \field{volume}{8}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{pages}{6085}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41598-018-24271-9
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\hokarami\\Zotero\\storage\\R4K8EF48\\Che et al. - 2018 - Recurrent Neural Networks for Multivariate Time Se.pdf
+      \endverb
+    \endentry
+    \entry{choiRETAINInterpretablePredictive2017}{unpublished}{}
+      \name{author}{6}{}{%
+        {{hash=3246e33a021896545e817132027c175f}{%
+           family={Choi},
+           familyi={C\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+        {{hash=4d5e3a007a47a0dfc444d4fe4e3fb306}{%
+           family={Bahadori},
+           familyi={B\bibinitperiod},
+           given={Mohammad\bibnamedelima Taha},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=cf1b5bd92d65c7bae6a020ecf94f2bc9}{%
+           family={Kulas},
+           familyi={K\bibinitperiod},
+           given={Joshua\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=053bc4feaa0fff33ccf7f071724d3df7}{%
+           family={Schuetz},
+           familyi={S\bibinitperiod},
+           given={Andy},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2f020e7cd116e83bc6ab21694e2d72b5}{%
+           family={Stewart},
+           familyi={S\bibinitperiod},
+           given={Walter\bibnamedelima F.},
+           giveni={W\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=a1b0869dc74267b9c5cd955132f0ef7d}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Jimeng},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{abebd1aed40c41a2e88cffdfe0582a57}
+      \strng{fullhash}{856391c416a7a00604188a8a5ed22f3d}
+      \strng{bibnamehash}{abebd1aed40c41a2e88cffdfe0582a57}
+      \strng{authorbibnamehash}{abebd1aed40c41a2e88cffdfe0582a57}
+      \strng{authornamehash}{abebd1aed40c41a2e88cffdfe0582a57}
+      \strng{authorfullhash}{856391c416a7a00604188a8a5ed22f3d}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Accuracy and interpretability are two dominant features of successful predictive models. Typically, a choice must be made in favor of complex black box models such as recurrent neural networks (RNN) for accuracy versus less accurate but more interpretable traditional models such as logistic regression. This tradeoff poses challenges in medicine where both accuracy and interpretability are important. We addressed this challenge by developing the REverse Time AttentIoN model (RETAIN) for application to Electronic Health Records (EHR) data. RETAIN achieves high accuracy while remaining clinically interpretable and is based on a two-level neural attention model that detects influential past visits and significant clinical variables within those visits (e.g. key diagnoses). RETAIN mimics physician practice by attending the EHR data in a reverse time order so that recent clinical visits are likely to receive higher attention. RETAIN was tested on a large health system EHR dataset with 14 million visits completed by 263K patients over an 8 year period and demonstrated predictive accuracy and computational scalability comparable to state-of-the-art methods such as RNN, and ease of interpretability comparable to traditional models.}
+      \field{annotation}{00816}
+      \field{day}{26}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arxiv}
+      \field{month}{2}
+      \field{shorttitle}{{{RETAIN}}}
+      \field{title}{{{RETAIN}}: {{An Interpretable Predictive Model}} for {{Healthcare}} Using {{Reverse Time Attention Mechanism}}}
+      \field{urlday}{3}
+      \field{urlmonth}{1}
+      \field{urlyear}{2022}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{eprint}
+      \verb 1608.05745
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\hokarami\\Zotero\\storage\\E32XWUZT\\Choi et al. - 2017 - RETAIN An Interpretable Predictive Model for Heal.pdf;C\:\\Users\\hokarami\\Zotero\\storage\\SGWTXCH6\\Choi et al. - 2017 - RETAIN An Interpretable Predictive Model for Heal.pdf;C\:\\Users\\hokarami\\Zotero\\storage\\VVWKMZYD\\1608.html;C\:\\Users\\hokarami\\Zotero\\storage\\XXJ9GPXW\\1608.html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1608.05745
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1608.05745
+      \endverb
+    \endentry
+    \entry{enguehardNeuralTemporalPoint2020}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=2fcffca8549dec84ae6efd6e202c3d18}{%
+           family={Enguehard},
+           familyi={E\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=45ccbe2a1d1c5ef01fa8972722150ab4}{%
+           family={Busbridge},
+           familyi={B\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9e960cffddbfbbc4f390fea83f3df2d0}{%
+           family={Bozson},
+           familyi={B\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod}}}%
+        {{hash=43467fb9093c0e1e3516cf30f9beaa80}{%
+           family={Woodcock},
+           familyi={W\bibinitperiod},
+           given={Claire},
+           giveni={C\bibinitperiod}}}%
+        {{hash=ada8b8985321c1bce70d8581b379a634}{%
+           family={Hammerla},
+           familyi={H\bibinitperiod},
+           given={Nils},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {PMLR}%
+      }
+      \strng{namehash}{d812c28c8e40f66aa7a935972d12e4c0}
+      \strng{fullhash}{78c369fa2c67d05c2a31675f11794c21}
+      \strng{bibnamehash}{d812c28c8e40f66aa7a935972d12e4c0}
+      \strng{authorbibnamehash}{d812c28c8e40f66aa7a935972d12e4c0}
+      \strng{authornamehash}{d812c28c8e40f66aa7a935972d12e4c0}
+      \strng{authorfullhash}{78c369fa2c67d05c2a31675f11794c21}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The modelling of Electronic Health Records (EHRs) has the potential to drive more efficient allocation of healthcare resources, enabling early intervention strategies and advancing personalised healthcare. However, EHRs are challenging to model due to their realisation as noisy, multi-modal data occurring at irregular time intervals. To address their temporal nature, we treat EHRs as samples generated by a Temporal Point Process (TPP), enabling us to model what happened in an event with when it happened in a principled way. We gather and propose neural network parameterisations of TPPs, collectively referred to as Neural TPPs. We perform evaluations on synthetic EHRs as well as on a set of established benchmarks. We show that TPPs significantly outperform their non-TPP counterparts on EHRs. We also show that an assumption of many Neural TPPs, that the class distribution is conditionally independent of time, reduces performance on EHRs. Finally, our proposed attention-based Neural TPP performs favourably compared to existing models, whilst aligning with real world interpretability requirements, an important step towards a component of clinical decision support systems.}
+      \field{booktitle}{Proceedings of the {{Machine Learning}} for {{Health NeurIPS Workshop}}}
+      \field{day}{23}
+      \field{eventtitle}{Machine {{Learning}} for {{Health}}}
+      \field{issn}{2640-3498}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{title}{Neural {{Temporal Point Processes For Modelling Electronic Health Records}}}
+      \field{urlday}{6}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{85\bibrangedash 113}
+      \range{pages}{29}
+      \verb{file}
+      \verb C\:\\Users\\hokarami\\Zotero\\storage\\L89R3ZXZ\\Enguehard et al_2020_Neural Temporal Point Processes For Modelling Electronic Health Records.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://proceedings.mlr.press/v136/enguehard20a.html
+      \endverb
+      \verb{url}
+      \verb https://proceedings.mlr.press/v136/enguehard20a.html
+      \endverb
+    \endentry
+    \entry{ghassemiReviewChallengesOpportunities2020}{article}{}
+      \name{author}{6}{}{%
+        {{hash=ff8af8e130ae11696d7907d2dda90cdb}{%
+           family={Ghassemi},
+           familyi={G\bibinitperiod},
+           given={Marzyeh},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c32488dd5d7f959000f196d022162361}{%
+           family={Naumann},
+           familyi={N\bibinitperiod},
+           given={Tristan},
+           giveni={T\bibinitperiod}}}%
+        {{hash=496d0f7bf1ba5017297a64246331af79}{%
+           family={Schulam},
+           familyi={S\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=3333cfe95922b8f5d8bac7127e304455}{%
+           family={Beam},
+           familyi={B\bibinitperiod},
+           given={Andrew\bibnamedelima L.},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=2b489e3332fce6f8f46664ffd88efde7}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Irene\bibnamedelima Y.},
+           giveni={I\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=bb5c273638bcd68f168fefeca29f69c1}{%
+           family={Ranganath},
+           familyi={R\bibinitperiod},
+           given={Rajesh},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{8c3220d922f1fe00324d7e16f5342e5a}
+      \strng{fullhash}{95010c482bdcc2ba8b6dacb0ba335cde}
+      \strng{bibnamehash}{8c3220d922f1fe00324d7e16f5342e5a}
+      \strng{authorbibnamehash}{8c3220d922f1fe00324d7e16f5342e5a}
+      \strng{authornamehash}{8c3220d922f1fe00324d7e16f5342e5a}
+      \strng{authorfullhash}{95010c482bdcc2ba8b6dacb0ba335cde}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Modern electronic health records (EHRs) provide data to answer clinically meaningful questions. The growing data in EHRs makes healthcare ripe for the use of machine learning. However, learning in a clinical setting presents unique challenges that complicate the use of common machine learning methodologies. For example, diseases in EHRs are poorly labeled, conditions can encompass multiple underlying endotypes, and healthy individuals are underrepresented. This article serves as a primer to illuminate these challenges and highlights opportunities for members of the machine learning community to contribute to healthcare.}
+      \field{day}{30}
+      \field{eprinttype}{pmid}
+      \field{issn}{2153-4063}
+      \field{journaltitle}{AMIA Summits on Translational Science Proceedings}
+      \field{month}{5}
+      \field{shortjournal}{AMIA Jt Summits Transl Sci Proc}
+      \field{title}{A {{Review}} of {{Challenges}} and {{Opportunities}} in {{Machine Learning}} for {{Health}}}
+      \field{urlday}{31}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{volume}{2020}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{191\bibrangedash 200}
+      \range{pages}{10}
+      \verb{eprint}
+      \verb 32477638
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\hokarami\\Zotero\\storage\\99WKXRNS\\Ghassemi et al. - 2020 - A Review of Challenges and Opportunities in Machin.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7233077/
+      \endverb
+      \verb{url}
+      \verb https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7233077/
+      \endverb
+    \endentry
+    \entry{hornSetFunctionsTime2020}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=0a1094f8c6cd19077071e5f2942f3793}{%
+           family={Horn},
+           familyi={H\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7dc4c9f1c0df35bca11484a4f830712f}{%
+           family={Moor},
+           familyi={M\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b4034a6084feb4d0bf9e4ba370ed3a1f}{%
+           family={Bock},
+           familyi={B\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=f4220efc57f9db2871e158b72bf9aa38}{%
+           family={Rieck},
+           familyi={R\bibinitperiod},
+           given={Bastian},
+           giveni={B\bibinitperiod}}}%
+        {{hash=444d8d5fcbebf11f920c4fd033f0bb40}{%
+           family={Borgwardt},
+           familyi={B\bibinitperiod},
+           given={Karsten},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {PMLR}%
+      }
+      \strng{namehash}{605f717b2dde3d7e4ea025afe98bc2ae}
+      \strng{fullhash}{3d1886a2e7c01a0aba76e7fec8e4676b}
+      \strng{bibnamehash}{605f717b2dde3d7e4ea025afe98bc2ae}
+      \strng{authorbibnamehash}{605f717b2dde3d7e4ea025afe98bc2ae}
+      \strng{authornamehash}{605f717b2dde3d7e4ea025afe98bc2ae}
+      \strng{authorfullhash}{3d1886a2e7c01a0aba76e7fec8e4676b}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Despite the eminent successes of deep neural networks, many architectures are often hard to transfer to irregularly-sampled and asynchronous time series that commonly occur in real-world datasets, especially in healthcare applications. This paper proposes a novel approach for classifying irregularly-sampled time series with unaligned measurements, focusing on high scalability and data efficiency. Our method SeFT (Set Functions for Time Series) is based on recent advances in differentiable set function learning, extremely parallelizable with a beneficial memory footprint, thus scaling well to large datasets of long time series and online monitoring scenarios. Furthermore, our approach permits quantifying per-observation contributions to the classification outcome. We extensively compare our method with existing algorithms on multiple healthcare time series datasets and demonstrate that it performs competitively whilst significantly reducing runtime.}
+      \field{booktitle}{Proceedings of the 37th {{International Conference}} on {{Machine Learning}}}
+      \field{day}{21}
+      \field{eventtitle}{International {{Conference}} on {{Machine Learning}}}
+      \field{issn}{2640-3498}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{title}{Set {{Functions}} for {{Time Series}}}
+      \field{urlday}{26}
+      \field{urlmonth}{9}
+      \field{urlyear}{2022}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{4353\bibrangedash 4363}
+      \range{pages}{11}
+      \verb{file}
+      \verb C\:\\Users\\hokarami\\Zotero\\storage\\ETCDFTT8\\Horn et al. - 2020 - Set Functions for Time Series.pdf;C\:\\Users\\hokarami\\Zotero\\storage\\V6B5HGHU\\Horn et al_2020_Set Functions for Time Series.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://proceedings.mlr.press/v119/horn20a.html
+      \endverb
+      \verb{url}
+      \verb https://proceedings.mlr.press/v119/horn20a.html
+      \endverb
+    \endentry
+    \entry{maatenVisualizingDataUsing2008}{article}{}
+      \name{author}{2}{}{%
+        {{hash=47fbe2837893a84fb516e9e85ba7aa36}{%
+           family={Maaten},
+           familyi={M\bibinitperiod},
+           given={Laurens},
+           giveni={L\bibinitperiod},
+           prefix={van\bibnamedelima der},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+        {{hash=9a8750ccdb2a4cf14d2655face1ce016}{%
+           family={Hinton},
+           familyi={H\bibinitperiod},
+           given={Geoffrey},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{07df37c1f29fdfb7765c821206be824a}
+      \strng{fullhash}{07df37c1f29fdfb7765c821206be824a}
+      \strng{bibnamehash}{07df37c1f29fdfb7765c821206be824a}
+      \strng{authorbibnamehash}{07df37c1f29fdfb7765c821206be824a}
+      \strng{authornamehash}{07df37c1f29fdfb7765c821206be824a}
+      \strng{authorfullhash}{07df37c1f29fdfb7765c821206be824a}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a new technique called "t-SNE" that visualizes high-dimensional data by giving each datapoint a location in a two or three-dimensional map. The technique is a variation of Stochastic Neighbor Embedding (Hinton and Roweis, 2002) that is much easier to optimize, and produces significantly better visualizations by reducing the tendency to crowd points together in the center of the map. t-SNE is better than existing techniques at creating a single map that reveals structure at many different scales. This is particularly important for high-dimensional data that lie on several different, but related, low-dimensional manifolds, such as images ofobjects from multiple classes seen from multiple viewpoints. For visualizing the structure of very large data sets, we show how t-SNE can use random walks on neighborhood graphs to allow the implicit structure of all of the data to influence the way in which a subset of the data is displayed. We illustrate the performance of t-SNE on a wide variety of data sets and compare it with many other non-parametric visualization techniques, including Sammon mapping, Isomap, and Locally Linear Embedding. The visualizations produced by t-SNE are significantly better than those produced by the other techniques on almost all of the data sets.}
+      \field{issn}{1533-7928}
+      \field{journaltitle}{Journal of Machine Learning Research}
+      \field{number}{86}
+      \field{title}{Visualizing {{Data}} Using T-{{SNE}}}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
+      \field{volume}{9}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2579\bibrangedash 2605}
+      \range{pages}{27}
+      \verb{file}
+      \verb C\:\\Users\\hokarami\\Zotero\\storage\\PTNJXNTQ\\Maaten and Hinton - 2008 - Visualizing Data using t-SNE.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://jmlr.org/papers/v9/vandermaaten08a.html
+      \endverb
+      \verb{url}
+      \verb http://jmlr.org/papers/v9/vandermaaten08a.html
+      \endverb
+    \endentry
+    \entry{reynaEarlyPredictionSepsis2020}{article}{}
+      \name{author}{8}{}{%
+        {{hash=85a180a9c2b2cbbfdb99b3964b51f8de}{%
+           family={Reyna},
+           familyi={R\bibinitperiod},
+           given={Matthew\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=a6ef567d00381a216f60394ac1f6b0f5}{%
+           family={Josef},
+           familyi={J\bibinitperiod},
+           given={Christopher\bibnamedelima S.},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=a1a46c97e1166055b1fa7480eb817e6d}{%
+           family={Jeter},
+           familyi={J\bibinitperiod},
+           given={Russell},
+           giveni={R\bibinitperiod}}}%
+        {{hash=039dea91aff0b646f8762066bd5b861c}{%
+           family={Shashikumar},
+           familyi={S\bibinitperiod},
+           given={Supreeth\bibnamedelima P.},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=2dd03693ae9441014f7000a265e113a6}{%
+           family={Westover},
+           familyi={W\bibinitperiod},
+           given={M.\bibnamedelimi Brandon},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=1819952e220c21ac30b12694111628a7}{%
+           family={Nemati},
+           familyi={N\bibinitperiod},
+           given={Shamim},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b927e667e291a47a7437a9a8d631ed0e}{%
+           family={Clifford},
+           familyi={C\bibinitperiod},
+           given={Gari\bibnamedelima D.},
+           giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=b05620aa2ec177d220e7ad210f055d74}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Ashish},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{32ca620944cb54eaa6c18cc0f28148d8}
+      \strng{fullhash}{f3706da9f21d2ca5b58489df54c70937}
+      \strng{bibnamehash}{32ca620944cb54eaa6c18cc0f28148d8}
+      \strng{authorbibnamehash}{32ca620944cb54eaa6c18cc0f28148d8}
+      \strng{authornamehash}{32ca620944cb54eaa6c18cc0f28148d8}
+      \strng{authorfullhash}{f3706da9f21d2ca5b58489df54c70937}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Objectives:~ Sepsis is a major public health concern with significant morbidity, mortality, and healthcare expenses. Early detection and antibiotic treatment of sepsis improve outcomes. However, although professional critical care societies have proposed new clinical criteria that aid sepsis recognition, the fundamental need for early detection and treatment remains unmet. In response, researchers have proposed algorithms for early sepsis detection, but directly comparing such methods has not been possible because of different patient cohorts, clinical variables and sepsis criteria, prediction tasks, evaluation metrics, and other differences. To address these issues, the PhysioNet/Computing in Cardiology Challenge 2019 facilitated the development of automated, open-source algorithms for the early detection of sepsis from clinical data. Design:~ Participants submitted containerized algorithms to a cloud-based testing environment, where we graded entries for their binary classification performance using a novel clinical utility-based evaluation metric. We designed this scoring function specifically for the Challenge to reward algorithms for early predictions and penalize them for late or missed predictions and for false alarms. Setting:~ ICUs in three separate hospital systems. We shared data from two systems publicly and sequestered data from all three systems for scoring. Patients:~ We sourced over 60,000 ICU patients with up to 40 clinical variables for each hour of a patient’s ICU stay. We applied Sepsis-3 clinical criteria for sepsis onset. Interventions:~ None. Measurements and Main Results:~ A total of 104 groups from academia and industry participated, contributing 853 submissions. Furthermore, 90 abstracts based on Challenge entries were accepted for presentation at Computing in Cardiology. Conclusions:~ Diverse computational approaches predict the onset of sepsis several hours before clinical recognition, but generalizability to different hospital systems remains a challenge.}
+      \field{annotation}{00163}
+      \field{issn}{0090-3493}
+      \field{journaltitle}{Critical Care Medicine}
+      \field{langid}{american}
+      \field{month}{2}
+      \field{number}{2}
+      \field{shorttitle}{Early {{Prediction}} of {{Sepsis From Clinical Data}}}
+      \field{title}{Early {{Prediction}} of {{Sepsis From Clinical Data}}: {{The PhysioNet}}/{{Computing}} in {{Cardiology Challenge}} 2019}
+      \field{volume}{48}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{210\bibrangedash 217}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1097/CCM.0000000000004145
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\hokarami\\Zotero\\storage\\JBBL7WLF\\Early_Prediction_of_Sepsis_From_Clinical_Data__The.10.pdf;C\:\\Users\\hokarami\\Zotero\\storage\\UCW2X8J4\\41591_2020_789_MOESM1_ESM.pdf;C\:\\Users\\hokarami\\Zotero\\storage\\L9P8Z23I\\early_prediction_of_sepsis_from_clinical_data__the.10.html
+      \endverb
+    \endentry
+    \entry{silvaPredictingInHospitalMortality}{article}{}
+      \name{author}{5}{}{%
+        {{hash=a014bc35a0c855a4bc42e641ba9e37a2}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={Ikaro},
+           giveni={I\bibinitperiod}}}%
+        {{hash=7bcbb9c689431a5afc17e619dafbad1a}{%
+           family={Moody},
+           familyi={M\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d5c44c90fb093d330188d5c0cc6d3228}{%
+           family={Scott},
+           familyi={S\bibinitperiod},
+           given={Daniel\bibnamedelima J},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=3f99086f25722fadcd3c7540baaa9e93}{%
+           family={Celi},
+           familyi={C\bibinitperiod},
+           given={Leo\bibnamedelima A},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=2193bac90baddb616fc4dcd2f366de81}{%
+           family={Mark},
+           familyi={M\bibinitperiod},
+           given={Roger\bibnamedelima G},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{279ae2f7ae16f90f81082edff8603ef6}
+      \strng{fullhash}{a3d844ffcee06df361ba83c1ac28384a}
+      \strng{bibnamehash}{279ae2f7ae16f90f81082edff8603ef6}
+      \strng{authorbibnamehash}{279ae2f7ae16f90f81082edff8603ef6}
+      \strng{authornamehash}{279ae2f7ae16f90f81082edff8603ef6}
+      \strng{authorfullhash}{a3d844ffcee06df361ba83c1ac28384a}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Acuity scores, such as APACHE, SAPS, MPM, and SOFA, are widely used to account for population differences in studies aiming to compare how medications, care guidelines, surgery, and other interventions impact mortality in Intensive Care Unit (ICU) patients. By contrast, the focus of the PhysioNet/CinC Challenge 2012 is to develop methods for patient-specific prediction of in-hospital mortality. The data used for the challenge consisted of 5 general descriptors and 36 time series (measurements of vital signs and laboratory results) from the first 48 hours of the first available ICU stay of 12,000 adult patients from the MIMIC II database. The challenge was organized as two events: event 1 measured performance of a binary classifier, and event 2 measured performance of a risk estimator. The score of event 1 was the lower of sensitivity and positive predictive value. The score for event 2 was a range-normalized Hosmer-Lemeshow statistic. A baseline algorithm (using SAPS-1) obtained event 1 and 2 scores of 0.3125 and 68.58 respectively. Most participants submitted entries that outperformed the baseline algorithm. The top final scores for events 1 and 2 were 0.5353 and 17.88 respectively.}
+      \field{langid}{english}
+      \field{title}{Predicting {{In-Hospital Mortality}} of {{ICU Patients}}: {{The PhysioNet}}/{{Computing}} in {{Cardiology Challenge}} 2012}
+      \verb{file}
+      \verb C\:\\Users\\hokarami\\Zotero\\storage\\2CLCWRSH\\Silva et al. - Predicting In-Hospital Mortality of ICU Patients .pdf
+      \endverb
+    \endentry
+    \entry{vaswaniAttentionAllYou2017}{inproceedings}{}
+      \name{author}{8}{}{%
+        {{hash=7f28e84700536646dd6620a0db07ad09}{%
+           family={Vaswani},
+           familyi={V\bibinitperiod},
+           given={Ashish},
+           giveni={A\bibinitperiod}}}%
+        {{hash=62efade83d70f0323fe248755e6c90c5}{%
+           family={Shazeer},
+           familyi={S\bibinitperiod},
+           given={Noam},
+           giveni={N\bibinitperiod}}}%
+        {{hash=06649ebab1ea5cac0250746a19764975}{%
+           family={Parmar},
+           familyi={P\bibinitperiod},
+           given={Niki},
+           giveni={N\bibinitperiod}}}%
+        {{hash=831027ee0ebf22375e2a86afc1881909}{%
+           family={Uszkoreit},
+           familyi={U\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2fd2982e30ebcec93ec1cf76e0d797fd}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Llion},
+           giveni={L\bibinitperiod}}}%
+        {{hash=27b07e4eacbf4ef7a1438e3badb7dd8d}{%
+           family={Gomez},
+           familyi={G\bibinitperiod},
+           given={Aidan\bibnamedelima N},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=540fcd72e1fa4bbed46604f4e6cff817}{%
+           family={Kaiser},
+           familyi={K\bibinitperiod},
+           given={Łukasz},
+           giveni={Ł\bibinitperiod}}}%
+        {{hash=95595a0fefb86187cbc36e551017d332}{%
+           family={Polosukhin},
+           familyi={P\bibinitperiod},
+           given={Illia},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates, Inc.}%
+      }
+      \strng{namehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{fullhash}{cb26e47f6b8133865271fc8483132297}
+      \strng{bibnamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authorbibnamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authornamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authorfullhash}{cb26e47f6b8133865271fc8483132297}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The dominant sequence transduction models are based on complex recurrent orconvolutional neural networks in an encoder and decoder configuration. The best performing such models also connect the encoder and decoder through an attentionm echanisms. We propose a novel, simple network architecture based solely onan attention mechanism, dispensing with recurrence and convolutions entirely.Experiments on two machine translation tasks show these models to be superiorin quality while being more parallelizable and requiring significantly less timeto train. Our single model with 165 million parameters, achieves 27.5 BLEU onEnglish-to-German translation, improving over the existing best ensemble result by over 1 BLEU. On English-to-French translation, we outperform the previoussingle state-of-the-art with model by 0.7 BLEU, achieving a BLEU score of 41.1.}
+      \field{booktitle}{Advances in {{Neural Information Processing Systems}}}
+      \field{title}{Attention Is {{All}} You {{Need}}}
+      \field{urlday}{7}
+      \field{urlmonth}{7}
+      \field{urlyear}{2022}
+      \field{volume}{30}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C\:\\Users\\hokarami\\Zotero\\storage\\5ZNDVKFI\\Vaswani et al_2017_Attention is All you Need.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html
+      \endverb
+      \verb{url}
+      \verb https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html
+      \endverb
+    \endentry
+    \entry{walonoskiSyntheaApproachMethod2018}{article}{}
+      \name{author}{10}{}{%
+        {{hash=515119419aff07588d23910529604a95}{%
+           family={Walonoski},
+           familyi={W\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0a255cddfe0f4e2c31d268323399bc04}{%
+           family={Kramer},
+           familyi={K\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=52d9f6bcfa2223958b6de4e8e5246498}{%
+           family={Nichols},
+           familyi={N\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=941d9a527e57e491134f2c9431150f7a}{%
+           family={Quina},
+           familyi={Q\bibinitperiod},
+           given={Andre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7473f1fe0309a13a84ffc7f62422284b}{%
+           family={Moesel},
+           familyi={M\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=be9f063da8cefe19177a8079d3e85ab7}{%
+           family={Hall},
+           familyi={H\bibinitperiod},
+           given={Dylan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f54b20260d5f6c8c976cffc920a500b7}{%
+           family={Duffett},
+           familyi={D\bibinitperiod},
+           given={Carlton},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d6cb89d2cf6fd0884afbc16c97644417}{%
+           family={Dube},
+           familyi={D\bibinitperiod},
+           given={Kudakwashe},
+           giveni={K\bibinitperiod}}}%
+        {{hash=70e72429b4e8083b2b0846a7f2e9bb94}{%
+           family={Gallagher},
+           familyi={G\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=f68be353f922ce33c73099b867fd282b}{%
+           family={McLachlan},
+           familyi={M\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{cbf8964f28084be7d87c21cb62295533}
+      \strng{fullhash}{8d76ba2a7cb3d150eda444f406f61092}
+      \strng{bibnamehash}{cbf8964f28084be7d87c21cb62295533}
+      \strng{authorbibnamehash}{cbf8964f28084be7d87c21cb62295533}
+      \strng{authornamehash}{cbf8964f28084be7d87c21cb62295533}
+      \strng{authorfullhash}{8d76ba2a7cb3d150eda444f406f61092}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Our objective is to create a source of synthetic electronic health records that is readily available; suited to industrial, innovation, research, and educational uses; and free of legal, privacy, security, and intellectual property restrictions.We developed Synthea, an open-source software package that simulates the lifespans of synthetic patients, modeling the 10 most frequent reasons for primary care encounters and the 10 chronic conditions with the highest morbidity in the United States.Synthea adheres to a previously developed conceptual framework, scales via open-source deployment on the Internet, and may be extended with additional disease and treatment modules developed by its user community. One million synthetic patient records are now freely available online, encoded in standard formats (eg, Health Level-7 [HL7] Fast Healthcare Interoperability Resources [FHIR] and Consolidated-Clinical Document Architecture), and accessible through an HL7 FHIR application program interface.Health care lags other industries in information technology, data exchange, and interoperability. The lack of freely distributable health records has long hindered innovation in health care. Approaches and tools are available to inexpensively generate synthetic health records at scale without accidental disclosure risk, lowering current barriers to entry for promising early-stage developments. By engaging a growing community of users, the synthetic data generated will become increasingly comprehensive, detailed, and realistic over time.Synthetic patients can be simulated with models of disease progression and corresponding standards of care to produce risk-free realistic synthetic health care records at scale.}
+      \field{annotation}{162 citations (Semantic Scholar/DOI) [2022-11-25] 96 citations (Crossref) [2022-11-25]}
+      \field{day}{1}
+      \field{issn}{1527-974X}
+      \field{journaltitle}{Journal of the American Medical Informatics Association}
+      \field{month}{3}
+      \field{number}{3}
+      \field{shortjournal}{Journal of the American Medical Informatics Association}
+      \field{shorttitle}{Synthea}
+      \field{title}{Synthea: {{An}} Approach, Method, and Software Mechanism for Generating Synthetic Patients and the Synthetic Electronic Health Care Record}
+      \field{volume}{25}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{pages}{230\bibrangedash 238}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1093/jamia/ocx079
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\hokarami\\Zotero\\storage\\S4U4T9DR\\Walonoski et al_2018_Synthea.pdf;C\:\\Users\\hokarami\\Zotero\\storage\\W6R9HMG2\\4098271.html
+      \endverb
+    \endentry
+    \entry{xuLearningGrangerCausality2016}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=6089e89dd54f06ece4073b97080c8602}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Hongteng},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ec062944682ce19fe2e0ca6c0405cfe0}{%
+           family={Farajtabar},
+           familyi={F\bibinitperiod},
+           given={Mehrdad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=55bb21a31fded4aad976b7902dc8206a}{%
+           family={Zha},
+           familyi={Z\bibinitperiod},
+           given={Hongyuan},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {PMLR}%
+      }
+      \strng{namehash}{ff6dd18c07a04b1b58ab472e484bdf57}
+      \strng{fullhash}{ff6dd18c07a04b1b58ab472e484bdf57}
+      \strng{bibnamehash}{ff6dd18c07a04b1b58ab472e484bdf57}
+      \strng{authorbibnamehash}{ff6dd18c07a04b1b58ab472e484bdf57}
+      \strng{authornamehash}{ff6dd18c07a04b1b58ab472e484bdf57}
+      \strng{authorfullhash}{ff6dd18c07a04b1b58ab472e484bdf57}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Learning Granger causality for general point processes is a very challenging task. We propose an effective method learning Granger causality for a special but significant type of point processes — Hawkes processes. Focusing on Hawkes processes, we reveal the relationship between Hawkes process’s impact functions and its Granger causality graph. Specifically, our model represents impact functions using a series of basis functions and recovers the Granger causality graph via group sparsity of the impact functions’ coefficients. We propose an effective learning algorithm combining a maximum likelihood estimator (MLE) with a sparse-group-lasso (SGL) regularizer. Additionally, the pairwise similarity between the dimensions of the process is considered when their clustering structure is available. We analyze our learning method and discuss the selection of the basis functions. Experiments on synthetic data and real-world data show that our method can learn the Granger causality graph and the triggering patterns of Hawkes processes simultaneously.}
+      \field{booktitle}{Proceedings of {{The}} 33rd {{International Conference}} on {{Machine Learning}}}
+      \field{day}{11}
+      \field{eventtitle}{International {{Conference}} on {{Machine Learning}}}
+      \field{issn}{1938-7228}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{title}{Learning {{Granger Causality}} for {{Hawkes Processes}}}
+      \field{urlday}{20}
+      \field{urlmonth}{4}
+      \field{urlyear}{2022}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1717\bibrangedash 1726}
+      \range{pages}{10}
+      \verb{file}
+      \verb C\:\\Users\\hokarami\\Zotero\\storage\\2AR4F4GV\\Xu et al_2016_Learning Granger Causality for Hawkes Processes.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://proceedings.mlr.press/v48/xuc16.html
+      \endverb
+      \verb{url}
+      \verb https://proceedings.mlr.press/v48/xuc16.html
+      \endverb
+    \endentry
+    \entry{zhangSelfAttentiveHawkesProcess2020}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=08c1e9a58399d68669c800dc1ee6607b}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Qiang},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=890ffd3ca91295544a9ea9d656a10e7c}{%
+           family={Lipani},
+           familyi={L\bibinitperiod},
+           given={Aldo},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3d31191307d5a53c952f295f2015b456}{%
+           family={Kirnap},
+           familyi={K\bibinitperiod},
+           given={Omer},
+           giveni={O\bibinitperiod}}}%
+        {{hash=127768a6d795f3c224a762902b215f38}{%
+           family={Yilmaz},
+           familyi={Y\bibinitperiod},
+           given={Emine},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {PMLR}%
+      }
+      \strng{namehash}{4eaa7170a428a9a2cb4b217f5e6fd14e}
+      \strng{fullhash}{7d10e7de850a8474128bb1c1fd1eab6b}
+      \strng{bibnamehash}{4eaa7170a428a9a2cb4b217f5e6fd14e}
+      \strng{authorbibnamehash}{4eaa7170a428a9a2cb4b217f5e6fd14e}
+      \strng{authornamehash}{4eaa7170a428a9a2cb4b217f5e6fd14e}
+      \strng{authorfullhash}{7d10e7de850a8474128bb1c1fd1eab6b}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Capturing the occurrence dynamics is crucial to predicting which type of events will happen next and when. A common method to do this is through Hawkes processes. To enhance their capacity, recurrent neural networks (RNNs) have been incorporated due to RNNs’ successes in processing sequential data such as languages. Recent evidence suggests that self-attention is more competent than RNNs in dealing with languages. However, we are unaware of the effectiveness of self-attention in the context of Hawkes processes. This study aims to fill the gap by designing a self-attentive Hawkes process (SAHP). SAHP employs self-attention to summarise the influence of history events and compute the probability of the next event. One deficit of the conventional self-attention when applied to event sequences is that its positional encoding only considers the order of a sequence ignoring the time intervals between events. To overcome this deficit, we modify its encoding by translating time intervals into phase shifts of sinusoidal functions. Experiments on goodness-of-fit and prediction tasks show the improved capability of SAHP. Furthermore, SAHP is more interpretable than RNN-based counterparts because the learnt attention weights reveal contributions of one event type to the happening of another type. To the best of our knowledge, this is the first work that studies the effectiveness of self-attention in Hawkes processes.}
+      \field{booktitle}{Proceedings of the 37th {{International Conference}} on {{Machine Learning}}}
+      \field{day}{21}
+      \field{eventtitle}{International {{Conference}} on {{Machine Learning}}}
+      \field{issn}{2640-3498}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{title}{Self-{{Attentive Hawkes Process}}}
+      \field{urlday}{9}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{11183\bibrangedash 11193}
+      \range{pages}{11}
+      \verb{file}
+      \verb C\:\\Users\\hokarami\\Zotero\\storage\\CT5ZZ3EA\\Zhang et al. - 2020 - Self-Attentive Hawkes Process.pdf;C\:\\Users\\hokarami\\Zotero\\storage\\V2ZTGYAV\\Zhang et al_2020_Self-Attentive Hawkes Process.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://proceedings.mlr.press/v119/zhang20q.html
+      \endverb
+      \verb{url}
+      \verb https://proceedings.mlr.press/v119/zhang20q.html
+      \endverb
+    \endentry
+    \entry{zuoTransformerHawkesProcess2020a}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=3309bf092827781ffd038ce1069c0710}{%
+           family={Zuo},
+           familyi={Z\bibinitperiod},
+           given={Simiao},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a5643fa1ae8fe0824b15f38d5bd6a580}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Haoming},
+           giveni={H\bibinitperiod}}}%
+        {{hash=22490d27bf4609701bb6e92b6cb7881e}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Zichong},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=5aabe643c77f92846adf1b83e9c78387}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Tuo},
+           giveni={T\bibinitperiod}}}%
+        {{hash=55bb21a31fded4aad976b7902dc8206a}{%
+           family={Zha},
+           familyi={Z\bibinitperiod},
+           given={Hongyuan},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {PMLR}%
+      }
+      \strng{namehash}{e9d74a43929c8d1624f3733af801a8df}
+      \strng{fullhash}{c31bccfeadda7a73fdb17c9eefee48f5}
+      \strng{bibnamehash}{e9d74a43929c8d1624f3733af801a8df}
+      \strng{authorbibnamehash}{e9d74a43929c8d1624f3733af801a8df}
+      \strng{authornamehash}{e9d74a43929c8d1624f3733af801a8df}
+      \strng{authorfullhash}{c31bccfeadda7a73fdb17c9eefee48f5}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Modern data acquisition routinely produce massive amounts of event sequence data in various domains, such as social media, healthcare, and financial markets. These data often exhibit complicated short-term and long-term temporal dependencies. However, most of the existing recurrent neural network based point process models fail to capture such dependencies, and yield unreliable prediction performance. To address this issue, we propose a Transformer Hawkes Process (THP) model, which leverages the self-attention mechanism to capture long-term dependencies and meanwhile enjoys computational efficiency. Numerical experiments on various datasets show that THP outperforms existing models in terms of both likelihood and event prediction accuracy by a notable margin. Moreover, THP is quite general and can incorporate additional structural knowledge. We provide a concrete example, where THP achieves improved prediction performance for learning multiple point processes when incorporating their relational information.}
+      \field{booktitle}{Proceedings of the 37th {{International Conference}} on {{Machine Learning}}}
+      \field{day}{21}
+      \field{eventtitle}{International {{Conference}} on {{Machine Learning}}}
+      \field{issn}{2640-3498}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{title}{Transformer {{Hawkes Process}}}
+      \field{urlday}{6}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{11692\bibrangedash 11702}
+      \range{pages}{11}
+      \verb{file}
+      \verb C\:\\Users\\hokarami\\Zotero\\storage\\FFEV6YWA\\Zuo et al. - 2020 - Transformer Hawkes Process.pdf;C\:\\Users\\hokarami\\Zotero\\storage\\K5LDG4WX\\Zuo et al_2020_Transformer Hawkes Process.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://proceedings.mlr.press/v119/zuo20a.html
+      \endverb
+      \verb{url}
+      \verb https://proceedings.mlr.press/v119/zuo20a.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

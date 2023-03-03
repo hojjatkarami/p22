@@ -39,11 +39,10 @@
   date = {2017-02-26},
   eprint = {1608.05745},
   eprinttype = {arxiv},
-  primaryclass = {cs},
+  eprintclass = {cs},
   url = {http://arxiv.org/abs/1608.05745},
   urldate = {2022-01-03},
   abstract = {Accuracy and interpretability are two dominant features of successful predictive models. Typically, a choice must be made in favor of complex black box models such as recurrent neural networks (RNN) for accuracy versus less accurate but more interpretable traditional models such as logistic regression. This tradeoff poses challenges in medicine where both accuracy and interpretability are important. We addressed this challenge by developing the REverse Time AttentIoN model (RETAIN) for application to Electronic Health Records (EHR) data. RETAIN achieves high accuracy while remaining clinically interpretable and is based on a two-level neural attention model that detects influential past visits and significant clinical variables within those visits (e.g. key diagnoses). RETAIN mimics physician practice by attending the EHR data in a reverse time order so that recent clinical visits are likely to receive higher attention. RETAIN was tested on a large health system EHR dataset with 14 million visits completed by 263K patients over an 8 year period and demonstrated predictive accuracy and computational scalability comparable to state-of-the-art methods such as RNN, and ease of interpretability comparable to traditional models.},
-  archiveprefix = {arXiv},
   annotation = {00816},
   file = {C\:\\Users\\hokarami\\Zotero\\storage\\E32XWUZT\\Choi et al. - 2017 - RETAIN An Interpretable Predictive Model for Heal.pdf;C\:\\Users\\hokarami\\Zotero\\storage\\SGWTXCH6\\Choi et al. - 2017 - RETAIN An Interpretable Predictive Model for Heal.pdf;C\:\\Users\\hokarami\\Zotero\\storage\\VVWKMZYD\\1608.html;C\:\\Users\\hokarami\\Zotero\\storage\\XXJ9GPXW\\1608.html}
 }
@@ -149,23 +148,36 @@
   file = {C\:\\Users\\hokarami\\Zotero\\storage\\ETCDFTT8\\Horn et al. - 2020 - Set Functions for Time Series.pdf;C\:\\Users\\hokarami\\Zotero\\storage\\V6B5HGHU\\Horn et al_2020_Set Functions for Time Series.pdf}
 }
 
-@misc{linEmpiricalStudyExtensive2021,
+@online{linEmpiricalStudyExtensive2021,
   title = {An {{Empirical Study}}: {{Extensive Deep Temporal Point Process}}},
   shorttitle = {An {{Empirical Study}}},
   author = {Lin, Haitao and Tan, Cheng and Wu, Lirong and Gao, Zhangyang and Li, Stan Z.},
   date = {2021-12-21},
   number = {arXiv:2110.09823},
-  eprint = {2110.09823},
+  eprint = {arXiv:2110.09823},
   eprinttype = {arxiv},
-  primaryclass = {cs, stat},
-  publisher = {{arXiv}},
   url = {http://arxiv.org/abs/2110.09823},
   urldate = {2022-06-27},
   abstract = {Temporal point process as the stochastic process on continuous domain of time is commonly used to model the asynchronous event sequence featuring with occurrence timestamps. Thanks to the strong expressivity of deep neural networks, they are emerging as a promising choice for capturing the patterns in asynchronous sequences, in the context of temporal point process. In this paper, we first review recent research emphasis and difficulties in modeling asynchronous event sequences with deep temporal point process, which can be concluded into four fields: encoding of history sequence, formulation of conditional intensity function, relational discovery of events and learning approaches for optimization. We introduce most of recently proposed models by dismantling them into the four parts, and conduct experiments by remodularizing the first three parts with the same learning strategy for a fair empirical evaluation. Besides, we extend the history encoders and conditional intensity function family, and propose a Granger causality discovery framework for exploiting the relations among multi-types of events. Because the Granger causality can be represented by the Granger causality graph, discrete graph structure learning in the framework of Variational Inference is employed to reveal latent structures of the graph. Further experiments show that the proposed framework with latent graph discovery can both capture the relations and achieve an improved fitting and predicting performance.},
-  archiveprefix = {arXiv},
+  pubstate = {preprint},
   keywords = {Computer Science - Machine Learning,review,Statistics - Applications,Statistics - Methodology},
   annotation = {0 citations (Semantic Scholar/arXiv) [2022-06-27]},
   file = {C\:\\Users\\hokarami\\Zotero\\storage\\3V5B7DN6\\Lin et al_2021_An Empirical Study.pdf;C\:\\Users\\hokarami\\Zotero\\storage\\R87R9TRF\\2110.html}
+}
+
+@article{maatenVisualizingDataUsing2008,
+  title = {Visualizing {{Data}} Using T-{{SNE}}},
+  author = {van der Maaten, Laurens and Hinton, Geoffrey},
+  date = {2008},
+  journaltitle = {Journal of Machine Learning Research},
+  volume = {9},
+  number = {86},
+  pages = {2579--2605},
+  issn = {1533-7928},
+  url = {http://jmlr.org/papers/v9/vandermaaten08a.html},
+  urldate = {2023-03-03},
+  abstract = {We present a new technique called "t-SNE" that visualizes high-dimensional data by giving each datapoint a location in a two or three-dimensional map. The technique is a variation of Stochastic Neighbor Embedding (Hinton and Roweis, 2002) that is much easier to optimize, and produces significantly better visualizations by reducing the tendency to crowd points together in the center of the map. t-SNE is better than existing techniques at creating a single map that reveals structure at many different scales. This is particularly important for high-dimensional data that lie on several different, but related, low-dimensional manifolds, such as images ofobjects from multiple classes seen from multiple viewpoints. For visualizing the structure of very large data sets, we show how t-SNE can use random walks on neighborhood graphs to allow the implicit structure of all of the data to influence the way in which a subset of the data is displayed. We illustrate the performance of t-SNE on a wide variety of data sets and compare it with many other non-parametric visualization techniques, including Sammon mapping, Isomap, and Locally Linear Embedding. The visualizations produced by t-SNE are significantly better than those produced by the other techniques on almost all of the data sets.},
+  file = {C\:\\Users\\hokarami\\Zotero\\storage\\PTNJXNTQ\\Maaten and Hinton - 2008 - Visualizing Data using t-SNE.pdf}
 }
 
 @inproceedings{meiNeuralHawkesProcess2017,
@@ -188,12 +200,28 @@
   date = {2017-11-27},
   eprint = {1711.09602},
   eprinttype = {arxiv},
-  primaryclass = {cs},
+  eprintclass = {cs},
   url = {http://arxiv.org/abs/1711.09602},
   urldate = {2021-12-30},
   abstract = {Sepsis is a leading cause of mortality in intensive care units and costs hospitals billions annually. Treating a septic patient is highly challenging, because individual patients respond very differently to medical interventions and there is no universally agreed-upon treatment for sepsis. In this work, we propose an approach to deduce treatment policies for septic patients by using continuous state-space models and deep reinforcement learning. Our model learns clinically interpretable treatment policies, similar in important aspects to the treatment policies of physicians. The learned policies could be used to aid intensive care clinicians in medical decision making and improve the likelihood of patient survival.},
-  archiveprefix = {arXiv},
   file = {C\:\\Users\\hokarami\\Zotero\\storage\\UZAG8T83\\Raghu et al. - 2017 - Deep Reinforcement Learning for Sepsis Treatment.pdf;C\:\\Users\\hokarami\\Zotero\\storage\\5LPMW6PE\\1711.html}
+}
+
+@article{reynaEarlyPredictionSepsis2020,
+  title = {Early {{Prediction}} of {{Sepsis From Clinical Data}}: {{The PhysioNet}}/{{Computing}} in {{Cardiology Challenge}} 2019},
+  shorttitle = {Early {{Prediction}} of {{Sepsis From Clinical Data}}},
+  author = {Reyna, Matthew A. and Josef, Christopher S. and Jeter, Russell and Shashikumar, Supreeth P. and Westover, M. Brandon and Nemati, Shamim and Clifford, Gari D. and Sharma, Ashish},
+  date = {2020-02},
+  journaltitle = {Critical Care Medicine},
+  volume = {48},
+  number = {2},
+  pages = {210--217},
+  issn = {0090-3493},
+  doi = {10.1097/CCM.0000000000004145},
+  abstract = {Objectives:~         Sepsis is a major public health concern with significant morbidity, mortality, and healthcare expenses. Early detection and antibiotic treatment of sepsis improve outcomes. However, although professional critical care societies have proposed new clinical criteria that aid sepsis recognition, the fundamental need for early detection and treatment remains unmet. In response, researchers have proposed algorithms for early sepsis detection, but directly comparing such methods has not been possible because of different patient cohorts, clinical variables and sepsis criteria, prediction tasks, evaluation metrics, and other differences. To address these issues, the PhysioNet/Computing in Cardiology Challenge 2019 facilitated the development of automated, open-source algorithms for the early detection of sepsis from clinical data.         Design:~         Participants submitted containerized algorithms to a cloud-based testing environment, where we graded entries for their binary classification performance using a novel clinical utility-based evaluation metric. We designed this scoring function specifically for the Challenge to reward algorithms for early predictions and penalize them for late or missed predictions and for false alarms.         Setting:~         ICUs in three separate hospital systems. We shared data from two systems publicly and sequestered data from all three systems for scoring.         Patients:~         We sourced over 60,000 ICU patients with up to 40 clinical variables for each hour of a patient’s ICU stay. We applied Sepsis-3 clinical criteria for sepsis onset.         Interventions:~         None.         Measurements and Main Results:~         A total of 104 groups from academia and industry participated, contributing 853 submissions. Furthermore, 90 abstracts based on Challenge entries were accepted for presentation at Computing in Cardiology.         Conclusions:~         Diverse computational approaches predict the onset of sepsis several hours before clinical recognition, but generalizability to different hospital systems remains a challenge.},
+  langid = {american},
+  annotation = {00163},
+  file = {C\:\\Users\\hokarami\\Zotero\\storage\\JBBL7WLF\\Early_Prediction_of_Sepsis_From_Clinical_Data__The.10.pdf;C\:\\Users\\hokarami\\Zotero\\storage\\UCW2X8J4\\41591_2020_789_MOESM1_ESM.pdf;C\:\\Users\\hokarami\\Zotero\\storage\\L9P8Z23I\\early_prediction_of_sepsis_from_clinical_data__the.10.html}
 }
 
 @inproceedings{salehiLearningHawkesProcesses2019,
@@ -209,6 +237,14 @@
   file = {C\:\\Users\\hokarami\\Zotero\\storage\\DJG8NDM6\\Salehi et al_2019_Learning Hawkes Processes from a handful of events.pdf}
 }
 
+@article{silvaPredictingInHospitalMortality,
+  title = {Predicting {{In-Hospital Mortality}} of {{ICU Patients}}: {{The PhysioNet}}/{{Computing}} in {{Cardiology Challenge}} 2012},
+  author = {Silva, Ikaro and Moody, George and Scott, Daniel J and Celi, Leo A and Mark, Roger G},
+  abstract = {Acuity scores, such as APACHE, SAPS, MPM, and SOFA, are widely used to account for population differences in studies aiming to compare how medications, care guidelines, surgery, and other interventions impact mortality in Intensive Care Unit (ICU) patients. By contrast, the focus of the PhysioNet/CinC Challenge 2012 is to develop methods for patient-specific prediction of in-hospital mortality. The data used for the challenge consisted of 5 general descriptors and 36 time series (measurements of vital signs and laboratory results) from the first 48 hours of the first available ICU stay of 12,000 adult patients from the MIMIC II database. The challenge was organized as two events: event 1 measured performance of a binary classifier, and event 2 measured performance of a risk estimator. The score of event 1 was the lower of sensitivity and positive predictive value. The score for event 2 was a range-normalized Hosmer-Lemeshow statistic. A baseline algorithm (using SAPS-1) obtained event 1 and 2 scores of 0.3125 and 68.58 respectively. Most participants submitted entries that outperformed the baseline algorithm. The top final scores for events 1 and 2 were 0.5353 and 17.88 respectively.},
+  langid = {english},
+  file = {C\:\\Users\\hokarami\\Zotero\\storage\\2CLCWRSH\\Silva et al. - Predicting In-Hospital Mortality of ICU Patients .pdf}
+}
+
 @inproceedings{vaswaniAttentionAllYou2017,
   title = {Attention Is {{All}} You {{Need}}},
   booktitle = {Advances in {{Neural Information Processing Systems}}},
@@ -220,6 +256,23 @@
   urldate = {2022-07-07},
   abstract = {The dominant sequence transduction models are based on complex recurrent orconvolutional neural networks in an encoder and decoder configuration. The best performing such models also connect the encoder and decoder through an attentionm echanisms.  We propose a novel, simple network architecture based solely onan attention mechanism, dispensing with recurrence and convolutions entirely.Experiments on two machine translation tasks show these models to be superiorin quality while being more parallelizable and requiring significantly less timeto train. Our single model with 165 million parameters, achieves 27.5 BLEU onEnglish-to-German translation, improving over the existing best ensemble result by over 1 BLEU. On English-to-French translation, we outperform the previoussingle state-of-the-art with model by 0.7 BLEU, achieving a BLEU score of 41.1.},
   file = {C\:\\Users\\hokarami\\Zotero\\storage\\5ZNDVKFI\\Vaswani et al_2017_Attention is All you Need.pdf}
+}
+
+@article{walonoskiSyntheaApproachMethod2018,
+  title = {Synthea: {{An}} Approach, Method, and Software Mechanism for Generating Synthetic Patients and the Synthetic Electronic Health Care Record},
+  shorttitle = {Synthea},
+  author = {Walonoski, Jason and Kramer, Mark and Nichols, Joseph and Quina, Andre and Moesel, Chris and Hall, Dylan and Duffett, Carlton and Dube, Kudakwashe and Gallagher, Thomas and McLachlan, Scott},
+  date = {2018-03-01},
+  journaltitle = {Journal of the American Medical Informatics Association},
+  shortjournal = {Journal of the American Medical Informatics Association},
+  volume = {25},
+  number = {3},
+  pages = {230--238},
+  issn = {1527-974X},
+  doi = {10.1093/jamia/ocx079},
+  abstract = {Our objective is to create a source of synthetic electronic health records that is readily available; suited to industrial, innovation, research, and educational uses; and free of legal, privacy, security, and intellectual property restrictions.We developed Synthea, an open-source software package that simulates the lifespans of synthetic patients, modeling the 10 most frequent reasons for primary care encounters and the 10 chronic conditions with the highest morbidity in the United States.Synthea adheres to a previously developed conceptual framework, scales via open-source deployment on the Internet, and may be extended with additional disease and treatment modules developed by its user community. One million synthetic patient records are now freely available online, encoded in standard formats (eg, Health Level-7 [HL7] Fast Healthcare Interoperability Resources [FHIR] and Consolidated-Clinical Document Architecture), and accessible through an HL7 FHIR application program interface.Health care lags other industries in information technology, data exchange, and interoperability. The lack of freely distributable health records has long hindered innovation in health care. Approaches and tools are available to inexpensively generate synthetic health records at scale without accidental disclosure risk, lowering current barriers to entry for promising early-stage developments. By engaging a growing community of users, the synthetic data generated will become increasingly comprehensive, detailed, and realistic over time.Synthetic patients can be simulated with models of disease progression and corresponding standards of care to produce risk-free realistic synthetic health care records at scale.},
+  annotation = {162 citations (Semantic Scholar/DOI) [2022-11-25] 96 citations (Crossref) [2022-11-25]},
+  file = {C\:\\Users\\hokarami\\Zotero\\storage\\S4U4T9DR\\Walonoski et al_2018_Synthea.pdf;C\:\\Users\\hokarami\\Zotero\\storage\\W6R9HMG2\\4098271.html}
 }
 
 @inproceedings{xuLearningGrangerCausality2016,
