@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.31)  3 MAR 2023 16:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.31)  6 MAR 2023 16:55
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -864,124 +864,123 @@ Package xcolor Warning: Incompatible color definition on input line 485.
 
 \width=\dimen194
 
-Package xcolor Warning: Incompatible color definition on input line 514.
+Package xcolor Warning: Incompatible color definition on input line 515.
 
 
-Package xcolor Warning: Incompatible color definition on input line 541.
+Package xcolor Warning: Incompatible color definition on input line 542.
 
 
-Package xcolor Warning: Incompatible color definition on input line 552.
+Package xcolor Warning: Incompatible color definition on input line 553.
 
 \width=\dimen195
 
 Package xcolor Warning: Incompatible color definition on input line 565.
 
 
-Package xcolor Warning: Incompatible color definition on input line 605.
+Package xcolor Warning: Incompatible color definition on input line 604.
 
 <images/tsne.png, id=49, 462.309pt x 270.684pt>
 File: images/tsne.png Graphic file (type png)
 <use images/tsne.png>
-Package pdftex.def Info: images/tsne.png  used on input line 616.
+Package pdftex.def Info: images/tsne.png  used on input line 615.
 (pdftex.def)             Requested size: 462.30788pt x 270.68333pt.
 
-Package xcolor Warning: Incompatible color definition on input line 618.
+Package xcolor Warning: Incompatible color definition on input line 617.
 
 
-Package xcolor Warning: Incompatible color definition on input line 625.
+Package xcolor Warning: Incompatible color definition on input line 627.
 
 
-Package xcolor Warning: Incompatible color definition on input line 634.
+Package xcolor Warning: Incompatible color definition on input line 631.
 
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [6]
 
-Package xcolor Warning: Incompatible color definition on input line 634.
-
-
-Package xcolor Warning: Incompatible color definition on input line 734.
-
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 734.
-(c:/texlive/2022/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-
-Package xcolor Warning: Incompatible color definition on input line 734.
+Package xcolor Warning: Incompatible color definition on input line 631.
 
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [7]
-Underfull \hbox (badness 1881) in paragraph at lines 735--735
+
+Package xcolor Warning: Incompatible color definition on input line 636.
+
+
+Package xcolor Warning: Incompatible color definition on input line 736.
+
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 736.
+(c:/texlive/2022/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Underfull \hbox (badness 1881) in paragraph at lines 737--737
 \OT1/ptm/m/n/10 cesses For Mod-elling Elec-tronic Health Records''.
  []
 
 
-Underfull \hbox (badness 1708) in paragraph at lines 735--735
+Underfull \hbox (badness 1708) in paragraph at lines 737--737
 \OT1/ptm/m/it/10 NeurIPS Work-shop\OT1/ptm/m/n/10 . Ma-chine Learn-ing for Health.
  []
 
 
-Underfull \hbox (badness 4001) in paragraph at lines 735--735
+Underfull \hbox (badness 4001) in paragraph at lines 737--737
 \OT1/pcr/m/n/10 / / proceedings . mlr . press / v136 /
  []
 
 
-Underfull \hbox (badness 7740) in paragraph at lines 735--735
+Underfull \hbox (badness 7740) in paragraph at lines 737--737
 []\OT1/ptm/m/n/10 Ashish Vaswani et al. ``At-ten-tion Is All You
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 735--735
+Underfull \hbox (badness 10000) in paragraph at lines 737--737
 \OT1/ptm/m/n/10 Need''. In: \OT1/ptm/m/it/10 Ad-vances in Neu-ral In-for-ma-tion
  []
 
 
-Underfull \hbox (badness 5119) in paragraph at lines 735--735
+Underfull \hbox (badness 5119) in paragraph at lines 737--737
 \OT1/ptm/m/it/10 Pro-cess-ing Sys-tems\OT1/ptm/m/n/10 . Vol. 30. Cur-ran As-so-ciates,
  []
 
 
-Underfull \hbox (badness 1895) in paragraph at lines 735--735
+Underfull \hbox (badness 1895) in paragraph at lines 737--737
 \OT1/ptm/m/n/10 Inc., 2017. \OT1/ptm/m/sc/10 url\OT1/ptm/m/n/10 : $\OT1/pcr/m/n/10 https : / / proceedings .
  []
 
 
-Underfull \hbox (badness 7522) in paragraph at lines 735--735
+Underfull \hbox (badness 7522) in paragraph at lines 737--737
 \OT1/pcr/m/n/10 neurips . cc / paper / 2017 / hash /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 735--735
+Underfull \hbox (badness 10000) in paragraph at lines 737--737
 \OT1/pcr/m/n/10 3f5ee243547dee91fbd053c1c4a845aa -[]
  []
 
 
-Underfull \hbox (badness 1838) in paragraph at lines 735--735
-\OT1/pcr/m/n/10 press / v119 / zhang20q . html$ \OT1/ptm/m/n/10 (vis-ited on
- []
-
-
-Underfull \hbox (badness 1496) in paragraph at lines 735--735
-\OT1/ptm/m/n/10 In: \OT1/ptm/m/it/10 Pro-ceed-ings of the 37th In-ter-na-tional Con-fer-
- []
-
-
-Underfull \hbox (badness 3058) in paragraph at lines 735--735
-\OT1/ptm/m/it/10 ence on Ma-chine Learn-ing\OT1/ptm/m/n/10 . In-ter-na-tional Con-fer-
- []
-
-
-Package xcolor Warning: Incompatible color definition on input line 734.
+Package xcolor Warning: Incompatible color definition on input line 736.
 
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [8 <./images/tsne.png>]
+Underfull \hbox (badness 1838) in paragraph at lines 737--737
+\OT1/pcr/m/n/10 press / v119 / zhang20q . html$ \OT1/ptm/m/n/10 (vis-ited on
+ []
 
-Package xcolor Warning: Incompatible color definition on input line 804.
+
+Underfull \hbox (badness 1496) in paragraph at lines 737--737
+\OT1/ptm/m/n/10 In: \OT1/ptm/m/it/10 Pro-ceed-ings of the 37th In-ter-na-tional Con-fer-
+ []
+
+
+Underfull \hbox (badness 3058) in paragraph at lines 737--737
+\OT1/ptm/m/it/10 ence on Ma-chine Learn-ing\OT1/ptm/m/n/10 . In-ter-na-tional Con-fer-
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 806.
 
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
@@ -999,13 +998,13 @@ Package logreq Info: Writing requests to 'Manuscript_v1.run.xml'.
 Here is how much of TeX's memory you used:
  14960 strings out of 476065
  285068 string characters out of 5795020
- 1911299 words of memory out of 5000000
+ 1908299 words of memory out of 5000000
  35083 multiletter control sequences out of 15000+600000
  579867 words of font info for 135 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,20n,92p,2217b,1415s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc} <c:/Users/hokarami/.texlive2022/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Manuscript_v1.pdf (9 pages, 855680 bytes).
+Output written on Manuscript_v1.pdf (9 pages, 857189 bytes).
 PDF statistics:
  153 PDF objects out of 1000 (max. 8388607)
  94 compressed objects within 1 object stream

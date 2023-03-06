@@ -1,18 +1,18 @@
 # Fdb version 4
-["biber Manuscript_v1"] 1677857298 "Manuscript_v1.bcf" "Manuscript_v1.bbl" "Manuscript_v1" 1677858346 0
+["biber Manuscript_v1"] 1678117852 "Manuscript_v1.bcf" "Manuscript_v1.bbl" "Manuscript_v1" 1678118114 0
   "./zotero.bib" 1677857270 46442 51a0c1095fc03367b3ac69e64afe12bd ""
-  "Manuscript_v1.bcf" 1677858345 109549 51dacf1b0fd3256ffd3317bc5ad7b89b "pdflatex"
+  "Manuscript_v1.bcf" 1678118113 109549 51dacf1b0fd3256ffd3317bc5ad7b89b "pdflatex"
   (generated)
   "Manuscript_v1.bbl"
   "Manuscript_v1.blg"
   (rewritten before read)
-["pdflatex"] 1677858342 "c:/DATA/Tasks/220704/Alternate-Transactions-Articles-LaTeX-template/Manuscript_v1.tex" "Manuscript_v1.pdf" "Manuscript_v1" 1677858346 0
+["pdflatex"] 1678118110 "c:/DATA/Tasks/220704/Alternate-Transactions-Articles-LaTeX-template/Manuscript_v1.tex" "Manuscript_v1.pdf" "Manuscript_v1" 1678118114 0
   "LOGO-generic-web.eps" 1502917004 96860 991288daab2defa3899e7c0d849884be ""
-  "Manuscript_v1.aux" 1677858345 7858 51d438efb71fc2468ef5d8d375e1418d "pdflatex"
-  "Manuscript_v1.bbl" 1677857301 50467 71a07b08454eccf8e40947e5b483cf17 "biber Manuscript_v1"
-  "Manuscript_v1.run.xml" 1677858345 2364 2e09a6a40545e74a1e6d444171aa4d03 "pdflatex"
-  "Manuscript_v1.tex" 1677858336 60682 5e260845bbca7e61f2ec189a3418382b ""
-  "c:/DATA/Tasks/220704/Alternate-Transactions-Articles-LaTeX-template/Manuscript_v1.tex" 1677858336 60682 5e260845bbca7e61f2ec189a3418382b ""
+  "Manuscript_v1.aux" 1678118113 7858 1a2b5844809e6ddd2e4c660ca991e444 "pdflatex"
+  "Manuscript_v1.bbl" 1678117855 50467 71a07b08454eccf8e40947e5b483cf17 "biber Manuscript_v1"
+  "Manuscript_v1.run.xml" 1678118113 2364 2e09a6a40545e74a1e6d444171aa4d03 "pdflatex"
+  "Manuscript_v1.tex" 1678118109 60926 a06c44e64268d106e46519e443e7ccfd ""
+  "c:/DATA/Tasks/220704/Alternate-Transactions-Articles-LaTeX-template/Manuscript_v1.tex" 1678118109 60926 a06c44e64268d106e46519e443e7ccfd ""
   "c:/Users/hokarami/.texlive2022/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk" 1677589170 6964 910ee162647b70bd3a635f9569614a9c ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc" 1675184324 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1675184688 3524 cb3e574dea2d1052e39280babc910dc8 ""
