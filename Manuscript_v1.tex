@@ -629,40 +629,71 @@ In general, it might seem problematic to rely on the missingness pattern for out
 
 
 
+  
+  \subsection{Model interpretability}
+  
+  
+  one advantage of proposed method is use of attention mechanisms in both event and state encoder.
+  Fig 1 shows the attention mechanism
+  
+
+  \begin{figure}[!h]
+
+    \centerline{\includegraphics{images/example.png}}
+    \caption{Magnetization as a function of applied field.
+    It is good practice to explain the significance of the figure in the caption.}
+    \label{fig2}
+\end{figure}
 
 
 
-
-\subsection{Learned representions}
+\subsection{Learned representions}  
 
 % \begin{figure*}[!t]
-%     \centerline{\includesvg[inkscapelatex=false,width=2\columnwidth]{images/tsne.svg}}
+%     \centerline{\includesvg[inkscapelatex=false,width=2\columnwidth]{images/tsne.svg}}    
 %     \caption{Magnetization as a function of applied field.
 %     It is good practice to explain the significance of the figure in the caption.}
 %     \label{fig1}
 %     \end{figure*}
 
 
-\begin{figure*}[!t]
-    \centerline{\includegraphics{images/tsne.png}}
+% \begin{figure*}[!h]
+
+%     \centerline{\includegraphics{images/tsne.png}}
+%     \caption{Magnetization as a function of applied field.
+%     It is good practice to explain the significance of the figure in the caption.}
+%     \label{fig2}
+%     \end{figure*}
+
+
+
+
+
+
+We have visualized the learned patients' embeddings for an example dataset and setting (P12-seft). Fig. 1-a and b visualize the t-SNE plot for the learned representations of TEE+DAM and TEE, respectively.     
+
+
+\begin{figure}[!h]
+
+    \centerline{\includegraphics{images/small_tsne.png}}
     \caption{Magnetization as a function of applied field.
     It is good practice to explain the significance of the figure in the caption.}
     \label{fig2}
-    \end{figure*}
-
-We have visualized the learned patients' embeddings for an example dataset and setting (P12-seft). Fig. 1-a and b visualize the t-SNE plot for the learned representations of TEE+DAM and TEE, respectively. 
+\end{figure}
 
 The 10 nearest neighbor pattern similarity (10-nnps) of positive labels for TEE+DAM ($0.903 \pm 0.058 $) is significantly higher than (DAM) ($0.832 \pm 0.095$)($pvalue \leq 0.001$). The sampling pattern of an example patient and its 4 nearest neighbors (in the embedding space) is visualized in Fig. \ref*{fig2}-c and d for TEE+DAM and TEE, respectively. As can be seen, in TEE+DAM, the 4 neighbors have a more similar pattern compared to the example patient. 
 
+
+\begin{figure}[!h]
+
+    \centerline{\includegraphics{images/knn_patterns.png}}
+    
+    \caption{Magnetization as a function of applied field.
+    It is good practice to explain the significance of the figure in the caption.}
+    \label{fig2}
+\end{figure}
+
 We argue that event encoding could lead to better representation learning in EHRs although it does not necessarily leads to better performance. Patient representation that can respect the irregular sampling pattern in EHRs could have various applications in synthetic data generation..
-
-
-
-\subsection{Model interpretability}
-
-
-one advantage of proposed method is use of attention mechanisms in both event and state encoder.
-Fig 1 shows the attention mechanism
 
 
 

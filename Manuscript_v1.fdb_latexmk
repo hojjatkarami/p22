@@ -1,18 +1,18 @@
 # Fdb version 4
-["biber Manuscript_v1"] 1678117852 "Manuscript_v1.bcf" "Manuscript_v1.bbl" "Manuscript_v1" 1678377512 0
+["biber Manuscript_v1"] 1678378547 "Manuscript_v1.bcf" "Manuscript_v1.bbl" "Manuscript_v1" 1678378696 0
   "./zotero.bib" 1677857270 46442 51a0c1095fc03367b3ac69e64afe12bd ""
-  "Manuscript_v1.bcf" 1678377512 109549 51dacf1b0fd3256ffd3317bc5ad7b89b "pdflatex"
+  "Manuscript_v1.bcf" 1678378695 109549 51dacf1b0fd3256ffd3317bc5ad7b89b "pdflatex"
   (generated)
   "Manuscript_v1.bbl"
   "Manuscript_v1.blg"
   (rewritten before read)
-["pdflatex"] 1678377508 "c:/DATA/Tasks/220704/Alternate-Transactions-Articles-LaTeX-template/Manuscript_v1.tex" "Manuscript_v1.pdf" "Manuscript_v1" 1678377512 0
+["pdflatex"] 1678378692 "c:/DATA/Tasks/220704/Alternate-Transactions-Articles-LaTeX-template/Manuscript_v1.tex" "Manuscript_v1.pdf" "Manuscript_v1" 1678378696 0
   "LOGO-generic-web.eps" 1502917004 96860 991288daab2defa3899e7c0d849884be ""
-  "Manuscript_v1.aux" 1678377512 8001 e80d96acc0f085c58d1698d3d4dcc2c7 "pdflatex"
-  "Manuscript_v1.bbl" 1678117855 50467 71a07b08454eccf8e40947e5b483cf17 "biber Manuscript_v1"
-  "Manuscript_v1.run.xml" 1678377512 2364 2e09a6a40545e74a1e6d444171aa4d03 "pdflatex"
-  "Manuscript_v1.tex" 1678377507 63239 e3712ffe3bba7f068d2590bf0a0b8b5a ""
-  "c:/DATA/Tasks/220704/Alternate-Transactions-Articles-LaTeX-template/Manuscript_v1.tex" 1678377507 63239 e3712ffe3bba7f068d2590bf0a0b8b5a ""
+  "Manuscript_v1.aux" 1678378695 8501 d25ffc58b44b444671035caa8d00286d "pdflatex"
+  "Manuscript_v1.bbl" 1678378554 50467 71a07b08454eccf8e40947e5b483cf17 "biber Manuscript_v1"
+  "Manuscript_v1.run.xml" 1678378695 2364 2e09a6a40545e74a1e6d444171aa4d03 "pdflatex"
+  "Manuscript_v1.tex" 1678378691 64068 fa817d5a905f753ae24a22bda034b176 ""
+  "c:/DATA/Tasks/220704/Alternate-Transactions-Articles-LaTeX-template/Manuscript_v1.tex" 1678378691 64068 fa817d5a905f753ae24a22bda034b176 ""
   "c:/Users/hokarami/.texlive2022/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk" 1677589170 6964 910ee162647b70bd3a635f9569614a9c ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc" 1675184324 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1675184688 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -180,8 +180,10 @@
   "c:/texlive/2022/texmf.cnf" 1675188709 713 e69b156964470283e0530f5060668171 ""
   "generic.sty" 1502914674 192 e8d3ecc691fbbb2da183dfc84a675b29 ""
   "ieeecolor.cls" 1502983686 224773 9f9540495f1e1a992a162661c1be18be ""
+  "images/example.png" 1678378417 133119 11078fc8cbec986a3feb3e70dc28bae3 ""
+  "images/knn_patterns.png" 1678378433 228130 116179b389225cdfb96e508249e936d9 ""
   "images/model_arch.png" 1675331232 43374 83acd46c61c9e85867c9c5f9a07efe1c ""
-  "images/tsne.png" 1678377479 787233 f652b59afa6d900253ba04852671e54e ""
+  "images/small_tsne.png" 1678378443 260740 87dff0be162b8ce5cefc3db20e9aedac ""
   "nul" 0 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
   "Manuscript_v1.aux"
